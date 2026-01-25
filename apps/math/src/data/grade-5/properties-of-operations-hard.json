@@ -1010,7 +1010,7 @@
         "$2bc$",
         "$ab + bc + ac$"
       ],
-      "correct": 2,
+      "correct": 1,
       "hint": "Expand all three products, then combine like terms very carefully."
     },
     {
@@ -1126,7 +1126,7 @@
       "question": "Expand $-4(2x - 3)(x + 1)$.",
       "answers": [
         "$-8x^2 - 8x + 12$",
-        "$-8x^2 + 2x + 12$",
+        "$-8x^2 + 4x + 12$",
         "$-8x^2 + 2x - 12$",
         "$8x^2 + 2x + 12$"
       ],
@@ -1166,7 +1166,7 @@
         "$-x + 1$",
         "$x + 5$"
       ],
-      "correct": 2,
+      "correct": 0,
       "hint": "Distribute each fraction, then combine like terms."
     },
     {
@@ -1341,7 +1341,7 @@
       "id": 112,
       "question": "Expand $(2x - 1)(3x + 2) - (x - 3)(6x + 4)$.",
       "answers": [
-        "$14$",
+        "$15x + 10$",
         "$-14$",
         "$14x$",
         "$-14x$"

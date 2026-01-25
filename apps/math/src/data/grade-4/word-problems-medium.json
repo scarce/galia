@@ -8,132 +8,77 @@
     {
       "id": 1,
       "question": "Maria bought 3 notebooks and a pen for $11. If the pen cost $2, how much did each notebook cost?",
-      "answers": [
-        "$3",
-        "$4",
-        "$5",
-        "$2"
-      ],
+      "answers": ["$3", "$4", "$5", "$2"],
       "correct": 0,
       "hint": "First subtract the pen cost from the total, then divide by the number of notebooks."
     },
     {
       "id": 2,
       "question": "Tom is 4 years older than his sister Amy. Together, their ages add up to 22. How old is Tom?",
-      "answers": [
-        "11 years",
-        "13 years",
-        "9 years",
-        "14 years"
-      ],
+      "answers": ["11 years", "13 years", "9 years", "14 years"],
       "correct": 1,
       "hint": "Let Amy's age be $x$. Then Tom is $x + 4$. What equation can you write for their total age?"
     },
     {
       "id": 3,
       "question": "A store sells pencils for $0.50 each and erasers for $0.75 each. Jake bought 4 pencils and 2 erasers. How much did he spend?",
-      "answers": [
-        "$3.00",
-        "$4.50",
-        "$3.50",
-        "$2.75"
-      ],
+      "answers": ["$3.00", "$4.50", "$3.50", "$2.75"],
       "correct": 2,
       "hint": "Calculate the cost of pencils and erasers separately, then add them together."
     },
     {
       "id": 4,
       "question": "Sarah has some stickers. After giving 12 to her friend and then buying 8 more, she has 26 stickers. How many did she start with?",
-      "answers": [
-        "22 stickers",
-        "34 stickers",
-        "18 stickers",
-        "30 stickers"
-      ],
+      "answers": ["22 stickers", "34 stickers", "18 stickers", "30 stickers"],
       "correct": 3,
       "hint": "Work backwards: before buying 8 more, how many did she have? Before giving away 12?"
     },
     {
       "id": 5,
       "question": "A farmer has chickens and cows. There are 20 animals in total with 56 legs. How many chickens are there?",
-      "answers": [
-        "12 chickens",
-        "8 chickens",
-        "14 chickens",
-        "10 chickens"
-      ],
+      "answers": ["12 chickens", "8 chickens", "14 chickens", "10 chickens"],
       "correct": 0,
       "hint": "Chickens have 2 legs, cows have 4. If $c$ = chickens, then $2c + 4(20 - c) = 56$. Solve for $c$."
     },
     {
       "id": 6,
       "question": "Ryan's father is 3 times as old as Ryan. In 10 years, their ages will add up to 68. How old is Ryan now?",
-      "answers": [
-        "14 years",
-        "12 years",
-        "10 years",
-        "16 years"
-      ],
+      "answers": ["14 years", "12 years", "10 years", "16 years"],
       "correct": 1,
       "hint": "If Ryan is $x$ now, his father is $3x$. In 10 years: $(x + 10) + (3x + 10) = 68$."
     },
     {
       "id": 7,
       "question": "Emma earned $45 babysitting. She wants to buy books that cost $7 each and have $10 left for lunch. How many books can she buy?",
-      "answers": [
-        "6 books",
-        "4 books",
-        "5 books",
-        "3 books"
-      ],
+      "answers": ["6 books", "4 books", "5 books", "3 books"],
       "correct": 2,
       "hint": "First subtract the lunch money from her earnings, then divide by the cost per book."
     },
     {
       "id": 8,
       "question": "A train travels at 60 miles per hour. How long will it take to travel 150 miles?",
-      "answers": [
-        "2 hours",
-        "3 hours",
-        "90 hours",
-        "2.5 hours"
-      ],
+      "answers": ["2 hours", "3 hours", "90 hours", "2.5 hours"],
       "correct": 3,
       "hint": "Use the formula: time = distance / speed."
     },
     {
       "id": 9,
       "question": "A class has 28 students. There are 4 more girls than boys. How many boys are in the class?",
-      "answers": [
-        "12 boys",
-        "14 boys",
-        "16 boys",
-        "10 boys"
-      ],
+      "answers": ["12 boys", "14 boys", "16 boys", "10 boys"],
       "correct": 0,
       "hint": "If $b$ = boys, then girls = $b + 4$. Together: $b + (b + 4) = 28$."
     },
     {
       "id": 10,
       "question": "Mike bought 5 apples and 3 oranges for $6.50. If each apple costs $0.80, how much did each orange cost?",
-      "answers": [
-        "$0.75",
-        "$0.50",
-        "$0.83",
-        "$1.00"
-      ],
-      "correct": 1,
+      "answers": ["$0.75", "$0.50", "$0.83", "$1.00"],
+      "correct": 2,
       "hint": "First find the total cost of apples, subtract from total, then divide by number of oranges."
     },
     {
       "id": 11,
       "question": "A rectangle's length is twice its width. If the perimeter is 36 cm, what is the width?",
-      "answers": [
-        "12 cm",
-        "9 cm",
-        "6 cm",
-        "8 cm"
-      ],
+      "answers": ["12 cm", "9 cm", "6 cm", "8 cm"],
       "correct": 2,
       "hint": "If width = $w$, length = $2w$. Perimeter = $2(w) + 2(2w) = 36$."
     },
@@ -152,480 +97,280 @@
     {
       "id": 13,
       "question": "A bike rental costs $5 plus $2 per hour. If Carlos paid $17, how many hours did he rent the bike?",
-      "answers": [
-        "6 hours",
-        "8 hours",
-        "5 hours",
-        "7 hours"
-      ],
+      "answers": ["6 hours", "8 hours", "5 hours", "7 hours"],
       "correct": 0,
       "hint": "Set up the equation: $5 + 2h = 17$. Solve for $h$."
     },
     {
       "id": 14,
       "question": "Three consecutive numbers add up to 48. What is the largest number?",
-      "answers": [
-        "15",
-        "17",
-        "16",
-        "18"
-      ],
+      "answers": ["15", "17", "16", "18"],
       "correct": 1,
       "hint": "If the middle number is $n$, the three numbers are $(n-1)$, $n$, $(n+1)$. Their sum equals 48."
     },
     {
       "id": 15,
       "question": "A car travels 45 miles per hour. A bus travels 35 miles per hour. If both start from the same place, how far apart will they be after 2 hours?",
-      "answers": [
-        "10 miles",
-        "80 miles",
-        "20 miles",
-        "160 miles"
-      ],
+      "answers": ["10 miles", "80 miles", "20 miles", "160 miles"],
       "correct": 2,
       "hint": "Find how far each vehicle travels in 2 hours, then find the difference."
     },
     {
       "id": 16,
       "question": "Sam has twice as many marbles as Tim. Together they have 36 marbles. How many marbles does Sam have?",
-      "answers": [
-        "12 marbles",
-        "18 marbles",
-        "30 marbles",
-        "24 marbles"
-      ],
+      "answers": ["12 marbles", "18 marbles", "30 marbles", "24 marbles"],
       "correct": 3,
       "hint": "If Tim has $t$ marbles, Sam has $2t$. Their total: $t + 2t = 36$."
     },
     {
       "id": 17,
       "question": "A store sold 84 items, some at $5 and some at $8. If the total sales were $504, how many $5 items were sold?",
-      "answers": [
-        "56 items",
-        "48 items",
-        "36 items",
-        "28 items"
-      ],
+      "answers": ["56 items", "48 items", "36 items", "28 items"],
       "correct": 0,
       "hint": "Let $x$ = number of $5 items. Then $(84 - x)$ = $8 items. Set up: $5x + 8(84 - x) = 504$."
     },
     {
       "id": 18,
       "question": "Jenny is 5 years younger than her brother. The sum of their ages is 29. How old is Jenny?",
-      "answers": [
-        "17 years",
-        "12 years",
-        "14 years",
-        "10 years"
-      ],
+      "answers": ["17 years", "12 years", "14 years", "10 years"],
       "correct": 1,
       "hint": "If Jenny is $j$, her brother is $j + 5$. Together: $j + (j + 5) = 29$."
     },
     {
       "id": 19,
       "question": "A parking lot charges $3 for the first hour and $2 for each additional hour. If Maya paid $11, how many hours did she park?",
-      "answers": [
-        "4 hours",
-        "6 hours",
-        "5 hours",
-        "3 hours"
-      ],
+      "answers": ["4 hours", "6 hours", "5 hours", "3 hours"],
       "correct": 2,
       "hint": "The first hour costs $3. After that, how many $2 hours make up the remaining amount?"
     },
     {
       "id": 20,
       "question": "David ran 3 times as far as Alex. Together they ran 12 miles. How far did David run?",
-      "answers": [
-        "4 miles",
-        "6 miles",
-        "8 miles",
-        "9 miles"
-      ],
+      "answers": ["4 miles", "6 miles", "8 miles", "9 miles"],
       "correct": 3,
       "hint": "If Alex ran $a$ miles, David ran $3a$ miles. Their total: $a + 3a = 12$."
     },
     {
       "id": 21,
       "question": "A fruit stand sells apples in bags of 6 and oranges in bags of 4. Kim bought some bags and got 38 pieces of fruit. If she bought 5 bags of apples, how many bags of oranges?",
-      "answers": [
-        "2 bags",
-        "3 bags",
-        "4 bags",
-        "5 bags"
-      ],
+      "answers": ["2 bags", "3 bags", "4 bags", "5 bags"],
       "correct": 0,
       "hint": "Calculate how many apples she got, subtract from total, then divide remaining by 4."
     },
     {
       "id": 22,
       "question": "A number doubled and then increased by 7 equals 31. What is the number?",
-      "answers": [
-        "14",
-        "12",
-        "10",
-        "19"
-      ],
+      "answers": ["14", "12", "10", "19"],
       "correct": 1,
       "hint": "Set up the equation: $2n + 7 = 31$. What do you do first to isolate $n$?"
     },
     {
       "id": 23,
       "question": "In 5 years, Mark will be twice as old as he was 3 years ago. How old is Mark now?",
-      "answers": [
-        "13 years",
-        "8 years",
-        "11 years",
-        "9 years"
-      ],
+      "answers": ["13 years", "8 years", "11 years", "9 years"],
       "correct": 2,
       "hint": "If Mark is $m$ now, then $m + 5 = 2(m - 3)$. Solve for $m$."
     },
     {
       "id": 24,
       "question": "A movie theater has 240 seats. On Saturday, 3/4 of the seats were filled. On Sunday, 2/3 of the seats were filled. How many more people came on Saturday?",
-      "answers": [
-        "40 people",
-        "30 people",
-        "60 people",
-        "20 people"
-      ],
+      "answers": ["40 people", "30 people", "60 people", "20 people"],
       "correct": 3,
       "hint": "Calculate 3/4 of 240 and 2/3 of 240 separately, then find the difference."
     },
     {
       "id": 25,
       "question": "Anna bought 4 sandwiches and 2 drinks for $22. If each drink cost $3, how much did each sandwich cost?",
-      "answers": [
-        "$4",
-        "$5",
-        "$3",
-        "$6"
-      ],
+      "answers": ["$4", "$5", "$3", "$6"],
       "correct": 0,
       "hint": "First find the total cost of drinks, subtract from total, then divide by number of sandwiches."
     },
     {
       "id": 26,
       "question": "A cyclist travels at 15 km/h. How far can she travel in 2 hours and 40 minutes?",
-      "answers": [
-        "37.5 km",
-        "40 km",
-        "45 km",
-        "32 km"
-      ],
+      "answers": ["37.5 km", "40 km", "45 km", "32 km"],
       "correct": 1,
       "hint": "Convert 2 hours 40 minutes to hours (as a decimal or fraction), then multiply by speed."
     },
     {
       "id": 27,
       "question": "The sum of two numbers is 50. One number is 14 more than the other. What is the smaller number?",
-      "answers": [
-        "32",
-        "18",
-        "25",
-        "16"
-      ],
+      "answers": ["32", "18", "25", "16"],
       "correct": 1,
       "hint": "If the smaller number is $x$, the larger is $x + 14$. Together: $x + (x + 14) = 50$."
     },
     {
       "id": 28,
       "question": "A shop sells notebooks for $4 and pens for $2. If Lucy spent $26 on 8 items, how many notebooks did she buy?",
-      "answers": [
-        "6 notebooks",
-        "4 notebooks",
-        "5 notebooks",
-        "3 notebooks"
-      ],
+      "answers": ["6 notebooks", "4 notebooks", "5 notebooks", "3 notebooks"],
       "correct": 2,
       "hint": "Let $n$ = notebooks. Then pens = $8 - n$. Set up: $4n + 2(8 - n) = 26$."
     },
     {
       "id": 29,
       "question": "Ben's age is 1/3 of his grandfather's age. If his grandfather is 72, how old will Ben be in 6 years?",
-      "answers": [
-        "24 years",
-        "18 years",
-        "36 years",
-        "30 years"
-      ],
+      "answers": ["24 years", "18 years", "36 years", "30 years"],
       "correct": 3,
       "hint": "First find Ben's current age (1/3 of 72), then add 6 years."
     },
     {
       "id": 30,
       "question": "A rectangular garden has a perimeter of 56 meters. The length is 4 meters more than the width. What is the length?",
-      "answers": [
-        "16 meters",
-        "12 meters",
-        "18 meters",
-        "14 meters"
-      ],
+      "answers": ["16 meters", "12 meters", "18 meters", "14 meters"],
       "correct": 0,
       "hint": "If width = $w$, length = $w + 4$. Perimeter = $2w + 2(w + 4) = 56$. Find $w$, then add 4."
     },
     {
       "id": 31,
       "question": "Kate has $50. She buys 3 books at $8 each and wants to buy pens at $2 each. How many pens can she buy?",
-      "answers": [
-        "12 pens",
-        "13 pens",
-        "11 pens",
-        "14 pens"
-      ],
+      "answers": ["12 pens", "13 pens", "11 pens", "14 pens"],
       "correct": 1,
       "hint": "First calculate how much she spends on books, then see how much is left for pens."
     },
     {
       "id": 32,
       "question": "Two buses leave a station at the same time, traveling in opposite directions. One goes 40 mph and the other 50 mph. How far apart are they after 3 hours?",
-      "answers": [
-        "30 miles",
-        "90 miles",
-        "270 miles",
-        "150 miles"
-      ],
+      "answers": ["30 miles", "90 miles", "270 miles", "150 miles"],
       "correct": 2,
       "hint": "Since they travel in opposite directions, add their speeds, then multiply by time."
     },
     {
       "id": 33,
       "question": "A number multiplied by 4, then decreased by 10, equals 30. What is the number?",
-      "answers": [
-        "5",
-        "8",
-        "12",
-        "10"
-      ],
+      "answers": ["5", "8", "12", "10"],
       "correct": 3,
       "hint": "Set up: $4n - 10 = 30$. Add 10 to both sides first, then divide."
     },
     {
       "id": 34,
       "question": "Mia scored 85 on her first test and 91 on her second test. What score does she need on her third test to have an average of 90?",
-      "answers": [
-        "94",
-        "90",
-        "92",
-        "96"
-      ],
+      "answers": ["94", "90", "92", "96"],
       "correct": 0,
       "hint": "For an average of 90 over 3 tests, the total must be $90 \\times 3 = 270$. What's missing?"
     },
     {
       "id": 35,
       "question": "A phone plan costs $25 per month plus $0.10 per text message. If the monthly bill was $37, how many text messages were sent?",
-      "answers": [
-        "62 messages",
-        "120 messages",
-        "370 messages",
-        "12 messages"
-      ],
+      "answers": ["62 messages", "120 messages", "370 messages", "12 messages"],
       "correct": 1,
       "hint": "Subtract the base cost from the bill, then divide by the cost per message."
     },
     {
       "id": 36,
       "question": "Jack and Jill have 54 trading cards together. Jack has 6 fewer cards than Jill. How many cards does Jill have?",
-      "answers": [
-        "24 cards",
-        "27 cards",
-        "30 cards",
-        "36 cards"
-      ],
+      "answers": ["24 cards", "27 cards", "30 cards", "36 cards"],
       "correct": 2,
       "hint": "If Jack has $j$ cards, Jill has $j + 6$. Together: $j + (j + 6) = 54$. Solve for Jill's amount."
     },
     {
       "id": 37,
       "question": "A swimming pool is being filled at 20 gallons per minute. It already has 100 gallons. How many minutes until it has 400 gallons?",
-      "answers": [
-        "20 minutes",
-        "12 minutes",
-        "25 minutes",
-        "15 minutes"
-      ],
+      "answers": ["20 minutes", "12 minutes", "25 minutes", "15 minutes"],
       "correct": 3,
       "hint": "First find how many more gallons are needed, then divide by the rate."
     },
     {
       "id": 38,
       "question": "At a fair, ride tickets cost $3 and game tickets cost $2. Pedro spent $21 on 9 tickets total. How many ride tickets did he buy?",
-      "answers": [
-        "3 tickets",
-        "4 tickets",
-        "5 tickets",
-        "6 tickets"
-      ],
+      "answers": ["3 tickets", "4 tickets", "5 tickets", "6 tickets"],
       "correct": 0,
       "hint": "Let $r$ = ride tickets. Game tickets = $9 - r$. Set up: $3r + 2(9 - r) = 21$."
     },
     {
       "id": 39,
       "question": "Nina is 8 years older than her cousin. In 4 years, Nina will be twice her cousin's current age. How old is Nina now?",
-      "answers": [
-        "12 years",
-        "16 years",
-        "14 years",
-        "20 years"
-      ],
+      "answers": ["12 years", "16 years", "14 years", "20 years"],
       "correct": 3,
       "hint": "Let cousin's age = $c$. Nina = $c + 8$. In 4 years: $(c + 8) + 4 = 2c$. Solve for $c$, then find Nina's age."
     },
     {
       "id": 40,
       "question": "A recipe calls for 2 cups of flour for every 3 cups of sugar. If you use 8 cups of flour, how many cups of sugar do you need?",
-      "answers": [
-        "10 cups",
-        "6 cups",
-        "12 cups",
-        "16 cups"
-      ],
+      "answers": ["10 cups", "6 cups", "12 cups", "16 cups"],
       "correct": 2,
       "hint": "Set up a proportion: $2/3 = 8/x$. Cross-multiply to solve for $x$."
     },
     {
       "id": 41,
       "question": "A factory produces 240 toys in 8 hours. How many toys can it produce in 15 hours at the same rate?",
-      "answers": [
-        "400 toys",
-        "450 toys",
-        "480 toys",
-        "420 toys"
-      ],
+      "answers": ["400 toys", "450 toys", "480 toys", "420 toys"],
       "correct": 1,
       "hint": "First find how many toys are made per hour, then multiply by 15."
     },
     {
       "id": 42,
       "question": "Marcus bought 6 identical shirts for $108. He then bought 2 pairs of pants for the same price per item. How much did he spend on pants?",
-      "answers": [
-        "$36",
-        "$54",
-        "$42",
-        "$32"
-      ],
+      "answers": ["$36", "$54", "$42", "$32"],
       "correct": 0,
       "hint": "Find the cost of one shirt first, then multiply by the number of pants."
     },
     {
       "id": 43,
       "question": "A bakery sold 3/5 of its muffins in the morning and 1/4 of the remaining in the afternoon. If 30 muffins are left, how many did they start with?",
-      "answers": [
-        "180 muffins",
-        "200 muffins",
-        "150 muffins",
-        "120 muffins"
-      ],
+      "answers": ["180 muffins", "200 muffins", "150 muffins", "120 muffins"],
       "correct": 1,
       "hint": "After selling 3/5, what fraction remains? Then 1/4 of that is sold. Work backwards from 30."
     },
     {
       "id": 44,
       "question": "A printer prints 12 pages per minute. How long will it take to print a 270-page document?",
-      "answers": [
-        "20.5 minutes",
-        "21 minutes",
-        "22.5 minutes",
-        "24 minutes"
-      ],
+      "answers": ["20.5 minutes", "21 minutes", "22.5 minutes", "24 minutes"],
       "correct": 2,
       "hint": "Divide the total pages by the rate per minute."
     },
     {
       "id": 45,
       "question": "Elena has 3 times as much money as her sister. If Elena gives her sister $20, they will have the same amount. How much money does Elena have?",
-      "answers": [
-        "$40",
-        "$30",
-        "$50",
-        "$60"
-      ],
+      "answers": ["$40", "$30", "$50", "$60"],
       "correct": 3,
       "hint": "If sister has $s$, Elena has $3s$. After giving $20: $3s - 20 = s + 20$."
     },
     {
       "id": 46,
       "question": "A car uses 8 gallons of gas to travel 240 miles. How many gallons will it need for a 450-mile trip?",
-      "answers": [
-        "12 gallons",
-        "18 gallons",
-        "15 gallons",
-        "16 gallons"
-      ],
+      "answers": ["12 gallons", "18 gallons", "15 gallons", "16 gallons"],
       "correct": 2,
       "hint": "First find miles per gallon, then divide the trip distance by that rate."
     },
     {
       "id": 47,
       "question": "Five workers can complete a job in 12 days. How many days would it take 10 workers to complete the same job?",
-      "answers": [
-        "6 days",
-        "24 days",
-        "8 days",
-        "5 days"
-      ],
+      "answers": ["6 days", "24 days", "8 days", "5 days"],
       "correct": 0,
       "hint": "More workers means less time. If workers double, what happens to the time?"
     },
     {
       "id": 48,
       "question": "A store offers 20% off a $45 jacket. What is the sale price?",
-      "answers": [
-        "$38",
-        "$36",
-        "$40",
-        "$35"
-      ],
+      "answers": ["$38", "$36", "$40", "$35"],
       "correct": 1,
       "hint": "Find 20% of $45, then subtract from the original price."
     },
     {
       "id": 49,
       "question": "The product of two consecutive even numbers is 168. What is the larger number?",
-      "answers": [
-        "12",
-        "16",
-        "14",
-        "18"
-      ],
+      "answers": ["12", "16", "14", "18"],
       "correct": 2,
       "hint": "Try consecutive even numbers: $12 \\times 14$, $14 \\times 16$, etc. Which pair multiplies to 168?"
     },
     {
       "id": 50,
       "question": "A water tank holds 500 liters. If it is 3/4 full and 75 liters are used, how much water remains?",
-      "answers": [
-        "375 liters",
-        "350 liters",
-        "300 liters",
-        "325 liters"
-      ],
+      "answers": ["375 liters", "350 liters", "300 liters", "325 liters"],
       "correct": 2,
       "hint": "First find 3/4 of 500, then subtract the water used."
     },
     {
       "id": 51,
       "question": "Lisa earns $15 per hour. She worked 8 hours on Monday and 6 hours on Tuesday. After buying a $50 gift, how much does she have left?",
-      "answers": [
-        "$160",
-        "$150",
-        "$140",
-        "$130"
-      ],
+      "answers": ["$160", "$150", "$140", "$130"],
       "correct": 0,
       "hint": "Calculate total hours, multiply by hourly rate, then subtract the gift cost."
     },
     {
       "id": 52,
       "question": "A square has the same perimeter as a rectangle with length 12 cm and width 8 cm. What is the side length of the square?",
-      "answers": [
-        "8 cm",
-        "10 cm",
-        "12 cm",
-        "9 cm"
-      ],
+      "answers": ["8 cm", "10 cm", "12 cm", "9 cm"],
       "correct": 1,
       "hint": "Find the rectangle's perimeter first. A square's perimeter is 4 times its side."
     },
@@ -644,120 +389,70 @@
     {
       "id": 54,
       "question": "Jon bought 4 notebooks at $3 each and 5 pens at $2 each. He paid with a $50 bill. How much change did he receive?",
-      "answers": [
-        "$26",
-        "$24",
-        "$22",
-        "$28"
-      ],
+      "answers": ["$26", "$24", "$22", "$28"],
       "correct": 3,
       "hint": "Calculate the total cost of notebooks and pens, then subtract from $50."
     },
     {
       "id": 55,
       "question": "A farmer plants 15 rows of corn with 24 plants in each row. If 1/6 of the plants die, how many survive?",
-      "answers": [
-        "320 plants",
-        "300 plants",
-        "280 plants",
-        "340 plants"
-      ],
+      "answers": ["320 plants", "300 plants", "280 plants", "340 plants"],
       "correct": 1,
       "hint": "First find total plants, then calculate how many survive (5/6 of total)."
     },
     {
       "id": 56,
       "question": "The ratio of boys to girls in a class is 3:5. If there are 40 students total, how many are boys?",
-      "answers": [
-        "24 boys",
-        "15 boys",
-        "18 boys",
-        "12 boys"
-      ],
+      "answers": ["24 boys", "15 boys", "18 boys", "12 boys"],
       "correct": 1,
       "hint": "The parts are 3 + 5 = 8. Find what fraction boys represent, then multiply by 40."
     },
     {
       "id": 57,
       "question": "A rectangular pool is 25 meters long and 10 meters wide. A 2-meter wide walkway surrounds it. What is the outer perimeter of the walkway?",
-      "answers": [
-        "78 meters",
-        "86 meters",
-        "94 meters",
-        "70 meters"
-      ],
+      "answers": ["78 meters", "86 meters", "94 meters", "70 meters"],
       "correct": 2,
       "hint": "Add the walkway width to each dimension (on both sides), then find the new perimeter."
     },
     {
       "id": 58,
       "question": "Maria reads 45 pages per hour. Her book has 315 pages. If she reads for 3 hours each day, how many days to finish the book?",
-      "answers": [
-        "3 days",
-        "2 days",
-        "4 days",
-        "2.5 days"
-      ],
+      "answers": ["3 days", "2 days", "4 days", "2.5 days"],
       "correct": 0,
       "hint": "Calculate pages per day, then divide total pages by that amount."
     },
     {
       "id": 59,
       "question": "A store marks up items by 40%. If a shirt's original cost was $25, what is the selling price?",
-      "answers": [
-        "$30",
-        "$32",
-        "$38",
-        "$35"
-      ],
+      "answers": ["$30", "$32", "$38", "$35"],
       "correct": 3,
       "hint": "Find 40% of $25 and add it to the original cost."
     },
     {
       "id": 60,
       "question": "Three friends split a dinner bill equally. The bill was $87.60. If each person also left a $4 tip, how much did each person pay in total?",
-      "answers": [
-        "$33.20",
-        "$29.20",
-        "$35.20",
-        "$31.20"
-      ],
+      "answers": ["$33.20", "$29.20", "$35.20", "$31.20"],
       "correct": 0,
       "hint": "Divide the bill by 3, then add the tip to each person's share."
     },
     {
       "id": 61,
       "question": "A car travels 55 mph for 2 hours, then 65 mph for 3 hours. What was the total distance traveled?",
-      "answers": [
-        "285 miles",
-        "305 miles",
-        "295 miles",
-        "310 miles"
-      ],
+      "answers": ["285 miles", "305 miles", "295 miles", "310 miles"],
       "correct": 2,
       "hint": "Calculate distance for each portion (distance = speed x time), then add them."
     },
     {
       "id": 62,
       "question": "An elevator can hold 8 people. If 50 people need to go up, how many trips are needed?",
-      "answers": [
-        "6 trips",
-        "7 trips",
-        "5 trips",
-        "8 trips"
-      ],
+      "answers": ["6 trips", "7 trips", "5 trips", "8 trips"],
       "correct": 1,
       "hint": "Divide 50 by 8. Remember, you can't have a partial trip - round up!"
     },
     {
       "id": 63,
       "question": "A pizza is cut into 8 slices. Tom ate 1/4 of the pizza and his friend ate 3/8. How many slices are left?",
-      "answers": [
-        "2 slices",
-        "4 slices",
-        "3 slices",
-        "5 slices"
-      ],
+      "answers": ["2 slices", "4 slices", "3 slices", "5 slices"],
       "correct": 2,
       "hint": "Convert fractions to slices: 1/4 of 8 and 3/8 of 8. Subtract both from 8."
     },
@@ -776,60 +471,35 @@
     {
       "id": 65,
       "question": "A rope 45 feet long is cut into pieces that are each 2.5 feet long. How many pieces can be cut?",
-      "answers": [
-        "20 pieces",
-        "16 pieces",
-        "18 pieces",
-        "15 pieces"
-      ],
+      "answers": ["20 pieces", "16 pieces", "18 pieces", "15 pieces"],
       "correct": 2,
       "hint": "Divide the total length by the length of each piece."
     },
     {
       "id": 66,
       "question": "Tyler has $120. He spends 1/3 on food, 1/4 on transportation, and saves the rest. How much does he save?",
-      "answers": [
-        "$50",
-        "$60",
-        "$45",
-        "$55"
-      ],
+      "answers": ["$50", "$60", "$45", "$55"],
       "correct": 0,
       "hint": "Find 1/3 and 1/4 of $120, add them together, and subtract from $120."
     },
     {
       "id": 67,
       "question": "A garden is 18 feet by 12 feet. If each plant needs 6 square feet, how many plants can fit?",
-      "answers": [
-        "32 plants",
-        "38 plants",
-        "36 plants",
-        "42 plants"
-      ],
+      "answers": ["32 plants", "38 plants", "36 plants", "42 plants"],
       "correct": 2,
       "hint": "Find the area of the garden, then divide by space needed per plant."
     },
     {
       "id": 68,
       "question": "Paula scored 78, 85, and 92 on three tests. What score does she need on the fourth test to average 85?",
-      "answers": [
-        "88",
-        "85",
-        "90",
-        "82"
-      ],
+      "answers": ["88", "85", "90", "82"],
       "correct": 1,
       "hint": "For an average of 85 over 4 tests, the total must be $85 \\times 4$. Find what's needed."
     },
     {
       "id": 69,
       "question": "A painter can paint 3 rooms in 5 hours. How many hours will it take to paint 9 rooms?",
-      "answers": [
-        "12 hours",
-        "18 hours",
-        "15 hours",
-        "20 hours"
-      ],
+      "answers": ["12 hours", "18 hours", "15 hours", "20 hours"],
       "correct": 2,
       "hint": "If 3 rooms take 5 hours, how many hours per room? Multiply by 9."
     },
@@ -848,684 +518,399 @@
     {
       "id": 71,
       "question": "A train leaves Station A at 9:00 AM traveling at 60 mph. Another train leaves Station B at 10:00 AM traveling toward Station A at 80 mph. If the stations are 280 miles apart, at what time do they meet?",
-      "answers": [
-        "12:00 PM",
-        "11:30 AM",
-        "11:00 AM",
-        "12:30 PM"
-      ],
+      "answers": ["12:00 PM", "11:30 AM", "11:00 AM", "12:30 PM"],
       "correct": 1,
       "hint": "Calculate how far the first train travels in 1 hour. Then find when combined distance equals remaining distance."
     },
     {
       "id": 72,
       "question": "A shirt originally costs $60. It's first discounted 25%, then an additional 10% off the sale price. What's the final price?",
-      "answers": [
-        "$42.00",
-        "$39.00",
-        "$40.50",
-        "$36.00"
-      ],
+      "answers": ["$42.00", "$39.00", "$40.50", "$36.00"],
       "correct": 2,
       "hint": "Apply the 25% discount first, then apply 10% to the new price."
     },
     {
       "id": 73,
       "question": "If 4 workers can build a wall in 6 days, how many workers are needed to build it in 3 days?",
-      "answers": [
-        "6 workers",
-        "12 workers",
-        "8 workers",
-        "10 workers"
-      ],
+      "answers": ["6 workers", "12 workers", "8 workers", "10 workers"],
       "correct": 2,
       "hint": "Half the time means you need more workers. Workers and time are inversely proportional."
     },
     {
       "id": 74,
       "question": "A recipe for 8 servings uses 3 cups of rice. How many cups are needed for 12 servings?",
-      "answers": [
-        "4 cups",
-        "5 cups",
-        "4.5 cups",
-        "3.5 cups"
-      ],
+      "answers": ["4 cups", "5 cups", "4.5 cups", "3.5 cups"],
       "correct": 2,
       "hint": "Set up a proportion: $3/8 = x/12$. Cross-multiply to solve."
     },
     {
       "id": 75,
       "question": "Carlos bought a computer for $800 and sold it for $920. What was his percent profit?",
-      "answers": [
-        "18%",
-        "12%",
-        "20%",
-        "15%"
-      ],
+      "answers": ["18%", "12%", "20%", "15%"],
       "correct": 3,
       "hint": "Profit = selling price - cost. Then divide profit by original cost and multiply by 100."
     },
     {
       "id": 76,
       "question": "A cylindrical tank has a capacity of 500 gallons. If water is pumped in at 25 gallons per minute and leaks out at 5 gallons per minute, how long to fill an empty tank?",
-      "answers": [
-        "20 minutes",
-        "30 minutes",
-        "25 minutes",
-        "35 minutes"
-      ],
+      "answers": ["20 minutes", "30 minutes", "25 minutes", "35 minutes"],
       "correct": 2,
       "hint": "Find the net rate (inflow minus outflow), then divide capacity by net rate."
     },
     {
       "id": 77,
       "question": "Amy is twice as old as her cousin. In 6 years, the sum of their ages will be 36. How old is Amy now?",
-      "answers": [
-        "14 years",
-        "18 years",
-        "16 years",
-        "12 years"
-      ],
+      "answers": ["14 years", "18 years", "16 years", "12 years"],
       "correct": 2,
       "hint": "If cousin is $c$, Amy is $2c$. In 6 years: $(c+6) + (2c+6) = 36$."
     },
     {
       "id": 78,
       "question": "A basketball team won 18 games and lost 12. What percentage of games did they win?",
-      "answers": [
-        "55%",
-        "65%",
-        "60%",
-        "70%"
-      ],
+      "answers": ["55%", "65%", "60%", "70%"],
       "correct": 2,
       "hint": "Find total games, then divide wins by total and multiply by 100."
     },
     {
       "id": 79,
       "question": "If 3/4 of a number is 45, what is 2/3 of that number?",
-      "answers": [
-        "30",
-        "35",
-        "45",
-        "40"
-      ],
+      "answers": ["30", "35", "45", "40"],
       "correct": 3,
       "hint": "First find the number by dividing 45 by 3/4. Then find 2/3 of it."
     },
     {
       "id": 80,
       "question": "A cube has a surface area of 150 square inches. What is the length of one edge?",
-      "answers": [
-        "4 inches",
-        "6 inches",
-        "5 inches",
-        "7 inches"
-      ],
+      "answers": ["4 inches", "6 inches", "5 inches", "7 inches"],
       "correct": 2,
       "hint": "A cube has 6 faces. Divide surface area by 6 to get one face's area, then find the square root."
     },
     {
       "id": 81,
       "question": "John types 45 words per minute. A document has 2,700 words. How many minutes will it take to type?",
-      "answers": [
-        "50 minutes",
-        "55 minutes",
-        "65 minutes",
-        "60 minutes"
-      ],
+      "answers": ["50 minutes", "55 minutes", "65 minutes", "60 minutes"],
       "correct": 3,
       "hint": "Divide total words by typing speed."
     },
     {
       "id": 82,
       "question": "A store sells shirts for $24 each or 3 for $60. How much is saved by buying 3 at the sale price?",
-      "answers": [
-        "$15",
-        "$10",
-        "$12",
-        "$18"
-      ],
+      "answers": ["$15", "$10", "$12", "$18"],
       "correct": 2,
       "hint": "Calculate the regular price for 3 shirts, then subtract the sale price."
     },
     {
       "id": 83,
       "question": "A tank is 2/5 full. After adding 30 gallons, it is 3/4 full. What is the tank's capacity?",
-      "answers": [
-        "90 gallons",
-        "80 gallons",
-        "100 gallons",
-        "85 gallons"
-      ],
+      "answers": ["90 gallons", "80 gallons", "100 gallons", "85 gallons"],
       "correct": 3,
       "hint": "The 30 gallons represent the difference between 3/4 and 2/5 of the capacity."
     },
     {
       "id": 84,
       "question": "Three machines produce 150 widgets per hour together. If one machine breaks down, how many widgets can the remaining two produce in 8 hours?",
-      "answers": [
-        "900 widgets",
-        "750 widgets",
-        "800 widgets",
-        "850 widgets"
-      ],
+      "answers": ["900 widgets", "750 widgets", "800 widgets", "850 widgets"],
       "correct": 2,
       "hint": "Find the rate per machine, then multiply by 2 machines and 8 hours."
     },
     {
       "id": 85,
       "question": "A ladder leans against a wall. The base is 6 feet from the wall and the ladder is 10 feet long. How high up the wall does it reach?",
-      "answers": [
-        "9 feet",
-        "7 feet",
-        "8 feet",
-        "10 feet"
-      ],
+      "answers": ["9 feet", "7 feet", "8 feet", "10 feet"],
       "correct": 2,
       "hint": "Use the Pythagorean theorem: $a^2 + b^2 = c^2$, where $c$ is the ladder."
     },
     {
       "id": 86,
       "question": "A car depreciates by 15% each year. If it's worth $20,000 now, what will it be worth in 2 years?",
-      "answers": [
-        "$14,000",
-        "$14,450",
-        "$15,300",
-        "$13,600"
-      ],
+      "answers": ["$14,000", "$14,450", "$15,300", "$13,600"],
       "correct": 1,
       "hint": "After year 1, multiply by 0.85. Then multiply that result by 0.85 again."
     },
     {
       "id": 87,
       "question": "The sum of three consecutive odd numbers is 81. What is the middle number?",
-      "answers": [
-        "25",
-        "29",
-        "27",
-        "31"
-      ],
+      "answers": ["25", "29", "27", "31"],
       "correct": 2,
       "hint": "If the middle number is $n$, the three numbers are $(n-2)$, $n$, $(n+2)$."
     },
     {
       "id": 88,
       "question": "A merchant buys items for $40 each and sells them for $52 each. How many items must be sold to make a profit of $180?",
-      "answers": [
-        "12 items",
-        "18 items",
-        "15 items",
-        "20 items"
-      ],
+      "answers": ["12 items", "18 items", "15 items", "20 items"],
       "correct": 2,
       "hint": "Find profit per item, then divide total profit needed by profit per item."
     },
     {
       "id": 89,
       "question": "A rectangular field is 120 meters by 80 meters. A path 4 meters wide runs around the inside. What is the area of the path?",
-      "answers": [
-        "1,408 sq m",
-        "1,536 sq m",
-        "1,200 sq m",
-        "1,344 sq m"
-      ],
+      "answers": ["1,408 sq m", "1,536 sq m", "1,200 sq m", "1,344 sq m"],
       "correct": 0,
       "hint": "Find the outer area and inner area (reduced by 8m on length and width), then subtract."
     },
     {
       "id": 90,
       "question": "A clock loses 5 minutes every hour. If it shows the correct time at 9:00 AM, what time will it show when the actual time is 3:00 PM?",
-      "answers": [
-        "2:00 PM",
-        "2:15 PM",
-        "2:45 PM",
-        "2:30 PM"
-      ],
+      "answers": ["2:00 PM", "2:15 PM", "2:45 PM", "2:30 PM"],
       "correct": 3,
       "hint": "Count the hours elapsed, multiply by 5 minutes lost, and subtract from actual time."
     },
     {
       "id": 91,
       "question": "A group of friends shares a $96 bill equally. If 2 more friends join and share equally, each person pays $4 less. How many friends were in the original group?",
-      "answers": [
-        "8 friends",
-        "4 friends",
-        "6 friends",
-        "5 friends"
-      ],
+      "answers": ["8 friends", "4 friends", "6 friends", "5 friends"],
       "correct": 2,
       "hint": "If original group is $n$: $96/n - 96/(n+2) = 4$."
     },
     {
       "id": 92,
       "question": "A cyclist travels 12 km uphill at 8 km/h and 12 km downhill at 24 km/h. What is the average speed for the whole trip?",
-      "answers": [
-        "16 km/h",
-        "14 km/h",
-        "12 km/h",
-        "10 km/h"
-      ],
+      "answers": ["16 km/h", "14 km/h", "12 km/h", "10 km/h"],
       "correct": 2,
       "hint": "Average speed = total distance / total time. Find time for each part first."
     },
     {
       "id": 93,
       "question": "In a class of 35 students, 20 play soccer, 18 play basketball, and 8 play both. How many play neither sport?",
-      "answers": [
-        "3 students",
-        "7 students",
-        "5 students",
-        "9 students"
-      ],
+      "answers": ["3 students", "7 students", "5 students", "9 students"],
       "correct": 2,
       "hint": "Use inclusion-exclusion: Soccer + Basketball - Both = students who play at least one."
     },
     {
       "id": 94,
       "question": "A wire 72 cm long is bent into a rectangle with length twice the width. What is the area of the rectangle?",
-      "answers": [
-        "216 sq cm",
-        "256 sq cm",
-        "288 sq cm",
-        "240 sq cm"
-      ],
+      "answers": ["216 sq cm", "256 sq cm", "288 sq cm", "240 sq cm"],
       "correct": 2,
       "hint": "Perimeter = 72 = 2(length + width). If width = $w$, length = $2w$."
     },
     {
       "id": 95,
       "question": "A bag contains red and blue marbles in the ratio 2:3. If there are 45 marbles total, how many more blue marbles than red are there?",
-      "answers": [
-        "12 marbles",
-        "9 marbles",
-        "15 marbles",
-        "6 marbles"
-      ],
+      "answers": ["12 marbles", "9 marbles", "15 marbles", "6 marbles"],
       "correct": 1,
       "hint": "Find number of red (2/5 of 45) and blue (3/5 of 45), then find the difference."
     },
     {
       "id": 96,
       "question": "If I triple a number and subtract 7, I get the same result as if I double the number and add 8. What is the number?",
-      "answers": [
-        "12",
-        "17",
-        "15",
-        "14"
-      ],
+      "answers": ["12", "17", "15", "14"],
       "correct": 2,
       "hint": "Set up the equation: $3n - 7 = 2n + 8$. Solve for $n$."
     },
     {
       "id": 97,
       "question": "A carpenter has a board 5 meters long. He cuts off pieces of 0.8 meters each. How many complete pieces can he cut?",
-      "answers": [
-        "7 pieces",
-        "5 pieces",
-        "6 pieces",
-        "8 pieces"
-      ],
+      "answers": ["7 pieces", "5 pieces", "6 pieces", "8 pieces"],
       "correct": 2,
       "hint": "Divide 5 by 0.8 and take only the whole number part."
     },
     {
       "id": 98,
       "question": "The average of 5 numbers is 24. If one number is removed, the average becomes 22. What number was removed?",
-      "answers": [
-        "30",
-        "28",
-        "34",
-        "32"
-      ],
+      "answers": ["30", "28", "34", "32"],
       "correct": 3,
       "hint": "Find the sum of all 5 numbers, then the sum of the remaining 4. The difference is the removed number."
     },
     {
       "id": 99,
       "question": "A boat travels 20 km upstream in 4 hours and returns downstream in 2 hours. What is the boat's speed in still water?",
-      "answers": [
-        "6 km/h",
-        "8 km/h",
-        "7.5 km/h",
-        "6.5 km/h"
-      ],
+      "answers": ["6 km/h", "8 km/h", "7.5 km/h", "6.5 km/h"],
       "correct": 2,
       "hint": "Find upstream speed (20/4) and downstream speed (20/2). Boat speed = (upstream + downstream)/2."
     },
     {
       "id": 100,
       "question": "A theater charges $12 for adults and $8 for children. If 200 tickets were sold for $2,000, how many adult tickets were sold?",
-      "answers": [
-        "100 tickets",
-        "125 tickets",
-        "80 tickets",
-        "150 tickets"
-      ],
+      "answers": ["100 tickets", "125 tickets", "80 tickets", "150 tickets"],
       "correct": 0,
       "hint": "Let $a$ = adult tickets. Then $12a + 8(200-a) = 2000$."
     },
     {
       "id": 101,
       "question": "A farmer has 180 feet of fencing. He wants to make a rectangular pen against a barn (so only 3 sides need fencing). What is the maximum area?",
-      "answers": [
-        "3,600 sq ft",
-        "4,050 sq ft",
-        "4,200 sq ft",
-        "3,800 sq ft"
-      ],
+      "answers": ["3,600 sq ft", "4,050 sq ft", "4,200 sq ft", "3,800 sq ft"],
       "correct": 1,
       "hint": "For maximum area with 3 sides: width = 1/4 of total fencing, length = 1/2 of total fencing."
     },
     {
       "id": 102,
       "question": "A sum of money doubles in 8 years at simple interest. What is the rate of interest?",
-      "answers": [
-        "10%",
-        "15%",
-        "12.5%",
-        "8%"
-      ],
+      "answers": ["10%", "15%", "12.5%", "8%"],
       "correct": 2,
       "hint": "If money doubles, interest earned equals principal. Use SI formula: I = PRT/100."
     },
     {
       "id": 103,
       "question": "Two pipes can fill a tank in 6 hours and 8 hours respectively. If both are opened together, how long to fill the tank?",
-      "answers": [
-        "3.43 hours",
-        "4 hours",
-        "3.5 hours",
-        "2.8 hours"
-      ],
+      "answers": ["3.43 hours", "4 hours", "3.5 hours", "2.8 hours"],
       "correct": 0,
       "hint": "Add the rates: 1/6 + 1/8. Then take the reciprocal for total time."
     },
     {
       "id": 104,
       "question": "A fruit seller buys oranges at 5 for $3 and sells at 4 for $3. If he sells 200 oranges, what is his profit?",
-      "answers": [
-        "$25",
-        "$35",
-        "$30",
-        "$40"
-      ],
+      "answers": ["$25", "$35", "$30", "$40"],
       "correct": 2,
       "hint": "Find cost price per orange and selling price per orange, then calculate profit per orange times 200."
     },
     {
       "id": 105,
       "question": "The length of a rectangle is increased by 20% and width decreased by 10%. By what percent does the area change?",
-      "answers": [
-        "8% increase",
-        "10% increase",
-        "12% increase",
-        "6% increase"
-      ],
+      "answers": ["8% increase", "10% increase", "12% increase", "6% increase"],
       "correct": 0,
       "hint": "New area = 1.2 times 0.9 = ? Compare to original area of 1."
     },
     {
       "id": 106,
       "question": "A school has 480 students. 60% are boys. How many girls need to join so that boys become 50% of all students?",
-      "answers": [
-        "96 girls",
-        "80 girls",
-        "88 girls",
-        "72 girls"
-      ],
+      "answers": ["96 girls", "80 girls", "88 girls", "72 girls"],
       "correct": 0,
       "hint": "Find number of boys (60% of 480). For them to be 50%, total students must be twice the boys."
     },
     {
       "id": 107,
       "question": "A trader mixes 30 kg of rice at $2.50/kg with 20 kg at $3.50/kg. What should be the selling price per kg to make 20% profit?",
-      "answers": [
-        "$3.36/kg",
-        "$3.00/kg",
-        "$3.48/kg",
-        "$3.24/kg"
-      ],
+      "answers": ["$3.36/kg", "$3.00/kg", "$3.48/kg", "$3.24/kg"],
       "correct": 0,
       "hint": "Find total cost and total weight. Find cost per kg, then add 20%."
     },
     {
       "id": 108,
       "question": "A man walks at 4 km/h. He starts at 7:00 AM. His friend starts at 8:00 AM on a bicycle at 12 km/h. At what time does the friend catch up?",
-      "answers": [
-        "8:30 AM",
-        "9:00 AM",
-        "8:45 AM",
-        "9:15 AM"
-      ],
+      "answers": ["8:30 AM", "9:00 AM", "8:45 AM", "9:15 AM"],
       "correct": 0,
       "hint": "By 8:00 AM, the walker is 4 km ahead. At what rate does the cyclist gain on him?"
     },
     {
       "id": 109,
       "question": "A shopkeeper sold an item for $360 at a loss of 10%. At what price should he sell it to make a 15% profit?",
-      "answers": [
-        "$460",
-        "$440",
-        "$420",
-        "$480"
-      ],
+      "answers": ["$460", "$440", "$420", "$480"],
       "correct": 0,
       "hint": "Find the cost price first (360 is 90% of cost). Then calculate 115% of cost."
     },
     {
       "id": 110,
       "question": "In a mixture of 60 liters, the ratio of milk to water is 2:1. How much water should be added to make the ratio 1:1?",
-      "answers": [
-        "15 liters",
-        "25 liters",
-        "20 liters",
-        "30 liters"
-      ],
+      "answers": ["15 liters", "25 liters", "20 liters", "30 liters"],
       "correct": 2,
       "hint": "Find current amounts of milk and water. For 1:1 ratio, water should equal milk."
     },
     {
       "id": 111,
       "question": "A train 150 meters long passes a platform 350 meters long in 25 seconds. What is the train's speed?",
-      "answers": [
-        "18 m/s",
-        "22 m/s",
-        "20 m/s",
-        "24 m/s"
-      ],
+      "answers": ["18 m/s", "22 m/s", "20 m/s", "24 m/s"],
       "correct": 2,
       "hint": "The train travels its own length plus the platform length. Divide total distance by time."
     },
     {
       "id": 112,
       "question": "The population of a town increases by 10% each year. If the current population is 10,000, what will it be in 2 years?",
-      "answers": [
-        "12,000",
-        "12,100",
-        "11,900",
-        "11,800"
-      ],
+      "answers": ["12,000", "12,100", "11,900", "11,800"],
       "correct": 1,
       "hint": "Multiply by 1.10 for each year: $10000 \\times 1.10 \\times 1.10$."
     },
     {
       "id": 113,
       "question": "A man is 24 years older than his son. In 6 years, he will be twice as old as his son. How old is the son now?",
-      "answers": [
-        "16 years",
-        "20 years",
-        "18 years",
-        "22 years"
-      ],
+      "answers": ["16 years", "20 years", "18 years", "22 years"],
       "correct": 2,
       "hint": "If son is $s$, father is $s + 24$. In 6 years: $(s+24+6) = 2(s+6)$."
     },
     {
       "id": 114,
       "question": "A cistern has two taps. One fills it in 15 minutes, the other empties it in 20 minutes. If both are open, how long to fill an empty cistern?",
-      "answers": [
-        "45 minutes",
-        "50 minutes",
-        "55 minutes",
-        "60 minutes"
-      ],
+      "answers": ["45 minutes", "50 minutes", "55 minutes", "60 minutes"],
       "correct": 3,
       "hint": "Net rate = filling rate - emptying rate = 1/15 - 1/20 per minute."
     },
     {
       "id": 115,
       "question": "The price of sugar rises by 25%. By what percent should consumption be reduced to keep spending the same?",
-      "answers": [
-        "25%",
-        "15%",
-        "20%",
-        "22%"
-      ],
+      "answers": ["25%", "15%", "20%", "22%"],
       "correct": 2,
       "hint": "If price becomes 125%, consumption should become 100/125 = 80%. How much is reduced?"
     },
     {
       "id": 116,
       "question": "A and B together can do a job in 12 days. B and C together in 15 days. A and C together in 20 days. How long for A alone?",
-      "answers": [
-        "24 days",
-        "30 days",
-        "36 days",
-        "28 days"
-      ],
+      "answers": ["24 days", "30 days", "36 days", "28 days"],
       "correct": 1,
       "hint": "Add all three rates, divide by 2 to get sum of individual rates. Then find A's rate."
     },
     {
       "id": 117,
       "question": "A can of soup holds 420 ml. A recipe needs 2.5 liters. How many cans are needed?",
-      "answers": [
-        "5 cans",
-        "7 cans",
-        "6 cans",
-        "8 cans"
-      ],
+      "answers": ["5 cans", "7 cans", "6 cans", "8 cans"],
       "correct": 2,
       "hint": "Convert liters to ml (1 L = 1000 ml), then divide by can capacity and round up."
     },
     {
       "id": 118,
       "question": "A class has a mean score of 72 on a test. If the top 5 students (scoring 90 each) are removed, the mean drops to 68. How many students are in the class?",
-      "answers": [
-        "25 students",
-        "20 students",
-        "28 students",
-        "30 students"
-      ],
+      "answers": ["25 students", "20 students", "28 students", "30 students"],
       "correct": 3,
       "hint": "Let $n$ = total students. Set up: $72n - 450 = 68(n-5)$."
     },
     {
       "id": 119,
       "question": "A salesman earns $200 base plus 5% commission. If he earned $650 total, what were his sales?",
-      "answers": [
-        "$8,000",
-        "$10,000",
-        "$9,000",
-        "$7,500"
-      ],
+      "answers": ["$8,000", "$10,000", "$9,000", "$7,500"],
       "correct": 2,
       "hint": "Commission = 650 - 200 = $450. If 5% = $450, what is 100%?"
     },
     {
       "id": 120,
       "question": "Two numbers are in ratio 3:5. If 10 is added to each, the ratio becomes 5:7. What is the smaller number?",
-      "answers": [
-        "12",
-        "18",
-        "15",
-        "20"
-      ],
+      "answers": ["12", "18", "15", "20"],
       "correct": 2,
       "hint": "Let numbers be $3x$ and $5x$. Then $(3x+10)/(5x+10) = 5/7$. Cross-multiply."
     },
     {
       "id": 121,
       "question": "A car's fuel efficiency is 32 miles per gallon. Gas costs $3.50 per gallon. What is the fuel cost for a 448-mile trip?",
-      "answers": [
-        "$42.00",
-        "$49.00",
-        "$56.00",
-        "$45.50"
-      ],
+      "answers": ["$42.00", "$49.00", "$56.00", "$45.50"],
       "correct": 1,
       "hint": "Find gallons needed (448/32), then multiply by price per gallon."
     },
     {
       "id": 122,
       "question": "A bag has 5 red, 4 blue, and 3 green balls. If 2 balls are drawn at random, what is the probability both are red? Express as a fraction and convert to percentage (round to nearest whole).",
-      "answers": [
-        "18%",
-        "12%",
-        "15%",
-        "21%"
-      ],
+      "answers": ["18%", "12%", "15%", "21%"],
       "correct": 2,
       "hint": "Probability = (5/12) times (4/11). Simplify and convert to percent."
     },
     {
       "id": 123,
       "question": "A rectangular tank 8m x 6m x 4m is filled to 3/4 capacity. How many liters of water does it contain? (1 cubic meter = 1000 liters)",
-      "answers": [
-        "144,000 L",
-        "160,000 L",
-        "128,000 L",
-        "136,000 L"
-      ],
+      "answers": ["144,000 L", "160,000 L", "128,000 L", "136,000 L"],
       "correct": 0,
       "hint": "Find volume in cubic meters, multiply by 3/4, then convert to liters."
     },
     {
       "id": 124,
       "question": "The difference between compound and simple interest on $8000 for 2 years at 5% per annum is:",
-      "answers": [
-        "$18",
-        "$22",
-        "$20",
-        "$25"
-      ],
+      "answers": ["$18", "$22", "$20", "$25"],
       "correct": 2,
       "hint": "SI = PRT/100. CI = P(1+R/100)^T - P. Find the difference."
     },
     {
       "id": 125,
       "question": "A wheel has a diameter of 70 cm. How many revolutions does it make to cover 2.2 km?",
-      "answers": [
-        "900",
-        "1000",
-        "1100",
-        "1200"
-      ],
+      "answers": ["900", "1000", "1100", "1200"],
       "correct": 1,
       "hint": "Circumference = $\\pi \\times d$. Convert distance to cm, divide by circumference."
     },
     {
       "id": 126,
       "question": "The HCF of two numbers is 12 and their LCM is 360. If one number is 72, what is the other?",
-      "answers": [
-        "48",
-        "60",
-        "54",
-        "72"
-      ],
+      "answers": ["48", "60", "54", "72"],
       "correct": 1,
       "hint": "Product of two numbers = HCF times LCM. So other number = (12 times 360)/72."
     },
     {
       "id": 127,
       "question": "A train traveling at 90 km/h crosses a man standing on a platform in 10 seconds. What is the length of the train?",
-      "answers": [
-        "200 m",
-        "275 m",
-        "250 m",
-        "225 m"
-      ],
+      "answers": ["200 m", "275 m", "250 m", "225 m"],
       "correct": 2,
       "hint": "Convert speed to m/s (divide by 3.6), then multiply by time."
     },
@@ -1544,264 +929,154 @@
     {
       "id": 129,
       "question": "A man rows 12 km downstream in 2 hours and 12 km upstream in 3 hours. Find the speed of the current.",
-      "answers": [
-        "2 km/h",
-        "0.5 km/h",
-        "1.5 km/h",
-        "1 km/h"
-      ],
+      "answers": ["2 km/h", "0.5 km/h", "1.5 km/h", "1 km/h"],
       "correct": 3,
       "hint": "Downstream speed = 12/2 = 6 km/h. Upstream speed = 12/3 = 4 km/h. Current = (downstream - upstream)/2."
     },
     {
       "id": 130,
       "question": "A shopkeeper offers 15% discount and still makes 19% profit. If the cost price is $200, what is the marked price?",
-      "answers": [
-        "$280",
-        "$260",
-        "$300",
-        "$290"
-      ],
+      "answers": ["$280", "$260", "$300", "$290"],
       "correct": 0,
       "hint": "Selling price = 200 times 1.19. Marked price = SP / 0.85."
     },
     {
       "id": 131,
       "question": "The ages of A and B are in ratio 5:7. After 5 years, the ratio will be 5:6. What is B's current age?",
-      "answers": [
-        "12 years",
-        "10 years",
-        "7 years",
-        "15 years"
-      ],
+      "answers": ["12 years", "10 years", "7 years", "15 years"],
       "correct": 2,
       "hint": "Let ages be $5x$ and $7x$. After 5 years: $(5x+5)/(7x+5) = 5/6$."
     },
     {
       "id": 132,
       "question": "A sum of money at compound interest amounts to $5832 in 2 years and $6298.56 in 3 years. What is the rate?",
-      "answers": [
-        "6%",
-        "10%",
-        "8%",
-        "12%"
-      ],
+      "answers": ["6%", "10%", "8%", "12%"],
       "correct": 2,
       "hint": "The third year's interest = 6298.56 - 5832. Rate = (this interest / 5832) times 100."
     },
     {
       "id": 133,
       "question": "In a triangle, one angle is twice the second and three times the third. What is the largest angle?",
-      "answers": [
-        "108 degrees",
-        "90 degrees",
-        "72 degrees",
-        "80 degrees"
-      ],
+      "answers": ["108 degrees", "90 degrees", "72 degrees", "80 degrees"],
       "correct": 0,
       "hint": "Let the largest angle be $6x$. Then angles are $6x$, $3x$, $2x$. Sum = 180."
     },
     {
       "id": 134,
       "question": "A grocer mixes two varieties of tea costing $60/kg and $90/kg in ratio 3:2. At what price should he sell to make 20% profit?",
-      "answers": [
-        "$86.40/kg",
-        "$84.00/kg",
-        "$88.20/kg",
-        "$82.80/kg"
-      ],
+      "answers": ["$86.40/kg", "$84.00/kg", "$88.20/kg", "$82.80/kg"],
       "correct": 0,
       "hint": "Find average cost per kg using weighted average, then add 20%."
     },
     {
       "id": 135,
       "question": "A circular track has a circumference of 400 meters. Two runners start together. One runs at 5 m/s, the other at 3 m/s. After how many seconds will they meet at the starting point?",
-      "answers": [
-        "200 seconds",
-        "150 seconds",
-        "250 seconds",
-        "180 seconds"
-      ],
+      "answers": ["200 seconds", "150 seconds", "250 seconds", "180 seconds"],
       "correct": 0,
       "hint": "Find time for each to complete one lap. LCM of these times gives when they meet at start."
     },
     {
       "id": 136,
       "question": "A cone and a cylinder have the same base and height. If the volume of the cylinder is 54 cubic cm, what is the volume of the cone?",
-      "answers": [
-        "27 cu cm",
-        "36 cu cm",
-        "18 cu cm",
-        "12 cu cm"
-      ],
+      "answers": ["27 cu cm", "36 cu cm", "18 cu cm", "12 cu cm"],
       "correct": 2,
       "hint": "A cone's volume is 1/3 of a cylinder with the same base and height."
     },
     {
       "id": 137,
       "question": "If the selling price is doubled, the profit triples. What is the profit percentage?",
-      "answers": [
-        "75%",
-        "100%",
-        "150%",
-        "125%"
-      ],
+      "answers": ["75%", "100%", "150%", "125%"],
       "correct": 1,
       "hint": "Let cost = C, profit = P. Then SP = C + P and 2SP - C = 3P. Solve for P in terms of C."
     },
     {
       "id": 138,
       "question": "A man can row 6 km/h in still water. If the river flows at 2 km/h, how long to row 16 km upstream and back?",
-      "answers": [
-        "5 hours",
-        "6 hours",
-        "4.5 hours",
-        "5.5 hours"
-      ],
+      "answers": ["5 hours", "6 hours", "4.5 hours", "5.5 hours"],
       "correct": 1,
       "hint": "Upstream speed = 4 km/h, downstream = 8 km/h. Find time for each leg and add."
     },
     {
       "id": 139,
       "question": "The cost of 5 oranges and 3 apples is $2.50. The cost of 3 oranges and 5 apples is $2.70. What is the cost of one orange?",
-      "answers": [
-        "$0.25",
-        "$0.35",
-        "$0.30",
-        "$0.20"
-      ],
+      "answers": ["$0.25", "$0.35", "$0.30", "$0.20"],
       "correct": 0,
       "hint": "Set up two equations: $5o + 3a = 2.50$ and $3o + 5a = 2.70$. Add them to simplify."
     },
     {
       "id": 140,
       "question": "A clock strikes once at 1 o'clock, twice at 2 o'clock, etc. How many times does it strike in 12 hours?",
-      "answers": [
-        "66 times",
-        "72 times",
-        "78 times",
-        "84 times"
-      ],
+      "answers": ["66 times", "72 times", "78 times", "84 times"],
       "correct": 2,
       "hint": "Sum of 1 + 2 + 3 + ... + 12. Use the formula n(n+1)/2."
     },
     {
       "id": 141,
       "question": "A father's age is 5 times his son's age. After 4 years, father's age will be 4 times son's age. What is the son's current age?",
-      "answers": [
-        "8 years",
-        "12 years",
-        "16 years",
-        "10 years"
-      ],
+      "answers": ["8 years", "12 years", "16 years", "10 years"],
       "correct": 1,
       "hint": "If son is $s$, father is $5s$. After 4 years: $5s + 4 = 4(s + 4)$."
     },
     {
       "id": 142,
       "question": "A rectangular plot 120m x 80m has a path 4m wide running inside along the border. What is the area of the path?",
-      "answers": [
-        "1,536 sq m",
-        "1,408 sq m",
-        "1,472 sq m",
-        "1,344 sq m"
-      ],
+      "answers": ["1,536 sq m", "1,408 sq m", "1,472 sq m", "1,344 sq m"],
       "correct": 1,
       "hint": "Outer area - inner area. Inner dimensions are reduced by 8m each (4m on each side)."
     },
     {
       "id": 143,
       "question": "A reduction of 20% in the price of rice enables a buyer to get 5 kg more for $200. What is the reduced price per kg?",
-      "answers": [
-        "$6/kg",
-        "$10/kg",
-        "$8/kg",
-        "$12/kg"
-      ],
+      "answers": ["$6/kg", "$10/kg", "$8/kg", "$12/kg"],
       "correct": 2,
       "hint": "Original price = P, reduced = 0.8P. Set up: 200/(0.8P) - 200/P = 5."
     },
     {
       "id": 144,
       "question": "Two dice are thrown. What is the probability that the sum is 8?",
-      "answers": [
-        "5/36",
-        "4/36",
-        "6/36",
-        "7/36"
-      ],
+      "answers": ["5/36", "4/36", "6/36", "7/36"],
       "correct": 0,
       "hint": "Count favorable outcomes: (2,6), (3,5), (4,4), (5,3), (6,2). Total outcomes = 36."
     },
     {
       "id": 145,
       "question": "A swimming pool can be filled by pipe A in 4 hours and by pipe B in 6 hours. A drain pipe empties it in 12 hours. If all three are open, how long to fill?",
-      "answers": [
-        "2 hours",
-        "4 hours",
-        "3 hours",
-        "5 hours"
-      ],
+      "answers": ["2 hours", "4 hours", "3 hours", "5 hours"],
       "correct": 2,
       "hint": "Net rate = 1/4 + 1/6 - 1/12. Find the sum and take reciprocal."
     },
     {
       "id": 146,
       "question": "The average weight of 8 persons increases by 2.5 kg when one person weighing 60 kg is replaced. What is the weight of the new person?",
-      "answers": [
-        "80 kg",
-        "75 kg",
-        "85 kg",
-        "70 kg"
-      ],
+      "answers": ["80 kg", "75 kg", "85 kg", "70 kg"],
       "correct": 0,
       "hint": "Total weight increase = 8 times 2.5 = 20 kg. New person = 60 + 20."
     },
     {
       "id": 147,
       "question": "If A can do a work in 10 days and B in 15 days, and they work together for 4 days, what fraction of work remains?",
-      "answers": [
-        "2/5",
-        "1/2",
-        "1/3",
-        "3/5"
-      ],
+      "answers": ["2/5", "1/2", "1/3", "3/5"],
       "correct": 2,
       "hint": "Combined rate = 1/10 + 1/15 per day. Multiply by 4 days to find work done."
     },
     {
       "id": 148,
       "question": "A number when divided by 5 gives remainder 3. What is the remainder when the square of this number is divided by 5?",
-      "answers": [
-        "2",
-        "3",
-        "4",
-        "1"
-      ],
+      "answers": ["2", "3", "4", "1"],
       "correct": 2,
       "hint": "The number can be written as $5k + 3$. Square it and find remainder when divided by 5."
     },
     {
       "id": 149,
       "question": "The length of a rectangle is increased by 30% and breadth decreased by 20%. What is the percent change in area?",
-      "answers": [
-        "4% increase",
-        "6% decrease",
-        "10% increase",
-        "8% decrease"
-      ],
+      "answers": ["4% increase", "6% decrease", "10% increase", "8% decrease"],
       "correct": 0,
       "hint": "New area = 1.30 times 0.80 = 1.04. This means a 4% increase."
     },
     {
       "id": 150,
       "question": "A merchant has 1000 kg of rice, part of which he sells at 8% profit and rest at 18% profit. If he gains 14% on the whole, how much did he sell at 18% profit?",
-      "answers": [
-        "400 kg",
-        "500 kg",
-        "700 kg",
-        "600 kg"
-      ],
+      "answers": ["400 kg", "500 kg", "700 kg", "600 kg"],
       "correct": 3,
       "hint": "Let x kg at 18%. Then (1000-x) at 8%. Weighted average: 8(1000-x) + 18x = 14(1000)."
     }

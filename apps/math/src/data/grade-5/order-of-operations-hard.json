@@ -8,1800 +8,1050 @@
     {
       "id": 1,
       "question": "What is $3^2 + 4 \\times 5 - 2$?",
-      "answers": [
-        "25",
-        "29",
-        "27",
-        "23"
-      ],
+      "answers": ["25", "29", "27", "23"],
       "correct": 2,
       "hint": "Exponents come first in PEMDAS! Then multiplication, then add and subtract."
     },
     {
       "id": 2,
       "question": "What is $(5 + 3)^2 \\div 4$?",
-      "answers": [
-        "8",
-        "16",
-        "20",
-        "12"
-      ],
+      "answers": ["8", "16", "20", "12"],
       "correct": 1,
       "hint": "Parentheses first, then the exponent, then divide."
     },
     {
       "id": 3,
       "question": "What is $2 \\times (15 - 3 \\times 4) + 6$?",
-      "answers": [
-        "6",
-        "24",
-        "18",
-        "12"
-      ],
+      "answers": ["6", "24", "18", "12"],
       "correct": 3,
       "hint": "Inside the parentheses, multiply before subtracting! Then continue."
     },
     {
       "id": 4,
       "question": "What is $100 \\div (5^2 - 5)$?",
-      "answers": [
-        "5",
-        "10",
-        "4",
-        "20"
-      ],
+      "answers": ["5", "10", "4", "20"],
       "correct": 0,
       "hint": "Inside parentheses: exponent first, then subtract. Then divide 100."
     },
     {
       "id": 5,
       "question": "What is $6 \\times 7 - 4^2 + 8 \\div 2$?",
-      "answers": [
-        "26",
-        "34",
-        "22",
-        "30"
-      ],
+      "answers": ["26", "34", "22", "30"],
       "correct": 3,
       "hint": "Handle the exponent first, then all multiplications and divisions, then add/subtract."
     },
     {
       "id": 6,
       "question": "What is $((8 + 4) \\times 3 - 6) \\div 6$?",
-      "answers": [
-        "4",
-        "7",
-        "5",
-        "6"
-      ],
+      "answers": ["4", "7", "5", "6"],
       "correct": 2,
       "hint": "Start with the innermost parentheses and work outward."
     },
     {
       "id": 7,
       "question": "What is $5^2 - 3^2 + 2^2$?",
-      "answers": [
-        "24",
-        "20",
-        "16",
-        "12"
-      ],
+      "answers": ["24", "20", "16", "12"],
       "correct": 1,
       "hint": "Calculate all exponents first, then add and subtract left to right."
     },
     {
       "id": 8,
       "question": "What is $48 \\div (2 \\times (4 + 2))$?",
-      "answers": [
-        "4",
-        "6",
-        "3",
-        "8"
-      ],
+      "answers": ["4", "6", "3", "8"],
       "correct": 0,
       "hint": "Innermost parentheses first, then multiply, then divide 48."
     },
     {
       "id": 9,
       "question": "What is $7 + 3 \\times (2^2 + 5)$?",
-      "answers": [
-        "27",
-        "40",
-        "31",
-        "34"
-      ],
+      "answers": ["27", "40", "31", "34"],
       "correct": 3,
       "hint": "Inside parentheses: exponent first, then add. Then multiply and add."
     },
     {
       "id": 10,
       "question": "What is $120 \\div (8 + 2) \\div 3$?",
-      "answers": [
-        "8",
-        "4",
-        "12",
-        "6"
-      ],
+      "answers": ["8", "4", "12", "6"],
       "correct": 1,
       "hint": "Parentheses first, then divide left to right."
     },
     {
       "id": 11,
       "question": "What is $(9 - 3)^2 - 6 \\times 4$?",
-      "answers": [
-        "24",
-        "36",
-        "12",
-        "0"
-      ],
+      "answers": ["24", "36", "12", "0"],
       "correct": 2,
       "hint": "Parentheses first, then exponent, then multiply, then subtract."
     },
     {
       "id": 12,
       "question": "What is $4 \\times (25 - 5^2) + 10$?",
-      "answers": [
-        "20",
-        "0",
-        "10",
-        "30"
-      ],
+      "answers": ["20", "0", "10", "30"],
       "correct": 2,
       "hint": "Inside parentheses: exponent first! What is $25 - 25$?"
     },
     {
       "id": 13,
       "question": "What is $8^2 \\div 4 - 3 \\times 4$?",
-      "answers": [
-        "12",
-        "8",
-        "0",
-        "4"
-      ],
+      "answers": ["12", "8", "0", "4"],
       "correct": 3,
       "hint": "Exponent first, then division and multiplication, then subtract."
     },
     {
       "id": 14,
       "question": "What is $5 \\times (6 + 4 \\times 2) - 10$?",
-      "answers": [
-        "50",
-        "70",
-        "60",
-        "80"
-      ],
+      "answers": ["50", "70", "60", "80"],
       "correct": 2,
       "hint": "Inside parentheses: multiply before adding! Then continue."
     },
     {
       "id": 15,
       "question": "What is $(12 \\div 3 + 2) \\times (8 - 3)$?",
-      "answers": [
-        "20",
-        "25",
-        "30",
-        "35"
-      ],
+      "answers": ["20", "25", "30", "35"],
       "correct": 2,
       "hint": "Solve each set of parentheses first, then multiply the results."
     },
     {
       "id": 16,
       "question": "What is $2^3 + 3^2 \\times 2$?",
-      "answers": [
-        "22",
-        "30",
-        "34",
-        "26"
-      ],
+      "answers": ["22", "30", "34", "26"],
       "correct": 3,
       "hint": "Both exponents first, then multiply, then add."
     },
     {
       "id": 17,
       "question": "What is $90 - (4^2 + 6) \\times 2$?",
-      "answers": [
-        "56",
-        "36",
-        "46",
-        "66"
-      ],
+      "answers": ["56", "36", "46", "66"],
       "correct": 2,
       "hint": "Inside parentheses: exponent first, then add. Multiply, then subtract."
     },
     {
       "id": 18,
       "question": "What is $((7 + 5) \\div 4)^2 + 6$?",
-      "answers": [
-        "12",
-        "15",
-        "21",
-        "18"
-      ],
+      "answers": ["12", "15", "21", "18"],
       "correct": 1,
       "hint": "Innermost parentheses first, then divide, then square, then add."
     },
     {
       "id": 19,
       "question": "What is $6 \\times 8 - 5 \\times 7 + 3^2$?",
-      "answers": [
-        "31",
-        "22",
-        "13",
-        "18"
-      ],
+      "answers": ["31", "22", "13", "18"],
       "correct": 1,
       "hint": "Exponent and multiplications first, then add and subtract left to right."
     },
     {
       "id": 20,
       "question": "What is $144 \\div (3 \\times 4)^2$?",
-      "answers": [
-        "1",
-        "36",
-        "4",
-        "12"
-      ],
+      "answers": ["1", "36", "4", "12"],
       "correct": 0,
       "hint": "Inside parentheses first, then square, then divide 144."
     },
     {
       "id": 21,
       "question": "What is $7 \\times (12 - 8 \\div 2) - 4^2$?",
-      "answers": [
-        "40",
-        "48",
-        "56",
-        "32"
-      ],
+      "answers": ["40", "48", "56", "32"],
       "correct": 0,
       "hint": "Inside parentheses: divide before subtracting! Then multiply, handle exponent, subtract."
     },
     {
       "id": 22,
       "question": "What is $(2 + 3)^3 \\div 5$?",
-      "answers": [
-        "30",
-        "25",
-        "20",
-        "15"
-      ],
+      "answers": ["30", "25", "20", "15"],
       "correct": 1,
       "hint": "Parentheses first, then cube (multiply three times), then divide."
     },
     {
       "id": 23,
       "question": "What is $10^2 - 6^2 - 4^2$?",
-      "answers": [
-        "48",
-        "64",
-        "52",
-        "36"
-      ],
+      "answers": ["48", "64", "52", "36"],
       "correct": 0,
       "hint": "All exponents first, then subtract left to right."
     },
     {
       "id": 24,
       "question": "What is $3 \\times (4^2 - 6) + 20 \\div 5$?",
-      "answers": [
-        "38",
-        "26",
-        "30",
-        "34"
-      ],
+      "answers": ["38", "26", "30", "34"],
       "correct": 3,
       "hint": "Inside parentheses: exponent first, then subtract. Continue with multiply, divide, add."
     },
     {
       "id": 25,
       "question": "What is $(15 - 3 \\times 3)^2 \\div 6$?",
-      "answers": [
-        "3",
-        "12",
-        "9",
-        "6"
-      ],
+      "answers": ["3", "12", "9", "6"],
       "correct": 3,
       "hint": "Inside parentheses: multiply first! Then square, then divide."
     },
     {
       "id": 26,
       "question": "What is $4^3 - 8 \\times 6 + 12$?",
-      "answers": [
-        "28",
-        "40",
-        "24",
-        "16"
-      ],
+      "answers": ["28", "40", "24", "16"],
       "correct": 0,
       "hint": "Exponent first ($4$ cubed), then multiply, then add and subtract."
     },
     {
       "id": 27,
       "question": "What is $72 \\div (9 - 3) \\div (8 \\div 4)$?",
-      "answers": [
-        "12",
-        "6",
-        "8",
-        "4"
-      ],
+      "answers": ["12", "6", "8", "4"],
       "correct": 1,
       "hint": "Solve both parentheses first, then divide left to right."
     },
     {
       "id": 28,
       "question": "What is $5 \\times 5 - (3 \\times 3 + 4 \\times 4)$?",
-      "answers": [
-        "4",
-        "2",
-        "0",
-        "-2"
-      ],
+      "answers": ["4", "2", "0", "-2"],
       "correct": 2,
       "hint": "Inside parentheses: both multiplications, then add. Then $5 \\times 5$ minus that."
     },
     {
       "id": 29,
       "question": "What is $(2^3 + 4^2) \\times (10 - 7)$?",
-      "answers": [
-        "60",
-        "48",
-        "84",
-        "72"
-      ],
+      "answers": ["60", "48", "84", "72"],
       "correct": 3,
       "hint": "Both exponents inside parentheses, then multiply the result by the second parentheses."
     },
     {
       "id": 30,
       "question": "What is $100 - 3^2 \\times 10 + 5$?",
-      "answers": [
-        "15",
-        "25",
-        "35",
-        "5"
-      ],
+      "answers": ["15", "25", "35", "5"],
       "correct": 0,
       "hint": "Exponent first, then multiply, then add and subtract left to right."
     },
     {
       "id": 31,
       "question": "What is $6^2 \\div 9 + 7^2 \\div 7$?",
-      "answers": [
-        "9",
-        "13",
-        "11",
-        "15"
-      ],
+      "answers": ["9", "13", "11", "15"],
       "correct": 2,
       "hint": "Both exponents first, then both divisions, then add."
     },
     {
       "id": 32,
       "question": "What is $(8 - 2 \\times 3)^2 \\times 5$?",
-      "answers": [
-        "40",
-        "10",
-        "5",
-        "20"
-      ],
+      "answers": ["40", "10", "5", "20"],
       "correct": 3,
       "hint": "Inside parentheses: multiply first! Then square, then multiply by 5."
     },
     {
       "id": 33,
       "question": "What is $9 \\times 9 - 8 \\times 8 - 1$?",
-      "answers": [
-        "16",
-        "15",
-        "17",
-        "18"
-      ],
+      "answers": ["16", "15", "17", "18"],
       "correct": 0,
       "hint": "Both multiplications first, then subtract left to right."
     },
     {
       "id": 34,
       "question": "What is $45 \\div (3 + 2)^2 \\times 4$?",
-      "answers": [
-        "3.6",
-        "7.2",
-        "9",
-        "36"
-      ],
+      "answers": ["3.6", "7.2", "9", "36"],
       "correct": 1,
       "hint": "Parentheses first, then square, then divide and multiply left to right."
     },
     {
       "id": 35,
       "question": "What is $2 \\times (3 + 4 \\times 5) - 3^2$?",
-      "answers": [
-        "55",
-        "28",
-        "46",
-        "37"
-      ],
+      "answers": ["55", "28", "46", "37"],
       "correct": 3,
       "hint": "Inside parentheses: multiply before adding! Then continue with exponent."
     },
     {
       "id": 36,
       "question": "What is $(10^2 - 6^2) \\div (4 \\times 4)$?",
-      "answers": [
-        "2",
-        "16",
-        "4",
-        "8"
-      ],
+      "answers": ["2", "16", "4", "8"],
       "correct": 2,
       "hint": "Both exponents in first parentheses, multiply in second, then divide."
     },
     {
       "id": 37,
       "question": "What is $12 \\times 5 - 7^2 + 3 \\times 6$?",
-      "answers": [
-        "35",
-        "41",
-        "29",
-        "23"
-      ],
+      "answers": ["35", "41", "29", "23"],
       "correct": 2,
       "hint": "Exponent and multiplications first, then add and subtract left to right."
     },
     {
       "id": 38,
       "question": "What is $((6 + 2) \\times 3)^2 \\div 48$?",
-      "answers": [
-        "6",
-        "24",
-        "12",
-        "8"
-      ],
+      "answers": ["6", "24", "12", "8"],
       "correct": 2,
       "hint": "Innermost parentheses, then multiply, then square, then divide."
     },
     {
       "id": 39,
       "question": "What is $5^3 - 4^3 + 3^3$?",
-      "answers": [
-        "108",
-        "78",
-        "88",
-        "98"
-      ],
+      "answers": ["108", "78", "88", "98"],
       "correct": 2,
       "hint": "All three cubes first, then add and subtract left to right."
     },
     {
       "id": 40,
       "question": "What is $(7 + 3 \\times 5) \\div (4^2 \\div 8)$?",
-      "answers": [
-        "44",
-        "11",
-        "8",
-        "22"
-      ],
+      "answers": ["44", "11", "8", "22"],
       "correct": 1,
       "hint": "In first parentheses: multiply before adding. In second: exponent, then divide. Then final division."
     },
     {
       "id": 41,
       "question": "What is $2^4 + 3^3 - 5^2$?",
-      "answers": [
-        "16",
-        "18",
-        "20",
-        "22"
-      ],
+      "answers": ["16", "18", "20", "22"],
       "correct": 1,
       "hint": "Calculate all three exponents first, then add and subtract left to right."
     },
     {
       "id": 42,
       "question": "What is $(6 + 2)^2 \\times (5 - 3)$?",
-      "answers": [
-        "64",
-        "100",
-        "128",
-        "80"
-      ],
+      "answers": ["64", "100", "128", "80"],
       "correct": 2,
       "hint": "Solve each parentheses, then square the first result, then multiply."
     },
     {
       "id": 43,
       "question": "What is $81 \\div 3^2 + 4 \\times 5$?",
-      "answers": [
-        "25",
-        "33",
-        "29",
-        "21"
-      ],
+      "answers": ["25", "33", "29", "21"],
       "correct": 2,
       "hint": "Exponent first, then division and multiplication, then add."
     },
     {
       "id": 44,
       "question": "What is $((9 - 4) \\times 2)^2 - 50$?",
-      "answers": [
-        "100",
-        "75",
-        "50",
-        "25"
-      ],
+      "answers": ["100", "75", "50", "25"],
       "correct": 2,
       "hint": "Innermost parentheses, multiply, square, then subtract."
     },
     {
       "id": 45,
       "question": "What is $7^2 - (3 + 2)^2 + 6$?",
-      "answers": [
-        "24",
-        "30",
-        "18",
-        "36"
-      ],
+      "answers": ["24", "30", "18", "36"],
       "correct": 1,
       "hint": "Parentheses first, then both exponents, then add and subtract."
     },
     {
       "id": 46,
       "question": "What is $4 \\times (8 - 2^3) \\div 2$?",
-      "answers": [
-        "0",
-        "4",
-        "2",
-        "8"
-      ],
+      "answers": ["0", "4", "2", "8"],
       "correct": 0,
       "hint": "Inside parentheses: exponent first! Then multiply and divide left to right."
     },
     {
       "id": 47,
       "question": "What is $60 \\div (4 + 2 \\times 3) \\times 2$?",
-      "answers": [
-        "6",
-        "8",
-        "12",
-        "10"
-      ],
+      "answers": ["6", "8", "12", "10"],
       "correct": 2,
       "hint": "Inside parentheses: multiply before adding! Then divide and multiply."
     },
     {
       "id": 48,
       "question": "What is $5^2 \\times 2 - 6^2 + 4$?",
-      "answers": [
-        "18",
-        "22",
-        "14",
-        "26"
-      ],
-      "correct": 2,
+      "answers": ["18", "22", "14", "26"],
+      "correct": 0,
       "hint": "Both exponents first, then multiply, then add and subtract."
     },
     {
       "id": 49,
       "question": "What is $(12 - 4)^2 \\div (2^3 \\times 2)$?",
-      "answers": [
-        "8",
-        "2",
-        "4",
-        "16"
-      ],
+      "answers": ["8", "2", "4", "16"],
       "correct": 2,
       "hint": "Both parentheses with exponents, then divide."
     },
     {
       "id": 50,
       "question": "What is $3^3 + 4^2 - 2^4$?",
-      "answers": [
-        "31",
-        "35",
-        "27",
-        "23"
-      ],
+      "answers": ["31", "35", "27", "23"],
       "correct": 2,
       "hint": "All three exponents first, then add and subtract left to right."
     },
     {
       "id": 51,
       "question": "What is $96 \\div (8 \\times 2) \\div 3$?",
-      "answers": [
-        "4",
-        "6",
-        "2",
-        "8"
-      ],
+      "answers": ["4", "6", "2", "8"],
       "correct": 2,
       "hint": "Parentheses first, then divide left to right."
     },
     {
       "id": 52,
       "question": "What is $(5 + 3 \\times 2)^2 - 100$?",
-      "answers": [
-        "25",
-        "17",
-        "21",
-        "29"
-      ],
+      "answers": ["25", "17", "21", "29"],
       "correct": 2,
       "hint": "Inside parentheses: multiply before adding! Then square and subtract."
     },
     {
       "id": 53,
       "question": "What is $8 \\times 9 - 7 \\times 8 + 2^3$?",
-      "answers": [
-        "24",
-        "20",
-        "16",
-        "12"
-      ],
-      "correct": 2,
+      "answers": ["24", "20", "16", "12"],
+      "correct": 0,
       "hint": "Exponent and multiplications first, then add and subtract left to right."
     },
     {
       "id": 54,
       "question": "What is $((4 + 2) \\times 5)^2 \\div 100$?",
-      "answers": [
-        "3",
-        "6",
-        "9",
-        "12"
-      ],
+      "answers": ["3", "6", "9", "12"],
       "correct": 2,
       "hint": "Innermost parentheses, multiply, square, then divide."
     },
     {
       "id": 55,
       "question": "What is $6^2 + 8^2 - 10^2$?",
-      "answers": [
-        "4",
-        "-4",
-        "0",
-        "8"
-      ],
+      "answers": ["4", "-4", "0", "8"],
       "correct": 2,
       "hint": "All exponents first, then add and subtract left to right."
     },
     {
       "id": 56,
       "question": "What is $5 \\times (4^2 - 2 \\times 5) + 3$?",
-      "answers": [
-        "30",
-        "28",
-        "33",
-        "35"
-      ],
+      "answers": ["30", "28", "33", "35"],
       "correct": 2,
       "hint": "Inside parentheses: exponent first, then multiply, then subtract. Continue."
     },
     {
       "id": 57,
       "question": "What is $72 \\div 8 + 3^2 \\times 2$?",
-      "answers": [
-        "36",
-        "21",
-        "27",
-        "30"
-      ],
+      "answers": ["36", "21", "27", "30"],
       "correct": 2,
       "hint": "Exponent first, then division and multiplication, then add."
     },
     {
       "id": 58,
       "question": "What is $(9 - 3)^2 \\div (6 + 3)$?",
-      "answers": [
-        "6",
-        "3",
-        "4",
-        "9"
-      ],
+      "answers": ["6", "3", "4", "9"],
       "correct": 2,
       "hint": "Both parentheses first, then exponent, then divide."
     },
     {
       "id": 59,
       "question": "What is $2^5 - 4 \\times 6 + 8$?",
-      "answers": [
-        "24",
-        "12",
-        "16",
-        "20"
-      ],
+      "answers": ["24", "12", "16", "20"],
       "correct": 2,
       "hint": "Exponent first, then multiply, then add and subtract left to right."
     },
     {
       "id": 60,
       "question": "What is $(7 \\times 4 - 8) \\div (3 + 2)$?",
-      "answers": [
-        "6",
-        "5",
-        "4",
-        "3"
-      ],
+      "answers": ["6", "5", "4", "3"],
       "correct": 2,
       "hint": "Solve each parentheses completely, then divide."
     },
     {
       "id": 61,
       "question": "What is $4^3 \\div 8 + 5^2 \\div 5$?",
-      "answers": [
-        "18",
-        "10",
-        "15",
-        "13"
-      ],
+      "answers": ["18", "10", "15", "13"],
       "correct": 3,
       "hint": "Both exponents first, then both divisions, then add."
     },
     {
       "id": 62,
       "question": "What is $(8 + 2 \\times 3)^2 \\div 7$?",
-      "answers": [
-        "32",
-        "24",
-        "36",
-        "28"
-      ],
+      "answers": ["32", "24", "36", "28"],
       "correct": 3,
       "hint": "Inside parentheses: multiply before adding! Then square and divide."
     },
     {
       "id": 63,
       "question": "What is $10 \\times 10 - 9 \\times 9 - 8$?",
-      "answers": [
-        "19",
-        "13",
-        "15",
-        "11"
-      ],
+      "answers": ["19", "13", "15", "11"],
       "correct": 3,
       "hint": "Both multiplications first, then subtract left to right."
     },
     {
       "id": 64,
       "question": "What is $50 \\div (2 + 3)^2 \\times 5$?",
-      "answers": [
-        "2",
-        "25",
-        "50",
-        "10"
-      ],
+      "answers": ["2", "25", "50", "10"],
       "correct": 3,
       "hint": "Parentheses first, then square, then divide and multiply left to right."
     },
     {
       "id": 65,
       "question": "What is $3 \\times (2 + 5 \\times 3) - 4^2$?",
-      "answers": [
-        "51",
-        "43",
-        "47",
-        "35"
-      ],
+      "answers": ["51", "43", "47", "35"],
       "correct": 3,
       "hint": "Inside parentheses: multiply before adding! Then continue with exponent."
     },
     {
       "id": 66,
       "question": "What is $(8^2 - 4^2) \\div (3 \\times 4)$?",
-      "answers": [
-        "6",
-        "8",
-        "2",
-        "4"
-      ],
+      "answers": ["6", "8", "2", "4"],
       "correct": 3,
       "hint": "Both exponents in first parentheses, multiply in second, then divide."
     },
     {
       "id": 67,
       "question": "What is $15 \\times 4 - 8^2 + 2 \\times 7$?",
-      "answers": [
-        "10",
-        "14",
-        "22",
-        "18"
-      ],
-      "correct": 3,
+      "answers": ["10", "14", "22", "18"],
+      "correct": 0,
       "hint": "Exponent and multiplications first, then add and subtract left to right."
     },
     {
       "id": 68,
       "question": "What is $((7 + 1) \\times 2)^2 \\div 64$?",
-      "answers": [
-        "2",
-        "8",
-        "1",
-        "4"
-      ],
+      "answers": ["2", "8", "1", "4"],
       "correct": 3,
       "hint": "Innermost parentheses, then multiply, then square, then divide."
     },
     {
       "id": 69,
       "question": "What is $6^3 - 5^3 + 2^3$?",
-      "answers": [
-        "99",
-        "95",
-        "87",
-        "91"
-      ],
-      "correct": 3,
+      "answers": ["99", "95", "87", "91"],
+      "correct": 0,
       "hint": "All three cubes first, then add and subtract left to right."
     },
     {
       "id": 70,
       "question": "What is $(8 + 4 \\times 3) \\div (5^2 \\div 5)$?",
-      "answers": [
-        "8",
-        "2",
-        "6",
-        "4"
-      ],
+      "answers": ["8", "2", "6", "4"],
       "correct": 3,
       "hint": "In first parentheses: multiply before adding. In second: exponent, then divide."
     },
     {
       "id": 71,
       "question": "What is $2^6 - 5^2 \\times 2 + 10$?",
-      "answers": [
-        "16",
-        "30",
-        "20",
-        "24"
-      ],
+      "answers": ["16", "30", "20", "24"],
       "correct": 3,
       "hint": "Both exponents first, then multiply, then add and subtract left to right."
     },
     {
       "id": 72,
       "question": "What is $(4 + 5)^2 \\times (6 - 4)$?",
-      "answers": [
-        "144",
-        "180",
-        "126",
-        "162"
-      ],
+      "answers": ["144", "180", "126", "162"],
       "correct": 3,
       "hint": "Solve each parentheses, then square the first, then multiply."
     },
     {
       "id": 73,
       "question": "What is $125 \\div 5^2 + 6 \\times 4$?",
-      "answers": [
-        "33",
-        "25",
-        "37",
-        "29"
-      ],
+      "answers": ["33", "25", "37", "29"],
       "correct": 3,
       "hint": "Exponent first, then division and multiplication, then add."
     },
     {
       "id": 74,
       "question": "What is $((10 - 6) \\times 3)^2 - 100$?",
-      "answers": [
-        "36",
-        "52",
-        "28",
-        "44"
-      ],
+      "answers": ["36", "52", "28", "44"],
       "correct": 3,
       "hint": "Innermost parentheses, multiply, square, then subtract."
     },
     {
       "id": 75,
       "question": "What is $9^2 - (4 + 3)^2 + 8$?",
-      "answers": [
-        "48",
-        "32",
-        "56",
-        "40"
-      ],
+      "answers": ["48", "32", "56", "40"],
       "correct": 3,
       "hint": "Parentheses first, then both exponents, then add and subtract."
     },
     {
       "id": 76,
       "question": "What is $6 \\times (9 - 3^2) \\div 3$?",
-      "answers": [
-        "0",
-        "6",
-        "3",
-        "9"
-      ],
+      "answers": ["0", "6", "3", "9"],
       "correct": 0,
       "hint": "Inside parentheses: exponent first! Then multiply and divide left to right."
     },
     {
       "id": 77,
       "question": "What is $84 \\div (5 + 2 \\times 4) \\times 3$?",
-      "answers": [
-        "18",
-        "6",
-        "12",
-        "9"
-      ],
+      "answers": ["18", "6", "12", "9"],
       "correct": 0,
       "hint": "Inside parentheses: multiply before adding! Then divide and multiply."
     },
     {
       "id": 78,
       "question": "What is $6^2 \\times 2 - 7^2 + 5$?",
-      "answers": [
-        "28",
-        "24",
-        "32",
-        "20"
-      ],
+      "answers": ["28", "24", "32", "20"],
       "correct": 0,
       "hint": "Both exponents first, then multiply, then add and subtract."
     },
     {
       "id": 79,
       "question": "What is $(14 - 6)^2 \\div (4^2 \\times 2)$?",
-      "answers": [
-        "2",
-        "4",
-        "1",
-        "8"
-      ],
+      "answers": ["2", "4", "1", "8"],
       "correct": 0,
       "hint": "Both parentheses with exponents, then divide."
     },
     {
       "id": 80,
       "question": "What is $4^3 + 3^3 - 5^2$?",
-      "answers": [
-        "66",
-        "64",
-        "58",
-        "70"
-      ],
+      "answers": ["66", "64", "58", "70"],
       "correct": 0,
       "hint": "All three exponents first, then add and subtract left to right."
     },
     {
       "id": 81,
       "question": "What is $108 \\div (6 \\times 3) \\div 2$?",
-      "answers": [
-        "3",
-        "6",
-        "9",
-        "12"
-      ],
+      "answers": ["3", "6", "9", "12"],
       "correct": 0,
       "hint": "Parentheses first, then divide left to right."
     },
     {
       "id": 82,
       "question": "What is $(4 + 2 \\times 4)^2 - 120$?",
-      "answers": [
-        "24",
-        "36",
-        "16",
-        "40"
-      ],
+      "answers": ["24", "36", "16", "40"],
       "correct": 0,
       "hint": "Inside parentheses: multiply before adding! Then square and subtract."
     },
     {
       "id": 83,
       "question": "What is $9 \\times 8 - 6 \\times 9 + 3^3$?",
-      "answers": [
-        "45",
-        "27",
-        "36",
-        "54"
-      ],
+      "answers": ["45", "27", "36", "54"],
       "correct": 0,
       "hint": "Exponent and multiplications first, then add and subtract left to right."
     },
     {
       "id": 84,
       "question": "What is $((5 + 4) \\times 4)^2 \\div 144$?",
-      "answers": [
-        "9",
-        "6",
-        "12",
-        "3"
-      ],
+      "answers": ["9", "6", "12", "3"],
       "correct": 0,
       "hint": "Innermost parentheses, multiply, square, then divide."
     },
     {
       "id": 85,
       "question": "What is $7^2 + 5^2 - 8^2$?",
-      "answers": [
-        "-10",
-        "6",
-        "14",
-        "10"
-      ],
-      "correct": 0,
+      "answers": ["-10", "6", "14", "10"],
+      "correct": 3,
       "hint": "All exponents first, then add and subtract left to right."
     },
     {
       "id": 86,
       "question": "What is $4 \\times (5^2 - 3 \\times 6) + 7$?",
-      "answers": [
-        "35",
-        "28",
-        "42",
-        "21"
-      ],
+      "answers": ["35", "28", "42", "21"],
       "correct": 0,
       "hint": "Inside parentheses: exponent first, then multiply, then subtract. Continue."
     },
     {
       "id": 87,
       "question": "What is $64 \\div 4 + 4^2 \\times 3$?",
-      "answers": [
-        "64",
-        "48",
-        "56",
-        "72"
-      ],
+      "answers": ["64", "48", "56", "72"],
       "correct": 0,
       "hint": "Exponent first, then division and multiplication, then add."
     },
     {
       "id": 88,
       "question": "What is $(10 - 4)^2 \\div (9 + 3)$?",
-      "answers": [
-        "3",
-        "6",
-        "4",
-        "2"
-      ],
+      "answers": ["3", "6", "4", "2"],
       "correct": 0,
       "hint": "Both parentheses first, then exponent, then divide."
     },
     {
       "id": 89,
       "question": "What is $3^4 - 5 \\times 12 + 6$?",
-      "answers": [
-        "27",
-        "33",
-        "21",
-        "39"
-      ],
+      "answers": ["27", "33", "21", "39"],
       "correct": 0,
       "hint": "Exponent first, then multiply, then add and subtract left to right."
     },
     {
       "id": 90,
       "question": "What is $(8 \\times 5 - 10) \\div (4 + 2)$?",
-      "answers": [
-        "5",
-        "6",
-        "4",
-        "7"
-      ],
+      "answers": ["5", "6", "4", "7"],
       "correct": 0,
       "hint": "Solve each parentheses completely, then divide."
     },
     {
       "id": 91,
       "question": "What is $5^3 \\div 25 + 6^2 \\div 9$?",
-      "answers": [
-        "9",
-        "13",
-        "7",
-        "11"
-      ],
+      "answers": ["9", "13", "7", "11"],
       "correct": 0,
       "hint": "Both exponents first, then both divisions, then add."
     },
     {
       "id": 92,
       "question": "What is $(9 + 3 \\times 2)^2 \\div 9$?",
-      "answers": [
-        "25",
-        "16",
-        "36",
-        "49"
-      ],
+      "answers": ["25", "16", "36", "49"],
       "correct": 0,
       "hint": "Inside parentheses: multiply before adding! Then square and divide."
     },
     {
       "id": 93,
       "question": "What is $11 \\times 11 - 10 \\times 10 - 10$?",
-      "answers": [
-        "11",
-        "21",
-        "1",
-        "31"
-      ],
+      "answers": ["11", "21", "1", "31"],
       "correct": 0,
       "hint": "Both multiplications first, then subtract left to right."
     },
     {
       "id": 94,
       "question": "What is $75 \\div (1 + 4)^2 \\times 4$?",
-      "answers": [
-        "12",
-        "3",
-        "15",
-        "6"
-      ],
+      "answers": ["12", "3", "15", "6"],
       "correct": 0,
       "hint": "Parentheses first, then square, then divide and multiply left to right."
     },
     {
       "id": 95,
       "question": "What is $4 \\times (3 + 6 \\times 2) - 5^2$?",
-      "answers": [
-        "35",
-        "60",
-        "45",
-        "50"
-      ],
+      "answers": ["35", "60", "45", "50"],
       "correct": 0,
       "hint": "Inside parentheses: multiply before adding! Then continue with exponent."
     },
     {
       "id": 96,
       "question": "What is $(9^2 - 5^2) \\div (2 \\times 7)$?",
-      "answers": [
-        "4",
-        "8",
-        "2",
-        "6"
-      ],
+      "answers": ["4", "8", "2", "6"],
       "correct": 0,
       "hint": "Both exponents in first parentheses, multiply in second, then divide."
     },
     {
       "id": 97,
       "question": "What is $14 \\times 6 - 9^2 + 4 \\times 5$?",
-      "answers": [
-        "23",
-        "27",
-        "19",
-        "31"
-      ],
+      "answers": ["23", "27", "19", "31"],
       "correct": 0,
       "hint": "Exponent and multiplications first, then add and subtract left to right."
     },
     {
       "id": 98,
       "question": "What is $((8 + 2) \\times 4)^2 \\div 200$?",
-      "answers": [
-        "8",
-        "4",
-        "12",
-        "16"
-      ],
+      "answers": ["8", "4", "12", "16"],
       "correct": 0,
       "hint": "Innermost parentheses, then multiply, then square, then divide."
     },
     {
       "id": 99,
       "question": "What is $7^3 - 6^3 + 1^3$?",
-      "answers": [
-        "128",
-        "127",
-        "126",
-        "130"
-      ],
-      "correct": 1,
+      "answers": ["128", "127", "126", "130"],
+      "correct": 0,
       "hint": "All three cubes first, then add and subtract left to right."
     },
     {
       "id": 100,
       "question": "What is $(9 + 5 \\times 2) \\div (6^2 \\div 9)$?",
-      "answers": [
-        "19",
-        "4.75",
-        "9.5",
-        "38"
-      ],
+      "answers": ["19", "4.75", "9.5", "38"],
       "correct": 1,
       "hint": "In first parentheses: multiply before adding. In second: exponent, then divide."
     },
     {
       "id": 101,
       "question": "What is $3^5 - 2^6 \\times 3 + 15$?",
-      "answers": [
-        "54",
-        "66",
-        "78",
-        "42"
-      ],
+      "answers": ["54", "66", "78", "42"],
       "correct": 1,
       "hint": "Both exponents first, then multiply, then add and subtract left to right."
     },
     {
       "id": 102,
       "question": "What is $(7 + 3)^2 \\times (8 - 5)$?",
-      "answers": [
-        "250",
-        "300",
-        "350",
-        "400"
-      ],
+      "answers": ["250", "300", "350", "400"],
       "correct": 1,
       "hint": "Solve each parentheses, then square the first, then multiply."
     },
     {
       "id": 103,
       "question": "What is $216 \\div 6^2 + 7 \\times 5$?",
-      "answers": [
-        "45",
-        "41",
-        "37",
-        "49"
-      ],
+      "answers": ["45", "41", "37", "49"],
       "correct": 1,
       "hint": "Exponent first, then division and multiplication, then add."
     },
     {
       "id": 104,
       "question": "What is $((12 - 7) \\times 4)^2 - 350$?",
-      "answers": [
-        "100",
-        "50",
-        "25",
-        "75"
-      ],
+      "answers": ["100", "50", "25", "75"],
       "correct": 1,
       "hint": "Innermost parentheses, multiply, square, then subtract."
     },
     {
       "id": 105,
       "question": "What is $11^2 - (5 + 4)^2 + 10$?",
-      "answers": [
-        "50",
-        "40",
-        "60",
-        "30"
-      ],
+      "answers": ["50", "40", "60", "30"],
       "correct": 1,
       "hint": "Parentheses first, then both exponents, then add and subtract."
     },
     {
       "id": 106,
       "question": "What is $8 \\times (12 - 2^3) \\div 4$?",
-      "answers": [
-        "16",
-        "8",
-        "4",
-        "12"
-      ],
+      "answers": ["16", "8", "4", "12"],
       "correct": 1,
       "hint": "Inside parentheses: exponent first! Then multiply and divide left to right."
     },
     {
       "id": 107,
       "question": "What is $90 \\div (3 + 3 \\times 4) \\times 5$?",
-      "answers": [
-        "15",
-        "30",
-        "45",
-        "60"
-      ],
+      "answers": ["15", "30", "45", "60"],
       "correct": 1,
       "hint": "Inside parentheses: multiply before adding! Then divide and multiply."
     },
     {
       "id": 108,
       "question": "What is $7^2 \\times 2 - 8^2 + 6$?",
-      "answers": [
-        "40",
-        "34",
-        "46",
-        "28"
-      ],
-      "correct": 1,
+      "answers": ["40", "34", "46", "28"],
+      "correct": 0,
       "hint": "Both exponents first, then multiply, then add and subtract."
     },
     {
       "id": 109,
       "question": "What is $(16 - 8)^2 \\div (2^4 \\times 2)$?",
-      "answers": [
-        "4",
-        "2",
-        "1",
-        "8"
-      ],
+      "answers": ["4", "2", "1", "8"],
       "correct": 1,
       "hint": "Both parentheses with exponents, then divide."
     },
     {
       "id": 110,
       "question": "What is $5^3 + 2^4 - 6^2$?",
-      "answers": [
-        "100",
-        "105",
-        "110",
-        "95"
-      ],
+      "answers": ["100", "105", "110", "95"],
       "correct": 1,
       "hint": "All three exponents first, then add and subtract left to right."
     },
     {
       "id": 111,
       "question": "What is $144 \\div (4 \\times 6) \\div 3$?",
-      "answers": [
-        "4",
-        "2",
-        "6",
-        "8"
-      ],
+      "answers": ["4", "2", "6", "8"],
       "correct": 1,
       "hint": "Parentheses first, then divide left to right."
     },
     {
       "id": 112,
       "question": "What is $(6 + 3 \\times 3)^2 - 200$?",
-      "answers": [
-        "50",
-        "25",
-        "75",
-        "100"
-      ],
+      "answers": ["50", "25", "75", "100"],
       "correct": 1,
       "hint": "Inside parentheses: multiply before adding! Then square and subtract."
     },
     {
       "id": 113,
       "question": "What is $10 \\times 9 - 8 \\times 7 + 4^2$?",
-      "answers": [
-        "50",
-        "40",
-        "60",
-        "30"
-      ],
-      "correct": 1,
+      "answers": ["50", "40", "60", "30"],
+      "correct": 0,
       "hint": "Exponent and multiplications first, then add and subtract left to right."
     },
     {
       "id": 114,
       "question": "What is $((6 + 6) \\times 3)^2 \\div 162$?",
-      "answers": [
-        "4",
-        "8",
-        "12",
-        "6"
-      ],
+      "answers": ["4", "8", "12", "6"],
       "correct": 1,
       "hint": "Innermost parentheses, multiply, square, then divide."
     },
     {
       "id": 115,
       "question": "What is $8^2 + 6^2 - 9^2$?",
-      "answers": [
-        "17",
-        "19",
-        "21",
-        "15"
-      ],
+      "answers": ["17", "19", "21", "15"],
       "correct": 1,
       "hint": "All exponents first, then add and subtract left to right."
     },
     {
       "id": 116,
       "question": "What is $5 \\times (6^2 - 4 \\times 7) + 8$?",
-      "answers": [
-        "40",
-        "48",
-        "56",
-        "32"
-      ],
+      "answers": ["40", "48", "56", "32"],
       "correct": 1,
       "hint": "Inside parentheses: exponent first, then multiply, then subtract. Continue."
     },
     {
       "id": 117,
       "question": "What is $96 \\div 8 + 5^2 \\times 2$?",
-      "answers": [
-        "50",
-        "62",
-        "54",
-        "58"
-      ],
+      "answers": ["50", "62", "54", "58"],
       "correct": 1,
       "hint": "Exponent first, then division and multiplication, then add."
     },
     {
       "id": 118,
       "question": "What is $(12 - 5)^2 \\div (7 + 7)$?",
-      "answers": [
-        "7",
-        "3.5",
-        "4",
-        "2.5"
-      ],
+      "answers": ["7", "3.5", "4", "2.5"],
       "correct": 1,
       "hint": "Both parentheses first, then exponent, then divide."
     },
     {
       "id": 119,
       "question": "What is $2^7 - 6 \\times 15 + 10$?",
-      "answers": [
-        "56",
-        "48",
-        "40",
-        "64"
-      ],
+      "answers": ["56", "48", "40", "64"],
       "correct": 1,
       "hint": "Exponent first, then multiply, then add and subtract left to right."
     },
     {
       "id": 120,
       "question": "What is $(9 \\times 6 - 14) \\div (5 + 3)$?",
-      "answers": [
-        "7",
-        "5",
-        "6",
-        "4"
-      ],
+      "answers": ["7", "5", "6", "4"],
       "correct": 1,
       "hint": "Solve each parentheses completely, then divide."
     },
     {
       "id": 121,
       "question": "What is $6^3 \\div 36 + 8^2 \\div 16$?",
-      "answers": [
-        "8",
-        "10",
-        "12",
-        "6"
-      ],
+      "answers": ["8", "10", "12", "6"],
       "correct": 1,
       "hint": "Both exponents first, then both divisions, then add."
     },
     {
       "id": 122,
       "question": "What is $(10 + 2 \\times 4)^2 \\div 81$?",
-      "answers": [
-        "9",
-        "4",
-        "16",
-        "1"
-      ],
+      "answers": ["9", "4", "16", "1"],
       "correct": 1,
       "hint": "Inside parentheses: multiply before adding! Then square and divide."
     },
     {
       "id": 123,
       "question": "What is $12 \\times 12 - 11 \\times 11 - 12$?",
-      "answers": [
-        "23",
-        "11",
-        "1",
-        "13"
-      ],
+      "answers": ["23", "11", "1", "13"],
       "correct": 1,
       "hint": "Both multiplications first, then subtract left to right."
     },
     {
       "id": 124,
       "question": "What is $80 \\div (2 + 2)^2 \\times 6$?",
-      "answers": [
-        "15",
-        "30",
-        "45",
-        "60"
-      ],
+      "answers": ["15", "30", "45", "60"],
       "correct": 1,
       "hint": "Parentheses first, then square, then divide and multiply left to right."
     },
     {
       "id": 125,
       "question": "What is $5 \\times (4 + 7 \\times 2) - 6^2$?",
-      "answers": [
-        "90",
-        "54",
-        "72",
-        "63"
-      ],
+      "answers": ["90", "54", "72", "63"],
       "correct": 1,
       "hint": "Inside parentheses: multiply before adding! Then continue with exponent."
     },
     {
       "id": 126,
       "question": "What is $(11^2 - 7^2) \\div (3 \\times 6)$?",
-      "answers": [
-        "8",
-        "4",
-        "2",
-        "6"
-      ],
+      "answers": ["8", "4", "2", "6"],
       "correct": 1,
       "hint": "Both exponents in first parentheses, multiply in second, then divide."
     },
     {
       "id": 127,
       "question": "What is $16 \\times 5 - 10^2 + 5 \\times 6$?",
-      "answers": [
-        "20",
-        "10",
-        "0",
-        "30"
-      ],
+      "answers": ["20", "10", "0", "30"],
       "correct": 1,
       "hint": "Exponent and multiplications first, then add and subtract left to right."
     },
     {
       "id": 128,
       "question": "What is $((9 + 3) \\times 5)^2 \\div 400$?",
-      "answers": [
-        "6",
-        "9",
-        "12",
-        "3"
-      ],
+      "answers": ["6", "9", "12", "3"],
       "correct": 1,
       "hint": "Innermost parentheses, then multiply, then square, then divide."
     },
     {
       "id": 129,
       "question": "What is $8^3 - 7^3 + 2^3$?",
-      "answers": [
-        "169",
-        "177",
-        "185",
-        "161"
-      ],
+      "answers": ["169", "177", "185", "161"],
       "correct": 1,
       "hint": "All three cubes first, then add and subtract left to right."
     },
     {
       "id": 130,
       "question": "What is $(10 + 6 \\times 3) \\div (7^2 \\div 7)$?",
-      "answers": [
-        "8",
-        "4",
-        "2",
-        "6"
-      ],
+      "answers": ["8", "4", "2", "6"],
       "correct": 1,
       "hint": "In first parentheses: multiply before adding. In second: exponent, then divide."
     },
     {
       "id": 131,
       "question": "What is $4^4 - 3^4 \\times 2 + 20$?",
-      "answers": [
-        "106",
-        "114",
-        "122",
-        "98"
-      ],
+      "answers": ["106", "114", "122", "98"],
       "correct": 1,
       "hint": "Both exponents first, then multiply, then add and subtract left to right."
     },
     {
       "id": 132,
       "question": "What is $(8 + 4)^2 \\times (9 - 6)$?",
-      "answers": [
-        "400",
-        "432",
-        "468",
-        "396"
-      ],
+      "answers": ["400", "432", "468", "396"],
       "correct": 1,
       "hint": "Solve each parentheses, then square the first, then multiply."
     },
     {
       "id": 133,
       "question": "What is $250 \\div 5^2 + 8 \\times 6$?",
-      "answers": [
-        "50",
-        "58",
-        "66",
-        "42"
-      ],
+      "answers": ["50", "58", "66", "42"],
       "correct": 1,
       "hint": "Exponent first, then division and multiplication, then add."
     },
     {
       "id": 134,
       "question": "What is $((15 - 9) \\times 5)^2 - 800$?",
-      "answers": [
-        "200",
-        "100",
-        "50",
-        "150"
-      ],
+      "answers": ["200", "100", "50", "150"],
       "correct": 1,
       "hint": "Innermost parentheses, multiply, square, then subtract."
     },
     {
       "id": 135,
       "question": "What is $12^2 - (6 + 5)^2 + 15$?",
-      "answers": [
-        "38",
-        "28",
-        "48",
-        "18"
-      ],
-      "correct": 1,
+      "answers": ["38", "28", "48", "18"],
+      "correct": 0,
       "hint": "Parentheses first, then both exponents, then add and subtract."
     },
     {
       "id": 136,
       "question": "What is $9 \\times (14 - 2^3) \\div 6$?",
-      "answers": [
-        "12",
-        "9",
-        "6",
-        "15"
-      ],
+      "answers": ["12", "9", "6", "15"],
       "correct": 1,
       "hint": "Inside parentheses: exponent first! Then multiply and divide left to right."
     },
     {
       "id": 137,
       "question": "What is $112 \\div (4 + 2 \\times 5) \\times 4$?",
-      "answers": [
-        "16",
-        "32",
-        "48",
-        "24"
-      ],
+      "answers": ["16", "32", "48", "24"],
       "correct": 1,
       "hint": "Inside parentheses: multiply before adding! Then divide and multiply."
     },
     {
       "id": 138,
       "question": "What is $8^2 \\times 3 - 9^2 + 7$?",
-      "answers": [
-        "119",
-        "112",
-        "126",
-        "105"
-      ],
-      "correct": 1,
+      "answers": ["118", "112", "126", "105"],
+      "correct": 0,
       "hint": "Both exponents first, then multiply, then add and subtract."
     },
     {
       "id": 139,
       "question": "What is $(18 - 10)^2 \\div (4^2 \\times 4)$?",
-      "answers": [
-        "2",
-        "1",
-        "4",
-        "0.5"
-      ],
+      "answers": ["2", "1", "4", "0.5"],
       "correct": 1,
       "hint": "Both parentheses with exponents, then divide."
     },
     {
       "id": 140,
       "question": "What is $6^3 + 4^3 - 7^2$?",
-      "answers": [
-        "225",
-        "231",
-        "237",
-        "219"
-      ],
+      "answers": ["225", "231", "237", "219"],
       "correct": 1,
       "hint": "All three exponents first, then add and subtract left to right."
     },
     {
       "id": 141,
       "question": "What is $180 \\div (5 \\times 9) \\div 2$?",
-      "answers": [
-        "4",
-        "2",
-        "3",
-        "6"
-      ],
+      "answers": ["4", "2", "3", "6"],
       "correct": 1,
       "hint": "Parentheses first, then divide left to right."
     },
     {
       "id": 142,
       "question": "What is $(7 + 4 \\times 3)^2 - 300$?",
-      "answers": [
-        "75",
-        "61",
-        "49",
-        "87"
-      ],
+      "answers": ["75", "61", "49", "87"],
       "correct": 1,
       "hint": "Inside parentheses: multiply before adding! Then square and subtract."
     },
     {
       "id": 143,
       "question": "What is $11 \\times 10 - 9 \\times 8 + 5^2$?",
-      "answers": [
-        "55",
-        "63",
-        "71",
-        "47"
-      ],
+      "answers": ["55", "63", "71", "47"],
       "correct": 1,
       "hint": "Exponent and multiplications first, then add and subtract left to right."
     },
     {
       "id": 144,
       "question": "What is $((7 + 5) \\times 6)^2 \\div 576$?",
-      "answers": [
-        "6",
-        "9",
-        "12",
-        "3"
-      ],
+      "answers": ["6", "9", "12", "3"],
       "correct": 1,
       "hint": "Innermost parentheses, multiply, square, then divide."
     },
     {
       "id": 145,
       "question": "What is $9^2 + 7^2 - 11^2$?",
-      "answers": [
-        "9",
-        "-9",
-        "11",
-        "1"
-      ],
-      "correct": 1,
+      "answers": ["9", "-9", "11", "1"],
+      "correct": 0,
       "hint": "All exponents first, then add and subtract left to right."
     },
     {
       "id": 146,
       "question": "What is $6 \\times (7^2 - 5 \\times 8) + 9$?",
-      "answers": [
-        "63",
-        "54",
-        "72",
-        "45"
-      ],
-      "correct": 1,
+      "answers": ["63", "54", "72", "45"],
+      "correct": 0,
       "hint": "Inside parentheses: exponent first, then multiply, then subtract. Continue."
     },
     {
       "id": 147,
       "question": "What is $120 \\div 10 + 6^2 \\times 2$?",
-      "answers": [
-        "72",
-        "84",
-        "96",
-        "60"
-      ],
+      "answers": ["72", "84", "96", "60"],
       "correct": 1,
       "hint": "Exponent first, then division and multiplication, then add."
     },
     {
       "id": 148,
       "question": "What is $(14 - 6)^2 \\div (8 + 8)$?",
-      "answers": [
-        "8",
-        "4",
-        "2",
-        "6"
-      ],
+      "answers": ["8", "4", "2", "6"],
       "correct": 1,
       "hint": "Both parentheses first, then exponent, then divide."
     },
     {
       "id": 149,
       "question": "What is $3^6 - 8 \\times 80 + 25$?",
-      "answers": [
-        "106",
-        "114",
-        "122",
-        "98"
-      ],
+      "answers": ["106", "114", "122", "98"],
       "correct": 1,
       "hint": "Exponent first, then multiply, then add and subtract left to right."
     },
     {
       "id": 150,
       "question": "What is $(10 \\times 8 - 20) \\div (6 + 6)$?",
-      "answers": [
-        "7",
-        "5",
-        "6",
-        "4"
-      ],
+      "answers": ["7", "5", "6", "4"],
       "correct": 1,
       "hint": "Solve each parentheses completely, then divide."
     }

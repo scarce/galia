@@ -122,7 +122,7 @@
         "$0.83",
         "$1.00"
       ],
-      "correct": 1,
+      "correct": 2,
       "hint": "First find the total cost of apples, subtract from total, then divide by number of oranges."
     },
     {

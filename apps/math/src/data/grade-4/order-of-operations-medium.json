@@ -626,7 +626,7 @@
         "14",
         "22"
       ],
-      "correct": 2,
+      "correct": 0,
       "hint": "Both multiplications first, then add and subtract left to right."
     },
     {
@@ -650,7 +650,7 @@
         "63",
         "51"
       ],
-      "correct": 3,
+      "correct": 1,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -842,7 +842,7 @@
         "26",
         "28"
       ],
-      "correct": 1,
+      "correct": 2,
       "hint": "Both multiplications first, then add and subtract left to right."
     },
     {
@@ -914,7 +914,7 @@
         "22",
         "30"
       ],
-      "correct": 1,
+      "correct": 0,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -938,7 +938,7 @@
         "21",
         "17"
       ],
-      "correct": 3,
+      "correct": 0,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -1034,7 +1034,7 @@
         "16",
         "24"
       ],
-      "correct": 2,
+      "correct": 1,
       "hint": "Both multiplications first, then add and subtract left to right."
     },
     {
@@ -1070,7 +1070,7 @@
         "22",
         "18"
       ],
-      "correct": 2,
+      "correct": 0,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -1106,7 +1106,7 @@
         "17",
         "11"
       ],
-      "correct": 2,
+      "correct": 1,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -1202,7 +1202,7 @@
         "21",
         "19"
       ],
-      "correct": 2,
+      "correct": 0,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -1259,10 +1259,10 @@
       "answers": [
         "45",
         "49",
-        "49",
-        "49"
+        "39",
+        "55"
       ],
-      "correct": 0,
+      "correct": 1,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -1406,7 +1406,7 @@
         "28",
         "24"
       ],
-      "correct": 1,
+      "correct": 0,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -1442,7 +1442,7 @@
         "28",
         "26"
       ],
-      "correct": 1,
+      "correct": 0,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -1466,7 +1466,7 @@
         "53",
         "49"
       ],
-      "correct": 1,
+      "correct": 0,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -1490,7 +1490,7 @@
         "16",
         "20"
       ],
-      "correct": 2,
+      "correct": 1,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -1562,7 +1562,7 @@
         "18",
         "24"
       ],
-      "correct": 2,
+      "correct": 0,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -1586,7 +1586,7 @@
         "55",
         "63"
       ],
-      "correct": 2,
+      "correct": 0,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -1610,7 +1610,7 @@
         "21",
         "17"
       ],
-      "correct": 3,
+      "correct": 0,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -1634,7 +1634,7 @@
         "36",
         "40"
       ],
-      "correct": 1,
+      "correct": 0,
       "hint": "Parentheses first, then both multiplications, then subtract."
     },
     {
@@ -1646,7 +1646,7 @@
         "17",
         "21"
       ],
-      "correct": 2,
+      "correct": 0,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -1682,7 +1682,7 @@
         "48",
         "62"
       ],
-      "correct": 1,
+      "correct": 0,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -1694,7 +1694,7 @@
         "33",
         "35"
       ],
-      "correct": 2,
+      "correct": 0,
       "hint": "Division and multiplication first, then add and subtract."
     },
     {
@@ -1790,7 +1790,7 @@
         "58",
         "62"
       ],
-      "correct": 3,
+      "correct": 0,
       "hint": "Both multiplications first, then add and subtract."
     },
     {
@@ -1802,7 +1802,7 @@
         "38",
         "42"
       ],
-      "correct": 2,
+      "correct": 0,
       "hint": "Division and multiplication first, then add and subtract."
     }
   ]

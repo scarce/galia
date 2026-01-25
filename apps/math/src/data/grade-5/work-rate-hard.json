@@ -31,15 +31,15 @@
     },
     {
       "id": 3,
-      "question": "A tank has inlet A (fills in 4h), inlet B (fills in 6h), and drain C (empties in 8h). All open, how long to fill?",
+      "question": "A tank has inlet A (fills in 4h), inlet B (fills in 6h), and drain C (empties in 12h). All open, how long to fill?",
       "answers": [
         "4.8 hours",
         "3 hours",
         "2.4 hours",
         "6 hours"
       ],
-      "correct": 2,
-      "hint": "Net rate = $\\frac{1}{4} + \\frac{1}{6} - \\frac{1}{8}$. Find common denominator."
+      "correct": 1,
+      "hint": "Net rate = $\\frac{1}{4} + \\frac{1}{6} - \\frac{1}{12} = \\frac{1}{3}$. Time = 3 hours."
     },
     {
       "id": 4,
@@ -127,15 +127,15 @@
     },
     {
       "id": 11,
-      "question": "Two trains 200 km apart travel toward each other. One at 60 km/h leaves 30 min before the other at 80 km/h. When do they meet?",
+      "question": "Two trains 200 km apart travel toward each other. One at 60 km/h leaves 1 hour before the other at 80 km/h. When do they meet?",
       "answers": [
         "1 hour after second",
         "1.75 hours after first",
         "1.5 hours after first",
         "1.25 hours after second"
       ],
-      "correct": 3,
-      "hint": "After 30 min, gap = 170 km. Combined speed = 140 km/h. Time = $170 \\div 140$."
+      "correct": 0,
+      "hint": "After 1 hour, gap = 140 km. Combined speed = 140 km/h. Time = $140 \\div 140 = 1$ hour after second."
     },
     {
       "id": 12,
@@ -175,7 +175,7 @@
     },
     {
       "id": 15,
-      "question": "8 workers finish $\\frac{3}{4}$ of a job in 6 hours. How many workers to finish the rest in 2 hours?",
+      "question": "8 workers finish $\\frac{3}{4}$ of a job in 6 hours. How many workers to finish the rest in 4 hours?",
       "answers": [
         "6 workers",
         "4 workers",
@@ -183,7 +183,7 @@
         "3 workers"
       ],
       "correct": 1,
-      "hint": "Find rate from first part, then calculate workers for remaining $\\frac{1}{4}$."
+      "hint": "Find rate from first part, then calculate workers for remaining $\\frac{1}{4}$ in 4 hours."
     },
     {
       "id": 16,
@@ -211,7 +211,7 @@
     },
     {
       "id": 18,
-      "question": "A can do $\\frac{1}{3}$ of work in 5 days. B joins and they finish the rest in 3 days. B alone would take?",
+      "question": "A can do $\\frac{1}{3}$ of work in 6 days. B joins and they finish the rest in 4 days. B alone would take?",
       "answers": [
         "6 days",
         "7.5 days",
@@ -219,7 +219,7 @@
         "12 days"
       ],
       "correct": 2,
-      "hint": "A's rate = $\\frac{1}{15}$ per day. Together they do $\\frac{2}{3}$ in 3 days. Find B's rate."
+      "hint": "A's rate = $\\frac{1}{18}$ per day. Together they do $\\frac{2}{3}$ in 4 days. Find B's rate."
     },
     {
       "id": 19,
@@ -312,10 +312,10 @@
         "12 hours",
         "18 hours",
         "16 hours",
-        "14 hours"
+        "24 hours"
       ],
       "correct": 3,
-      "hint": "In 4 hours: $\\frac{4}{20} + \\frac{4}{30} = \\frac{1}{3}$. B fills remaining $\\frac{2}{3}$ at $\\frac{1}{30}$ per hour."
+      "hint": "In 4 hours: $\\frac{4}{20} + \\frac{4}{30} = \\frac{1}{3}$. B fills remaining $\\frac{2}{3}$ at $\\frac{1}{30}$ per hour = 20 hours. Total = 24."
     },
     {
       "id": 27,
@@ -338,7 +338,7 @@
         "80 minutes",
         "95 minutes"
       ],
-      "correct": 3,
+      "correct": 2,
       "hint": "In 30 min, both type 3000 words. B types remaining 2000 alone."
     },
     {
@@ -355,14 +355,14 @@
     },
     {
       "id": 30,
-      "question": "5 men and 3 women finish in 4 days. 3 men and 5 women finish in 5 days. How long for 2 men and 2 women?",
+      "question": "6 men and 3 women finish in 4 days. 4 men and 2 women finish in 6 days. How long for 2 men and 2 women?",
       "answers": [
         "7.5 days",
         "10 days",
         "8 days",
         "6 days"
       ],
-      "correct": 0,
+      "correct": 1,
       "hint": "Set up two equations with man-days and woman-days. Solve the system."
     },
     {
@@ -379,7 +379,7 @@
     },
     {
       "id": 32,
-      "question": "A completes $\\frac{3}{5}$ of work, B completes $\\frac{1}{4}$, C does the rest. If C takes 3 hours for his part, how long for all 3 together?",
+      "question": "A completes $\\frac{3}{5}$ of work, B completes $\\frac{1}{4}$, C does the rest. If C takes 4 hours for his part, how long for all 3 together?",
       "answers": [
         "8 hours",
         "6 hours",
@@ -387,7 +387,7 @@
         "4 hours"
       ],
       "correct": 3,
-      "hint": "C does $\\frac{3}{20}$ of work in 3 hours. Find all rates and combine."
+      "hint": "C does $\\frac{3}{20}$ of work in 4 hours. Find all rates and combine."
     },
     {
       "id": 33,
@@ -422,12 +422,12 @@
         "12 days",
         "15 days"
       ],
-      "correct": 3,
+      "correct": 0,
       "hint": "From B's solo work, find B's rate. Then find A's rate from combined work."
     },
     {
       "id": 36,
-      "question": "Two trains 500 km apart travel toward each other. One leaves 1 hour earlier at 50 km/h, other at 75 km/h. Distance from slower's start when they meet?",
+      "question": "Two trains 425 km apart travel toward each other. One leaves 1 hour earlier at 50 km/h, other at 75 km/h. Distance from slower's start when they meet?",
       "answers": [
         "180 km",
         "220 km",
@@ -435,7 +435,7 @@
         "150 km"
       ],
       "correct": 2,
-      "hint": "After 1 hour, gap = 450 km. Meeting time from second train's start = $450 \\div 125$."
+      "hint": "After 1 hour, gap = 375 km. Meeting time from second train's start = $375 \\div 125 = 3$ hours. Slower travels $50 \\times 4 = 200$ km."
     },
     {
       "id": 37,
@@ -446,7 +446,7 @@
         "16 hours",
         "12 hours"
       ],
-      "correct": 0,
+      "correct": 3,
       "hint": "A's effective rate is $\\frac{3}{4} \\times \\frac{1}{18}$. Set up equation with combined rate = $\\frac{1}{8}$."
     },
     {
@@ -458,12 +458,12 @@
         "Fills in 30 h",
         "Never fills"
       ],
-      "correct": 1,
-      "hint": "Net rate = $\\frac{1}{10} + \\frac{1}{15} - \\frac{1}{6} = \\frac{3}{30} + \\frac{2}{30} - \\frac{5}{30}$. Check again..."
+      "correct": 0,
+      "hint": "Net rate = $\\frac{1}{10} + \\frac{1}{15} - \\frac{1}{6} = \\frac{3}{30} + \\frac{2}{30} - \\frac{5}{30} = 0$. Level stays constant."
     },
     {
       "id": 39,
-      "question": "7 boys and 5 girls finish in 4 hours. 3 boys and 7 girls finish in 6 hours. How long for 1 boy and 1 girl?",
+      "question": "7 boys and 5 girls finish in 4 hours. 3 boys and 5 girls finish in 6 hours. How long for 1 boy and 1 girl?",
       "answers": [
         "24 hours",
         "21 hours",
@@ -492,9 +492,9 @@
         "5 hours",
         "6 hours",
         "4.5 hours",
-        "5.5 hours"
+        "$\\frac{16}{3}$ hours"
       ],
-      "correct": 1,
+      "correct": 3,
       "hint": "Calculate work done in first 2 hours by all three. Then B and C finish the rest."
     },
     {
@@ -547,7 +547,7 @@
     },
     {
       "id": 46,
-      "question": "8 men can do a piece of work in 12 days. 4 women can do it in 48 days. How long for 6 men and 3 women?",
+      "question": "8 men can do a piece of work in 12 days. 4 women can do it in 12 days. How long for 6 men and 3 women?",
       "answers": [
         "8 days",
         "12 days",
@@ -727,7 +727,7 @@
     },
     {
       "id": 61,
-      "question": "A cistern has a leak which empties it in 12 hours. A tap fills it at 4 L/min. If capacity is 1440 L, how long to fill with leak?",
+      "question": "A cistern has a leak which empties it in 12 hours. A tap fills it at 4 L/min. If capacity is 960 L, how long to fill with leak?",
       "answers": [
         "8 hours",
         "6 hours",
@@ -735,7 +735,7 @@
         "7.2 hours"
       ],
       "correct": 1,
-      "hint": "Fill rate = 240 L/h. Leak rate = 120 L/h. Net = 120 L/h for 1440 L."
+      "hint": "Fill rate = 240 L/h. Leak rate = 960/12 = 80 L/h. Net = 160 L/h. Time = 960/160 = 6 hours."
     },
     {
       "id": 62,
@@ -744,10 +744,10 @@
         "4 hours",
         "3.5 hours",
         "4.5 hours",
-        "3.6 hours"
+        "$\\frac{28}{9}$ hours"
       ],
       "correct": 3,
-      "hint": "A+B do $\\frac{2}{6} + \\frac{2}{8}$ in 2 hours. All three finish the rest."
+      "hint": "A+B do $\\frac{2}{6} + \\frac{2}{8} = \\frac{7}{12}$ in 2 hours. All three at rate $\\frac{3}{8}$ finish the remaining $\\frac{5}{12}$."
     },
     {
       "id": 63,
@@ -1058,8 +1058,8 @@
         "700 m",
         "550 m"
       ],
-      "correct": 1,
-      "hint": "Relative speed = 150 km/h = $\\frac{125}{3}$ m/s. Total length = speed × time."
+      "correct": 0,
+      "hint": "Relative speed = 150 km/h = $\\frac{125}{3}$ m/s. Total length = speed × time = 833.33 m. Second train = 633.33 m."
     },
     {
       "id": 89,
@@ -1075,7 +1075,7 @@
     },
     {
       "id": 90,
-      "question": "Tap A fills in 15 hours, B fills in 20 hours, C empties in 30 hours. Tank is half full. All three open, how long to fill?",
+      "question": "Tap A fills in 15 hours, B fills in 20 hours, C empties in 15 hours. Tank is half full. All three open, how long to fill?",
       "answers": [
         "15 hours",
         "12 hours",
@@ -1083,7 +1083,7 @@
         "8 hours"
       ],
       "correct": 2,
-      "hint": "Net rate = $\\frac{1}{15} + \\frac{1}{20} - \\frac{1}{30} = \\frac{1}{20}$. Time for half tank?"
+      "hint": "Net rate = $\\frac{1}{15} + \\frac{1}{20} - \\frac{1}{15} = \\frac{1}{20}$. Time for half tank = 10 hours."
     },
     {
       "id": 91,
@@ -1130,8 +1130,8 @@
         "6 hours",
         "9 hours"
       ],
-      "correct": 2,
-      "hint": "Net rate = $\\frac{1}{10} + \\frac{1}{15} - \\frac{1}{20}$. Find common denominator 60."
+      "correct": 0,
+      "hint": "Net rate = $\\frac{1}{10} + \\frac{1}{15} - \\frac{1}{20} = \\frac{7}{60}$. Time = $\\frac{60}{7} \\approx 8.57$ hours."
     },
     {
       "id": 95,

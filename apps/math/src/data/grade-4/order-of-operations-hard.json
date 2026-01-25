@@ -578,7 +578,7 @@
         "14",
         "26"
       ],
-      "correct": 2,
+      "correct": 0,
       "hint": "Both exponents first, then multiply, then add and subtract."
     },
     {
@@ -638,7 +638,7 @@
         "16",
         "12"
       ],
-      "correct": 2,
+      "correct": 0,
       "hint": "Exponent and multiplications first, then add and subtract left to right."
     },
     {
@@ -806,7 +806,7 @@
         "22",
         "18"
       ],
-      "correct": 3,
+      "correct": 0,
       "hint": "Exponent and multiplications first, then add and subtract left to right."
     },
     {
@@ -830,7 +830,7 @@
         "87",
         "91"
       ],
-      "correct": 3,
+      "correct": 0,
       "hint": "All three cubes first, then add and subtract left to right."
     },
     {
@@ -1022,7 +1022,7 @@
         "14",
         "10"
       ],
-      "correct": 0,
+      "correct": 3,
       "hint": "All exponents first, then add and subtract left to right."
     },
     {
@@ -1190,7 +1190,7 @@
         "126",
         "130"
       ],
-      "correct": 1,
+      "correct": 0,
       "hint": "All three cubes first, then add and subtract left to right."
     },
     {
@@ -1298,7 +1298,7 @@
         "46",
         "28"
       ],
-      "correct": 1,
+      "correct": 0,
       "hint": "Both exponents first, then multiply, then add and subtract."
     },
     {
@@ -1358,7 +1358,7 @@
         "60",
         "30"
       ],
-      "correct": 1,
+      "correct": 0,
       "hint": "Exponent and multiplications first, then add and subtract left to right."
     },
     {
@@ -1622,7 +1622,7 @@
         "48",
         "18"
       ],
-      "correct": 1,
+      "correct": 0,
       "hint": "Parentheses first, then both exponents, then add and subtract."
     },
     {
@@ -1653,12 +1653,12 @@
       "id": 138,
       "question": "What is $8^2 \\times 3 - 9^2 + 7$?",
       "answers": [
-        "119",
+        "118",
         "112",
         "126",
         "105"
       ],
-      "correct": 1,
+      "correct": 0,
       "hint": "Both exponents first, then multiply, then add and subtract."
     },
     {
@@ -1742,7 +1742,7 @@
         "11",
         "1"
       ],
-      "correct": 1,
+      "correct": 0,
       "hint": "All exponents first, then add and subtract left to right."
     },
     {
@@ -1754,7 +1754,7 @@
         "72",
         "45"
       ],
-      "correct": 1,
+      "correct": 0,
       "hint": "Inside parentheses: exponent first, then multiply, then subtract. Continue."
     },
     {
