@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sql } from "@vercel/postgres";
+import { sql } from "@/lib/db";
 import { Resend } from "resend";
 import { Mistake } from "@/lib/types";
+import { awardRewards, type EarnedRewards } from "@/lib/award";
 
 interface ThemeBreakdown {
   theme: string;
@@ -170,7 +171,29 @@ Galamath Quiz App
       }
     }
 
-    return NextResponse.json({ success: true });
+    // Evaluate and persist rewards (badges, collectibles, tickets, family
+    // goals). Best-effort: never blocks the result submission.
+    let rewards: EarnedRewards = {
+      badges: [],
+      collectible: null,
+      tickets: [],
+      familyGoals: [],
+      pointsEarned: 0,
+    };
+    try {
+      rewards = await awardRewards({
+        userId: body.userId,
+        userName: body.userName,
+        sessionScore: body.score,
+        sessionTotal: body.totalQuestions,
+        level: body.level,
+        round: body.round,
+      });
+    } catch (rewardError) {
+      console.error("Reward error (continuing):", rewardError);
+    }
+
+    return NextResponse.json({ success: true, rewards });
   } catch (error) {
     console.error("Error processing result:", error);
     return NextResponse.json(

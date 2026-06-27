@@ -1,0 +1,40 @@
+{
+  "dailyGoalSeconds": 1800,
+  "collectible": {
+    "enabled": true,
+    "mode": "points",
+    "pointsPerCollectible": 6,
+    "levelPoints": {
+      "hard": { "minResult": 60, "points": 6 },
+      "medium": { "minResult": 75, "points": 3 },
+      "easy": { "minResult": 90, "points": 2 }
+    },
+    "sessionCooldown": 0,
+    "minAccuracy": 0,
+    "rarityWeights": {
+      "common": 0.62,
+      "rare": 0.28,
+      "epic": 0.085,
+      "legendary": 0.015
+    },
+    "accuracyBoost": {
+      "common": -0.5,
+      "rare": 0.6,
+      "epic": 1.5,
+      "legendary": 2.0
+    }
+  },
+  "tickets": {
+    "enabled": true,
+    "perfectScoreChance": 0.12,
+    "guaranteedOnLegendaryBadge": true,
+    "dailyCap": 2
+  },
+  "badges": {
+    "enabled": true
+  },
+  "redemption": {
+    "enabled": true,
+    "dollarsPerPoint": 0.76
+  }
+}

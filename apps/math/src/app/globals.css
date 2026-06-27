@@ -58,3 +58,132 @@ button, .no-select {
 .pb-safe {
   padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
 }
+
+/* Reward celebration confetti */
+@keyframes rewardConfettiFall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(540deg);
+    opacity: 0;
+  }
+}
+.reward-confetti {
+  animation-name: rewardConfettiFall;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+/* Reward card pop-in */
+@keyframes rewardPop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Party-popup animations */
+@font-face {
+  font-display: swap;
+}
+
+/* Big bouncy entrance for the whole popup */
+@keyframes partyPopIn {
+  0% {
+    transform: scale(0.5) rotate(-6deg);
+    opacity: 0;
+  }
+  55% {
+    transform: scale(1.08) rotate(2deg);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(0.97) rotate(-1deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+.party-pop {
+  animation: partyPopIn 0.55s cubic-bezier(0.18, 0.89, 0.32, 1.28) both;
+}
+
+/* Each reward row springs in, staggered */
+@keyframes rewardSlideIn {
+  0% {
+    transform: translateY(16px) scale(0.92);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+.reward-row {
+  animation: rewardSlideIn 0.45s ease-out both;
+}
+
+/* Headline wobble */
+@keyframes partyWobble {
+  0%,
+  100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+.party-wobble {
+  animation: partyWobble 1.4s ease-in-out infinite;
+}
+
+/* Trophy/figure gentle bob */
+@keyframes partyBob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+.party-bob {
+  animation: partyBob 1.8s ease-in-out infinite;
+}
+
+/* Shine sweep across a card */
+@keyframes shineSweep {
+  0% {
+    transform: translateX(-120%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(220%) skewX(-20deg);
+  }
+}
+.shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.55) 50%,
+    transparent 70%
+  );
+  animation: shineSweep 2.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.font-party {
+  font-family: var(--font-party), var(--font-nunito), system-ui, sans-serif;
+}

@@ -386,6 +386,18 @@ function QuizContent() {
           });
 
           if (response.ok) {
+            // Stash earned rewards for the results page to celebrate.
+            try {
+              const data = await response.json();
+              if (data?.rewards) {
+                sessionStorage.setItem(
+                  "quizRewards",
+                  JSON.stringify(data.rewards),
+                );
+              }
+            } catch {
+              // ignore reward parse errors
+            }
             break; // Success, exit retry loop
           }
 

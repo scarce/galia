@@ -1,0 +1,227 @@
+{
+  "explorer": {
+    "title": "the Explorer",
+    "power": "Turns curiosity into adventure",
+    "variants": {
+      "zoe": { "outfit": "an oversized burgundy floppy sun hat, a light pink sleeveless top, blue denim shorts, white sneakers, and a pink scrunchie on one wrist", "pose": "caught mid-stride as if hiking, one hand raised to shield her eyes while gazing into the distance", "accessories": ["navy backpack", "pink binoculars", "notebook with pen"] },
+      "iris": { "outfit": "a khaki safari vest over an olive t-shirt, tan cargo shorts, brown hiking boots, and a green bandana around her neck", "pose": "crouched low and pointing eagerly at the ground as if tracking a discovery", "accessories": ["brass compass", "rolled trail map", "magnifying glass"] },
+      "rose": { "outfit": "a bright yellow rain jacket, sky-blue leggings, yellow rubber boots, and a little orange backpack clip", "pose": "leaning forward with both hands cupped as if peeking at a tiny creature", "accessories": ["bug jar", "butterfly net", "small flashlight"] }
+    }
+  },
+  "swimmer": {
+    "title": "the Swimmer",
+    "power": "Keeps going one stroke at a time",
+    "variants": {
+      "zoe": { "outfit": "a sporty teal-and-black racing swimsuit and a teal swim cap, barefoot", "pose": "arms stretched overhead in a streamlined dive-ready stance", "accessories": ["mirrored racing goggles", "stopwatch on lanyard", "gold swim medal"] },
+      "iris": { "outfit": "a one-piece swimsuit with green palm-leaf print and a green swim cap, barefoot", "pose": "mid-freestyle reach with one arm forward and head turned to breathe", "accessories": ["foam kickboard", "swim fins", "water bottle"] },
+      "rose": { "outfit": "a pastel-pink ruffled swimsuit with a small bow and a pink swim cap, barefoot", "pose": "standing happily with hands on hips ready to splash", "accessories": ["pink arm floaties", "polka-dot beach ball", "rolled striped towel"] }
+    }
+  },
+  "clown": {
+    "title": "the Clown",
+    "power": "Spreads giggles wherever she goes",
+    "variants": {
+      "zoe": { "outfit": "a bold red-and-yellow polka-dot jumpsuit with a ruffled collar and oversized blue shoes, her face fully visible, NO mask or face paint on her face", "pose": "balancing on one foot with arms spread wide mid-juggle", "accessories": ["three juggling balls", "round red clown nose prop", "tiny bicycle horn"] },
+      "iris": { "outfit": "green-and-orange striped overalls over a white shirt with a giant flower brooch and floppy green shoes, her face fully visible, NO mask or face paint on her face", "pose": "leaning back laughing while squeezing a prop", "accessories": ["bouquet of squirt flowers", "stack of colorful rings", "polka-dot bow tie"] },
+      "rose": { "outfit": "a pastel-purple tutu costume with rainbow suspenders and pink curly-toe shoes, her face fully visible, NO mask or face paint on her face", "pose": "twirling on tiptoe holding balloons aloft", "accessories": ["bunch of balloon animals", "tiny pink top hat prop", "kazoo"] }
+    }
+  },
+  "surfer": {
+    "title": "the Surfer",
+    "power": "Rides the waves and stays steady",
+    "variants": {
+      "zoe": { "outfit": "a black-and-aqua short wetsuit with a bold stripe, barefoot", "pose": "knees bent in a low surf stance with arms out for balance", "accessories": ["aqua surfboard", "ankle leash", "shark-tooth necklace"] },
+      "iris": { "outfit": "a coral rash guard over green board shorts, barefoot", "pose": "crouched and pointing ahead as if reading a wave", "accessories": ["yellow bodyboard", "tube of zinc sunscreen", "woven beach hat"] },
+      "rose": { "outfit": "a pastel-pink rash top with a turquoise frill skirt over swim bottoms, barefoot", "pose": "standing proudly hugging her board to her side", "accessories": ["pink foam surfboard", "seashell bracelet", "small sand bucket"] }
+    }
+  },
+  "ballet": {
+    "title": "the Ballet Star",
+    "power": "Finds grace through practice",
+    "variants": {
+      "zoe": { "outfit": "a deep-red leotard with a short matching tutu, sheer tights, and red satin ballet slippers", "pose": "balanced in an elegant arabesque with one leg lifted behind", "accessories": ["pointe shoes by their ribbons", "small rose bouquet", "sparkly tiara"] },
+      "iris": { "outfit": "a teal long-sleeve leotard with an olive wrap skirt, tights, and tan ballet slippers", "pose": "frozen in a graceful curtsy with arms framing softly", "accessories": ["ballet barre prop", "ribbon wand", "drawstring slipper bag"] },
+      "rose": { "outfit": "a pastel-lavender leotard with a fluffy pink layered tutu, white tights, and pink ballet slippers", "pose": "on tiptoe with both arms curved overhead in first position", "accessories": ["flower crown", "satin hair ribbon", "small music box"] }
+    }
+  },
+  "gymnast": {
+    "title": "the Gymnast",
+    "power": "Bounces back stronger every time",
+    "variants": {
+      "zoe": { "outfit": "a sporty navy-and-red sleeveless leotard with a lightning stripe, barefoot", "pose": "mid-cartwheel with body diagonal and legs split in the air", "accessories": ["gold medal on ribbon", "chalk bag", "balance beam prop"] },
+      "iris": { "outfit": "a forest-green leotard with gold trim and matching scrunchie, barefoot", "pose": "landing in a confident finish with arms raised in a V", "accessories": ["wooden balance beam", "grip wristbands", "water bottle"] },
+      "rose": { "outfit": "a pastel-pink leotard with sparkly hearts and a tutu skirt, barefoot", "pose": "sitting in a wide split with arms stretched up cheerfully", "accessories": ["ribbon gymnastics streamer", "star sticker chart", "soft floor mat"] }
+    }
+  },
+  "tennis": {
+    "title": "the Tennis Pro",
+    "power": "Serves up effort every single time",
+    "variants": {
+      "zoe": { "outfit": "a navy tennis dress with a white visor and white tennis shoes, sweatband on one wrist", "pose": "mid-serve with racket raised high and ball tossed above", "accessories": ["graphite tennis racket", "can of tennis balls", "gold trophy cup"] },
+      "iris": { "outfit": "a green polo shirt with a white pleated skirt and green tennis shoes", "pose": "leaning into a forehand swing across her body", "accessories": ["wooden racket", "ball hopper basket", "sweat towel"] },
+      "rose": { "outfit": "a pastel-pink tennis dress with a ruffled hem and pink sneakers, a small bow headband", "pose": "holding the racket with both hands ready to bounce a ball", "accessories": ["pink mini racket", "fuzzy ball keychain", "matching wristbands"] }
+    }
+  },
+  "golfer": {
+    "title": "the Golfer",
+    "power": "Stays patient and aims true",
+    "variants": {
+      "zoe": { "outfit": "a navy polo, white golf shorts, a red visor, and white golf shoes, a glove on one hand", "pose": "mid-swing follow-through with the club arced over one shoulder", "accessories": ["golf driver", "tee with ball", "scorecard with pencil"] },
+      "iris": { "outfit": "an olive polo with khaki golf trousers, a brown cap, and tan golf shoes", "pose": "crouched lining up a putt with one eye toward the hole", "accessories": ["putter club", "small golf bag", "golf ball marker"] },
+      "rose": { "outfit": "a pastel-pink collared dress with a white bucket hat and pink golf shoes", "pose": "standing proudly leaning on her club with a big smile", "accessories": ["pink junior golf club", "polka-dot golf ball", "flagstick pennant"] }
+    }
+  },
+  "skier": {
+    "title": "the Skier",
+    "power": "Glides down challenges with courage",
+    "variants": {
+      "zoe": { "outfit": "a sleek teal-and-black ski suit with a high collar and ski boots, her face fully visible, NO goggles or helmet on her head", "pose": "carving in a low tuck with poles tucked back for speed", "accessories": ["pair of skis", "mirrored ski goggles", "ski poles"] },
+      "iris": { "outfit": "a forest-green padded ski jacket, gray snow pants, and ski boots with an orange beanie, her face fully visible, NO goggles or helmet on her head", "pose": "standing on a slope waving one pole in greeting", "accessories": ["white ski helmet", "thermal mittens", "trail map of the mountain"] },
+      "rose": { "outfit": "a pastel-pink puffy ski jacket with lavender snow pants and small boots, her face fully visible, NO goggles or helmet on her head", "pose": "leaning gently on her poles with a happy hop", "accessories": ["short junior skis", "pink pom-pom earmuffs", "hot-cocoa thermos"] }
+    }
+  },
+  "snowboarder": {
+    "title": "the Snowboarder",
+    "power": "Gets right back up every time",
+    "variants": {
+      "zoe": { "outfit": "a black-and-aqua snowboard jacket with matching snow pants and snowboard boots, her face fully visible, NO goggles or helmet on her head", "pose": "mid-air grab holding the edge of her board with knees tucked", "accessories": ["aqua snowboard", "tinted snow goggles", "fingerless snow gloves"] },
+      "iris": { "outfit": "an orange-and-gray snowboard hoodie over green snow pants with snow boots and a beanie, her face fully visible, NO goggles or helmet on her head", "pose": "crouched and strapping in at the top of a run", "accessories": ["wooden snowboard", "white snowboard helmet", "wax block"] },
+      "rose": { "outfit": "a pastel-purple puffy snow jacket with pink snow pants and small boots, her face fully visible, NO goggles or helmet on her head", "pose": "sitting on the snow giving a cheerful thumbs-up", "accessories": ["short pink snowboard", "fuzzy pink mittens", "snowball in hand"] }
+    }
+  },
+  "police": {
+    "title": "the Police Officer",
+    "power": "Keeps everyone safe with a kind heart",
+    "variants": {
+      "zoe": { "outfit": "a navy police uniform shirt with a silver badge, dark trousers, a duty belt, black boots, and a peaked cap", "pose": "standing tall with one hand raised in a friendly stop signal", "accessories": ["walkie-talkie radio", "shiny silver badge", "traffic whistle"] },
+      "iris": { "outfit": "a navy police polo with a reflective vest, cargo trousers, and black boots, no hat", "pose": "kneeling to help, pointing helpfully down the road", "accessories": ["flashlight", "notepad and pen", "junior officer cap"] },
+      "rose": { "outfit": "a light-blue toy-police shirt with a star sticker badge, a navy skirt, black shoes, and a small cap with a bow", "pose": "waving cheerfully while directing pretend traffic", "accessories": ["plush police puppy", "toy handcuffs", "sticker badge sheet"] }
+    }
+  },
+  "firefighter": {
+    "title": "the Firefighter",
+    "power": "Faces fear and helps others first",
+    "variants": {
+      "zoe": { "outfit": "a tan-and-yellow firefighter turnout coat with reflective stripes, suspenders, and black boots, her face fully visible, NO helmet on her head", "pose": "gripping a hose nozzle with a determined forward lean", "accessories": ["red fire helmet", "coiled fire hose", "axe prop"] },
+      "iris": { "outfit": "a navy fire-department t-shirt with reflective suspendered trousers and black boots, her face fully visible, NO helmet on her head", "pose": "carrying a coiled hose over one shoulder mid-stride", "accessories": ["yellow fire helmet", "walkie-talkie", "fire extinguisher"] },
+      "rose": { "outfit": "a red toy-firefighter jacket with yellow trim, navy leggings, and little boots, her face fully visible, NO helmet on her head", "pose": "holding a toy hose with a proud grin", "accessories": ["plastic fire helmet", "plush dalmatian puppy", "tiny toy ladder"] }
+    }
+  },
+  "doctor": {
+    "title": "the Doctor",
+    "power": "Heals with knowledge and kindness",
+    "variants": {
+      "zoe": { "outfit": "a crisp white doctor's coat over a teal scrub top, navy scrub trousers, and white sneakers", "pose": "standing confidently with a stethoscope held to listen", "accessories": ["stethoscope", "clipboard chart", "pen light"] },
+      "iris": { "outfit": "green hospital scrubs with a surgical cap and white clogs", "pose": "leaning forward examining with a friendly nod", "accessories": ["medical bag", "reflex hammer", "bandage roll"] },
+      "rose": { "outfit": "a short white lab coat over a pastel-pink scrub top with heart print and pink shoes", "pose": "holding a teddy bear patient and giving a thumbs-up", "accessories": ["teddy-bear patient", "toy thermometer", "sticker bandages"] }
+    }
+  },
+  "vet": {
+    "title": "the Vet",
+    "power": "Cares for every creature great and small",
+    "variants": {
+      "zoe": { "outfit": "a teal vet scrub top with a navy apron, dark trousers, and sturdy shoes", "pose": "kneeling to gently examine a puppy held in her lap", "accessories": ["puppy patient", "stethoscope", "clipboard chart"] },
+      "iris": { "outfit": "an olive scrub top with a brown utility apron and rubber clogs", "pose": "standing holding a rabbit carefully against her shoulder", "accessories": ["fluffy bunny", "pet carrier", "treat pouch"] },
+      "rose": { "outfit": "a pastel-pink scrub top with paw-print pattern and white shoes", "pose": "crouched offering a treat to a kitten with a big smile", "accessories": ["kitten patient", "tiny bandage roll", "soft cat brush"] }
+    }
+  },
+  "businesswoman": {
+    "title": "the CEO",
+    "power": "Leads big ideas with confidence",
+    "variants": {
+      "zoe": { "outfit": "a sharp navy blazer over a white blouse, matching trousers, and black loafers", "pose": "standing tall presenting with one hand gesturing forward", "accessories": ["leather briefcase", "tablet", "coffee cup"] },
+      "iris": { "outfit": "a charcoal pantsuit with a green silk scarf and low heels", "pose": "leaning over a desk pointing at a chart", "accessories": ["clipboard with graphs", "wireless headset", "name badge lanyard"] },
+      "rose": { "outfit": "a pastel-pink blazer over a polka-dot blouse with a matching skirt and pink flats", "pose": "giving a cheerful thumbs-up beside a pretend podium", "accessories": ["sparkly notebook planner", "toy phone", "star-shaped sticky notes"] }
+    }
+  },
+  "beachpro": {
+    "title": "the Beach Pro",
+    "power": "Brings sunshine energy to the team",
+    "variants": {
+      "zoe": { "outfit": "an aqua-and-white sporty two-piece beach volleyball set with a visor, barefoot, her face fully visible, NO sunglasses on her face", "pose": "mid-bump with arms together as if returning a volley", "accessories": ["beach volleyball", "mirrored sunglasses", "sport water bottle"] },
+      "iris": { "outfit": "a coral rash top over green swim shorts with a wide-brim straw hat, barefoot, her face fully visible, NO sunglasses on her face", "pose": "reaching up to spike an incoming ball", "accessories": ["beach paddle set", "round sunglasses", "beach umbrella"] },
+      "rose": { "outfit": "a pastel-pink swim set with a frilly cover-up skirt and sun hat, barefoot, her face fully visible, NO sunglasses on her face", "pose": "kneeling happily building a sandcastle", "accessories": ["heart-shaped sunglasses", "sand bucket and shovel", "pink beach ball"] }
+    }
+  },
+  "actor": {
+    "title": "the Actor",
+    "power": "Shines by being boldly herself",
+    "variants": {
+      "zoe": { "outfit": "a sparkly burgundy stage jacket over a black top, dark jeans, and shiny boots", "pose": "striking a dramatic bow with one arm sweeping wide", "accessories": ["gold trophy statuette", "rolled script", "stage microphone"] },
+      "iris": { "outfit": "an emerald-green vintage dress with a feather boa and character flats", "pose": "delivering a line with one hand pressed to her heart", "accessories": ["comedy-tragedy mask props", "feather quill", "director's clapperboard"] },
+      "rose": { "outfit": "a pastel-pink princess-style costume gown with a sparkly sash and glittery shoes", "pose": "twirling on a pretend stage with arms gracefully out", "accessories": ["sparkly star wand", "tiara", "bouquet of flowers"] }
+    }
+  },
+  "skater": {
+    "title": "the Skater",
+    "power": "Lands tricks by trying again",
+    "variants": {
+      "zoe": { "outfit": "a black hoodie with an aqua graphic tee, ripped jeans, knee pads, skate shoes, and a backwards cap, her face fully visible, NO helmet on her head", "pose": "mid-ollie with the board lifting beneath her feet", "accessories": ["aqua skateboard", "white skate helmet", "wristguards"] },
+      "iris": { "outfit": "an olive flannel over an orange tee with cargo pants, skate shoes, and a beanie, her face fully visible, NO helmet on her head", "pose": "rolling in a low crouch with arms out for balance", "accessories": ["wooden cruiser board", "elbow pads", "spare wheels"] },
+      "rose": { "outfit": "a pastel-pink hoodie with a glitter heart, purple leggings, and pink skate shoes, her face fully visible, NO helmet on her head", "pose": "standing on her board with one foot pushing off cheerfully", "accessories": ["pink glittery skateboard", "rainbow knee pads", "sticker-covered water bottle"] }
+    }
+  },
+  "librarian": {
+    "title": "the Bookworm",
+    "power": "Opens a new world with every book",
+    "variants": {
+      "zoe": { "outfit": "a burgundy cardigan over a white blouse, navy trousers, and loafers, reading glasses pushed up on her head", "pose": "balancing a tall stack of books in both arms", "accessories": ["stack of books", "library date stamp", "bookmark with tassel"] },
+      "iris": { "outfit": "a mustard knit sweater with a green corduroy skirt, tights, and brown boots", "pose": "reaching up to slide a book onto a shelf", "accessories": ["wheeled book cart", "magnifying reading glass", "due-date card"] },
+      "rose": { "outfit": "a pastel-pink pinafore dress over a white shirt with a bow collar and Mary Jane shoes", "pose": "sitting cross-legged reading an open picture book", "accessories": ["open picture book", "plush bookworm toy", "star bookmark"] }
+    }
+  },
+  "astronaut": {
+    "title": "the Astronaut",
+    "power": "Reaches for the stars and never gives up",
+    "variants": {
+      "zoe": { "outfit": "a white spacesuit with bold red accent trim and silver boots, her face fully visible, NO helmet on her head", "pose": "floating with one arm reaching upward toward the stars", "accessories": ["bubble space helmet", "toy rocket", "ringed-planet model"] },
+      "iris": { "outfit": "a white spacesuit with green accent trim and a mission patch, her face fully visible, NO helmet on her head", "pose": "planting a small flag with a triumphant stance", "accessories": ["moon rover toy", "star chart", "mini mission flag"] },
+      "rose": { "outfit": "a white spacesuit with pastel-pink accent trim and glittery boots, her face fully visible, NO helmet on her head", "pose": "hopping in low gravity with arms spread joyfully", "accessories": ["plush comet toy", "glow-in-the-dark moon", "constellation sticker sheet"] }
+    }
+  },
+  "scout": {
+    "title": "the Scout",
+    "power": "Always prepared and ready to help",
+    "variants": {
+      "zoe": { "outfit": "a tan scout shirt with a red neckerchief, navy shorts, knee socks, hiking boots, and a sash of badges", "pose": "standing at attention with a proud three-finger salute", "accessories": ["merit-badge sash", "rope with knots", "campfire pennant flag"] },
+      "iris": { "outfit": "an olive scout vest over a khaki shirt, cargo shorts, boots, and a green cap", "pose": "kneeling to build a tiny campfire setup", "accessories": ["mess kit", "pocket compass", "trail whistle"] },
+      "rose": { "outfit": "a pastel-tan scout dress with a pink neckerchief, white socks, and little boots", "pose": "holding up a box of cookies with a big grin", "accessories": ["box of scout cookies", "friendship-bracelet kit", "small lantern"] }
+    }
+  },
+  "dreamer": {
+    "title": "the Dreamer",
+    "power": "Carries big dreams into tomorrow",
+    "variants": {
+      "zoe": { "outfit": "cozy navy star-print pajamas with an aqua hoodie and fuzzy gray slipper socks", "pose": "stretching with a big yawn and arms reaching up sleepily", "accessories": ["plush moon pillow", "starry sleep mask", "reading flashlight"] },
+      "iris": { "outfit": "a green plaid flannel pajama set with an oversized knit cardigan and sock slippers", "pose": "curled up hugging a pillow with a contented smile", "accessories": ["patchwork quilt", "mug of cocoa", "open storybook"] },
+      "rose": { "outfit": "pastel-pink cloud-print footed onesie pajamas with a bunny-ear hood", "pose": "bouncing mid-pillow-fight giggle", "accessories": ["plush bunny", "fluffy pillow", "string of fairy lights"] }
+    }
+  },
+  "farmer": {
+    "title": "the Orchard Farmer",
+    "power": "Grows good things with patience",
+    "variants": {
+      "zoe": { "outfit": "blue denim overalls over a red plaid shirt, brown work boots, and a straw hat", "pose": "reaching up to pick an apple from a branch overhead", "accessories": ["bushel basket of apples", "wooden picking ladder", "garden gloves"] },
+      "iris": { "outfit": "a green canvas work apron over an olive tee, rolled khaki trousers, rubber boots, and a bandana", "pose": "kneeling to set a sapling with a small trowel", "accessories": ["watering can", "hand trowel", "seed packet pouch"] },
+      "rose": { "outfit": "a pastel-yellow gingham dress with a pink apron, white socks, little boots, and a sun bonnet", "pose": "carrying a basket of apples with a cheerful skip", "accessories": ["small apple basket", "stuffed lamb toy", "jar of apple cider"] }
+    }
+  },
+  "catcher": {
+    "title": "the Critter Catcher",
+    "power": "Befriends every creature with care",
+    "variants": {
+      "zoe": { "outfit": "an aqua zip vest over a black tee, navy shorts, sporty sneakers, and a red-and-white cap", "pose": "winding up to toss a critter ball with a focused grin", "accessories": ["red-and-white critter ball", "trainer's belt of catch balls", "field journal"] },
+      "iris": { "outfit": "an olive explorer jacket over an orange shirt, cargo shorts, boots, and a green visor", "pose": "creeping forward with a creature net raised to scoop", "accessories": ["creature net", "creature carrier crate", "binoculars"] },
+      "rose": { "outfit": "a pastel-pink hoodie with a purple skirt, leggings, sneakers, and a star hairclip", "pose": "kneeling and gently holding up a plush critter pal", "accessories": ["plush critter pal", "pink catch ball", "sticker badge case"] }
+    }
+  },
+  "nerd": {
+    "title": "the Inventor",
+    "power": "Loves learning and solving puzzles",
+    "variants": {
+      "zoe": { "outfit": "a burgundy bow tie with a white button-up, navy suspenders, dark trousers, sneakers, and chunky glasses", "pose": "holding up a beaker with a delighted eureka expression", "accessories": ["science beaker", "pocket protector of pens", "rubik-style puzzle cube"] },
+      "iris": { "outfit": "a green argyle sweater vest over a checkered shirt, khaki trousers, loafers, and round glasses", "pose": "leaning over an open book scribbling equations", "accessories": ["thick textbook", "wind-up robot toy", "calculator"] },
+      "rose": { "outfit": "a pastel-lavender cardigan over a star-print blouse, a polka-dot skirt, tights, Mary Janes, and heart-shaped glasses", "pose": "proudly showing off a hand-drawn invention sketch", "accessories": ["sketchbook of inventions", "colorful abacus", "magnet horseshoe toy"] }
+    }
+  }
+}

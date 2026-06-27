@@ -3,6 +3,28 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { QuizResult, User, Mistake } from "@/lib/types";
+import RewardPopup, { hasRewards } from "@/components/RewardPopup";
+import { type EarnedRewards } from "@/lib/rewards";
+
+// Combine rewards across the rounds of one quiz session (loot lands on round 1;
+// extra badges can come from later rounds).
+function mergeRewards(
+  a: EarnedRewards | null,
+  b: EarnedRewards | null,
+): EarnedRewards | null {
+  if (!a) return b;
+  if (!b) return a;
+  const byId = <T extends { id: string }>(arr: T[]) => [
+    ...new Map(arr.map((x) => [x.id, x])).values(),
+  ];
+  return {
+    badges: byId([...a.badges, ...b.badges]),
+    collectible: a.collectible ?? b.collectible,
+    tickets: [...a.tickets, ...b.tickets],
+    familyGoals: byId([...a.familyGoals, ...b.familyGoals]),
+    pointsEarned: (a.pointsEarned || 0) + (b.pointsEarned || 0),
+  };
+}
 
 interface ExtendedQuizResult extends QuizResult {
   round?: number;
@@ -175,7 +197,9 @@ function LessonPlayer({
       } catch (err) {
         console.error("Audio generation error:", err);
         setAudioLoading(false);
-        // Still allow proceeding without audio
+        // Audio failed — skip the lesson audio and let them move on to Round 2
+        // instead of getting stuck waiting to "listen".
+        onComplete();
       }
     }
 
@@ -349,6 +373,7 @@ export default function ResultsPage() {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
   const [lessonComplete, setLessonComplete] = useState(false);
+  const [rewards, setRewards] = useState<EarnedRewards | null>(null);
 
   useEffect(() => {
     const storedResult = sessionStorage.getItem("quizResult");
@@ -359,6 +384,31 @@ export default function ResultsPage() {
 
     const parsedResult = JSON.parse(storedResult);
     setResult(parsedResult);
+
+    // Rewards are computed on round 1 but only CELEBRATED when the whole quiz
+    // is finished. Accumulate each round's rewards per session, and pop the
+    // confetti only at completion (perfect score, or a one-shot test).
+    const sid = parsedResult.sessionId || "nosession";
+    const accKey = `rewardsAcc:${sid}`;
+    try {
+      const incoming = sessionStorage.getItem("quizRewards");
+      if (incoming) {
+        const prev = JSON.parse(sessionStorage.getItem(accKey) || "null");
+        const merged = mergeRewards(prev, JSON.parse(incoming));
+        sessionStorage.setItem(accKey, JSON.stringify(merged));
+        sessionStorage.removeItem("quizRewards");
+      }
+      const acc = JSON.parse(sessionStorage.getItem(accKey) || "null");
+      const isComplete =
+        parsedResult.isTestMode ||
+        parsedResult.score === parsedResult.questions.length;
+      if (isComplete && acc && hasRewards(acc)) {
+        setRewards(acc);
+        sessionStorage.removeItem(accKey);
+      }
+    } catch {
+      // ignore reward accumulation errors
+    }
 
     // Load users to get the user info
     fetch("/api/users")
@@ -398,6 +448,16 @@ export default function ResultsPage() {
 
   return (
     <div className="min-h-screen p-4 md:p-8">
+      {rewards && hasRewards(rewards) && (
+        <RewardPopup
+          rewards={rewards}
+          userName={user?.name || result.userName}
+          onClose={() => {
+            setRewards(null);
+            router.push(`/profile?user=${result.userId}`);
+          }}
+        />
+      )}
       {/* Header */}
       <header className="mb-8 text-center">
         {user && (

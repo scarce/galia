@@ -2,9 +2,18 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import dynamic from "next/dynamic";
 import UserSelector from "@/components/UserSelector";
 import PasscodeScreen from "@/components/PasscodeScreen";
+import StreakCalendar from "@/components/StreakCalendar";
 import { User } from "@/lib/types";
+
+// Liquid-glass panel — client-only (canvas-based SVG displacement filter),
+// loaded without SSR to avoid hydration mismatches.
+const LiquidGlass = dynamic(
+  () => import("@liquidglass/react").then((m) => m.LiquidGlass),
+  { ssr: false },
+);
 
 interface Theme {
   id: string;
@@ -162,7 +171,9 @@ export default function Home() {
   const [users, setUsers] = useState<User[]>([]);
   const [selectedUser, setSelectedUser] = useState<User | null>(null);
   const [selectedMode, setSelectedMode] = useState<Mode>("training");
-  const [selectedTheme, setSelectedTheme] = useState<Theme | null>(null);
+  // Set once the user picks what to play; opens the difficulty chooser.
+  const [pendingTheme, setPendingTheme] = useState<Theme | null>(null);
+  const [pendingTest, setPendingTest] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -220,34 +231,30 @@ export default function Home() {
     retryFailedSubmissions();
   }, []);
 
-  const handleLevelSelect = (levelId: string) => {
+  // Launch once a difficulty is chosen from the floating panel.
+  const handleSelectLevel = (levelId: string) => {
     if (!selectedUser) return;
     const grade = selectedUser.grade || 2;
-
-    if (selectedMode === "test") {
-      // Test mode: use all available themes for this user
+    if (pendingTheme) {
+      router.push(
+        `/quiz?theme=${pendingTheme.id}-${levelId}&user=${selectedUser.id}&grade=${grade}`,
+      );
+    } else if (pendingTest) {
       router.push(
         `/quiz?mode=test&level=${levelId}&user=${selectedUser.id}&grade=${grade}`,
-      );
-    } else {
-      // Training mode: use selected theme
-      if (!selectedTheme) return;
-      router.push(
-        `/quiz?theme=${selectedTheme.id}-${levelId}&user=${selectedUser.id}&grade=${grade}`,
       );
     }
   };
 
+  const closeDifficulty = () => {
+    setPendingTheme(null);
+    setPendingTest(false);
+  };
+
   const handleBack = () => {
-    if (selectedTheme) {
-      setSelectedTheme(null);
-    } else if (selectedMode === "test" && selectedUser) {
-      // In test mode, go back from level to mode selection
-      setSelectedMode("training");
-    } else if (selectedUser) {
-      setSelectedUser(null);
-      setSelectedMode("training");
-    }
+    setSelectedUser(null);
+    setSelectedMode("training");
+    closeDifficulty();
   };
 
   // Show loading state
@@ -267,89 +274,108 @@ export default function Home() {
     return <PasscodeScreen onUnlock={() => setUnlocked(true)} />;
   }
 
-  // Determine current step
-  // In test mode: user -> mode -> level (skip theme)
-  // In training mode: user -> mode -> theme -> level
-  const step = !selectedUser
-    ? "user"
-    : selectedMode === "test"
-      ? "level"
-      : !selectedTheme
-        ? "theme"
-        : "level";
+  // Two steps now: pick a profile, then the home hub (streak + difficulty +
+  // topics/test). Difficulty is an inline panel, not a separate screen.
+  const step = !selectedUser ? "user" : "home";
+  const isHome = step === "home" && !!selectedUser;
 
   return (
-    <div className="flex min-h-screen flex-col items-center p-6 pt-12 md:p-12 md:pt-20">
-      <header className="mb-12 text-center">
-        <h1 className="mb-4 text-5xl font-extrabold text-indigo-600 md:text-6xl">
-          galia/math
-        </h1>
-        <p className="text-lg text-gray-600 md:text-xl">
-          {step === "user" && "Select your profile to begin"}
-          {step === "theme" && "Choose a topic"}
-          {step === "level" &&
-            selectedMode === "test" &&
-            "Choose test difficulty"}
-          {step === "level" &&
-            selectedMode === "training" &&
-            "Choose difficulty level"}
-        </p>
+    <div className="flex min-h-screen flex-col p-6 pt-10 md:p-10">
+      {/* Top bar: branding on the left, streak calendar on the right.
+          Full-bleed indigo bar spanning the whole page width. */}
+      <header
+        className={`-mx-6 -mt-10 mb-10 flex flex-col gap-6 bg-[#4F39F6] px-6 pt-10 pb-8 md:-mx-10 md:-mt-10 md:px-10 ${
+          isHome
+            ? "lg:flex-row lg:items-center lg:justify-between"
+            : "items-center text-center"
+        }`}
+      >
+        <div className={isHome ? "text-center lg:text-left" : "text-center"}>
+          <h1 className="mb-2 text-5xl font-extrabold text-white md:text-6xl">
+            galia/math
+          </h1>
+          <p className="text-lg text-indigo-100 md:text-xl">
+            {step === "user" && "Select your profile to begin"}
+            {isHome &&
+              selectedMode === "training" &&
+              "Pick a topic and keep your rings closed"}
+            {isHome &&
+              selectedMode === "test" &&
+              "Ready for a mixed test?"}
+          </p>
+        </div>
+
+        {isHome && selectedUser && (
+          <div className="w-full lg:w-auto lg:max-w-sm">
+            <StreakCalendar userId={selectedUser.id} />
+          </div>
+        )}
       </header>
 
-      {/* Back button */}
-      {(selectedUser || selectedTheme) && (
-        <button
-          onClick={handleBack}
-          className="mb-8 flex items-center gap-2 rounded-full bg-gray-100 px-4 py-2 text-sm text-gray-600 transition-colors hover:bg-gray-200"
-        >
-          ← Back
-        </button>
-      )}
+      {/* Controls: back + mode toggle */}
+      <div
+        className={`mb-8 flex flex-wrap items-center gap-3 ${
+          isHome ? "justify-center lg:justify-start" : "justify-center"
+        }`}
+      >
+        {selectedUser && (
+          <button
+            onClick={handleBack}
+            className="flex items-center gap-2 rounded-full bg-gray-100 px-4 py-2 text-sm text-gray-600 transition-colors hover:bg-gray-200"
+          >
+            ← Back
+          </button>
+        )}
+
+        {selectedUser && (
+          <div className="flex items-center gap-2 rounded-full bg-gray-100 p-1">
+            <button
+              onClick={() => setSelectedMode("training")}
+              className={`rounded-full px-6 py-2 text-sm font-semibold transition-all ${
+                selectedMode === "training"
+                  ? "bg-indigo-600 text-white shadow-md"
+                  : "text-gray-600 hover:text-gray-800"
+              }`}
+            >
+              Training
+            </button>
+            <button
+              onClick={() => setSelectedMode("test")}
+              className={`rounded-full px-6 py-2 text-sm font-semibold transition-all ${
+                selectedMode === "test"
+                  ? "bg-indigo-600 text-white shadow-md"
+                  : "text-gray-600 hover:text-gray-800"
+              }`}
+            >
+              Test
+            </button>
+          </div>
+        )}
+
+        {selectedUser && (
+          <button
+            onClick={() => router.push(`/profile?user=${selectedUser.id}`)}
+            className="flex items-center gap-2 rounded-full bg-amber-400 px-5 py-2 text-sm font-bold text-amber-950 shadow-sm transition-all hover:scale-105 hover:bg-amber-300 active:scale-95"
+          >
+            👤 Profile
+          </button>
+        )}
+      </div>
 
       {/* User selection */}
       {step === "user" && (
-        <UserSelector
-          users={users}
-          selectedUser={selectedUser}
-          onSelectUser={setSelectedUser}
-        />
-      )}
-
-      {/* Mode toggle - shown after user selection */}
-      {selectedUser && (
-        <div className="mb-8 flex items-center gap-2 rounded-full bg-gray-100 p-1">
-          <button
-            onClick={() => {
-              setSelectedMode("training");
-              setSelectedTheme(null);
-            }}
-            className={`rounded-full px-6 py-2 text-sm font-semibold transition-all ${
-              selectedMode === "training"
-                ? "bg-indigo-600 text-white shadow-md"
-                : "text-gray-600 hover:text-gray-800"
-            }`}
-          >
-            Training
-          </button>
-          <button
-            onClick={() => {
-              setSelectedMode("test");
-              setSelectedTheme(null);
-            }}
-            className={`rounded-full px-6 py-2 text-sm font-semibold transition-all ${
-              selectedMode === "test"
-                ? "bg-indigo-600 text-white shadow-md"
-                : "text-gray-600 hover:text-gray-800"
-            }`}
-          >
-            Test
-          </button>
+        <div className="flex flex-col items-center">
+          <UserSelector
+            users={users}
+            selectedUser={selectedUser}
+            onSelectUser={setSelectedUser}
+          />
         </div>
       )}
 
-      {/* Theme selection */}
-      {step === "theme" && selectedUser && (
-        <main className="grid w-full max-w-4xl grid-cols-1 gap-6 md:grid-cols-3">
+      {/* Training: topic grid - click opens the difficulty chooser */}
+      {isHome && selectedUser && selectedMode === "training" && (
+        <main className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {themes
             .filter((theme) => {
               const userGrade = selectedUser.grade || 2;
@@ -359,7 +385,7 @@ export default function Home() {
             .map((theme) => (
               <button
                 key={theme.id}
-                onClick={() => setSelectedTheme(theme)}
+                onClick={() => setPendingTheme(theme)}
                 className="flex w-full flex-col items-center gap-4 rounded-3xl bg-white p-8 shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-xl active:scale-95"
               >
                 <span className="text-6xl">{theme.icon}</span>
@@ -376,27 +402,82 @@ export default function Home() {
         </main>
       )}
 
-      {/* Level selection */}
-      {step === "level" && (
-        <main className="grid w-full max-w-2xl grid-cols-1 gap-6 md:grid-cols-3">
-          {levels.map((level) => (
-            <button
-              key={level.id}
-              onClick={() => handleLevelSelect(level.id)}
-              className={`flex flex-col items-center gap-3 rounded-3xl p-8 text-white shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-xl active:scale-95 ${level.color}`}
-            >
-              <span className="text-4xl font-extrabold md:text-5xl">
-                {level.id === "easy"
-                  ? "⭐"
-                  : level.id === "medium"
-                    ? "⭐⭐"
-                    : "⭐⭐⭐"}
-              </span>
-              <h2 className="text-xl font-bold md:text-2xl">{level.name}</h2>
-              <p className="text-sm text-white/80">{level.description}</p>
-            </button>
-          ))}
+      {/* Test: single call-to-action opens the difficulty chooser */}
+      {isHome && selectedMode === "test" && (
+        <main className="mx-auto flex w-full max-w-md flex-col items-center">
+          <button
+            onClick={() => setPendingTest(true)}
+            className="flex w-full flex-col items-center gap-3 rounded-3xl bg-indigo-600 p-10 text-white shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-xl active:scale-95"
+          >
+            <span className="text-6xl">📝</span>
+            <h2 className="text-2xl font-bold">Start Test</h2>
+            <p className="text-sm text-white/80">
+              40 questions from all topics
+            </p>
+          </button>
         </main>
+      )}
+
+      {/* Difficulty chooser - floating liquid-glass panel over a dimmed backdrop,
+          shown only after a topic (or the test) is selected */}
+      {(pendingTheme || pendingTest) && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-6">
+          {/* Light backdrop - click to dismiss. Kept subtle (no blur) so the
+              glass lens reveals a clear, saturated view of what it covers. */}
+          <div
+            className="absolute inset-0 bg-black/20"
+            onClick={closeDifficulty}
+          />
+          {/* Sized wrapper; LiquidGlass fills it and centers its children */}
+          <div className="relative z-10 w-full max-w-xl">
+            <LiquidGlass
+              borderRadius={44}
+              blur={3}
+              contrast={1.3}
+              brightness={1.12}
+              saturation={2.2}
+              displacementScale={160}
+              elasticity={0}
+              shadowIntensity={0.35}
+              className="w-full"
+            >
+              <div className="flex w-full flex-col items-center gap-8 p-10 md:p-12">
+                <div className="text-center">
+                  <div className="text-6xl drop-shadow">
+                    {pendingTheme ? pendingTheme.icon : "📝"}
+                  </div>
+                  <h2 className="mt-3 text-4xl font-black tracking-tight text-white drop-shadow-lg md:text-5xl">
+                    {pendingTheme ? pendingTheme.name : "Mixed Test"}
+                  </h2>
+                  <p className="mt-1 text-lg font-semibold text-white/90 drop-shadow md:text-xl">
+                    Choose your difficulty
+                  </p>
+                </div>
+                <div className="flex flex-col gap-4 sm:flex-row sm:gap-5">
+                  {levels.map((level) => (
+                    <button
+                      key={level.id}
+                      onClick={() => handleSelectLevel(level.id)}
+                      className={`flex min-w-[10rem] flex-col items-center gap-2 rounded-3xl px-8 py-7 text-white shadow-xl transition-all duration-200 hover:scale-110 active:scale-95 ${level.color}`}
+                    >
+                      <span className="text-4xl font-black drop-shadow">
+                        {level.id === "easy"
+                          ? "⭐"
+                          : level.id === "medium"
+                            ? "⭐⭐"
+                            : "⭐⭐⭐"}
+                      </span>
+                      <span className="text-2xl font-black">{level.name}</span>
+                      <span className="text-sm font-medium text-white/85">
+                        {level.description}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </LiquidGlass>
+          </div>
+        </div>
       )}
 
       <footer className="mt-12 text-center text-sm text-gray-500">

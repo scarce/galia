@@ -1,0 +1,27 @@
+{
+  "_docs": "One entry per badge id in apps/math/badges.json. rarity drives the frame metal + enamel field (see SKILL.md). shape: coin (default) | hex. motif: the symbol, described for slim raised line-art. orb: the center gradient, 'top color → bottom color'.",
+
+  "first-steps":   { "rarity": "common", "shape": "coin", "motif": "a small sprout — a short stem rising from a single seed with two symmetric rounded leaves curving upward", "orb": "bright cyan at the top fading to fresh spring-green at the bottom" },
+  "ten-quizzes":   { "rarity": "common", "shape": "coin", "motif": "a flexed strong arm doing a bicep curl, drawn as one bold continuous curved line", "orb": "teal at the top fading to green at the bottom" },
+  "on-a-roll":     { "rarity": "common", "shape": "coin", "motif": "a single tongue of flame made of three nested upward-curling strokes", "orb": "warm orange at the top fading to golden yellow at the bottom" },
+
+  "century":       { "rarity": "rare", "shape": "coin", "motif": "the number 100 in elegant connected single-stroke script, flanked by two small laurel sprigs", "orb": "bright azure at the top fading to deep blue at the bottom" },
+  "flawless":      { "rarity": "rare", "shape": "coin", "motif": "a four-point sparkle star with two tiny twinkles beside it", "orb": "sky-cyan at the top fading to sapphire at the bottom" },
+  "week-warrior":  { "rarity": "rare", "shape": "coin", "motif": "a calendar page with a folded top corner and a bold check-mark across it", "orb": "azure at the top fading to deep blue at the bottom" },
+  "comeback-kid":  { "rarity": "rare", "shape": "coin", "motif": "a circular looping return arrow that curls into a small star at its tip", "orb": "teal at the top fading to blue at the bottom" },
+  "daredevil":     { "rarity": "rare", "shape": "coin", "motif": "a bold lightning bolt crossing a pair of cool sunglasses", "orb": "electric blue at the top fading to deep blue at the bottom" },
+  "topic-tamer":   { "rarity": "rare", "shape": "coin", "motif": "three interlocking jigsaw puzzle pieces arranged in a triangle", "orb": "aqua at the top fading to teal at the bottom" },
+
+  "five-hundred":  { "rarity": "epic", "shape": "coin", "motif": "a 3x3 counting frame (abacus) with rows of beads on rods", "orb": "magenta at the top fading to violet at the bottom" },
+  "perfectionist": { "rarity": "epic", "shape": "coin", "motif": "a bullseye of three concentric rings with an arrow striking the exact center", "orb": "magenta at the top fading to violet at the bottom" },
+  "fortnight":     { "rarity": "epic", "shape": "coin", "motif": "a calendar page showing the number 14, wrapped by a small laurel", "orb": "violet at the top fading to indigo at the bottom" },
+  "three-weeks":   { "rarity": "epic", "shape": "coin", "motif": "a calendar page showing the number 21 with a small flame rising above it", "orb": "violet at the top fading to magenta at the bottom" },
+  "brave-heart":   { "rarity": "epic", "shape": "coin", "motif": "a noble lion's head with a flowing mane drawn from radiating curved strokes", "orb": "warm amber at the top fading to violet at the bottom" },
+  "topic-master":  { "rarity": "epic", "shape": "coin", "motif": "a five-point crown with small round gem dots on its tips", "orb": "violet at the top fading to gold at the bottom" },
+  "accuracy-ace":  { "rarity": "epic", "shape": "coin", "motif": "a star medal hanging from a short pleated ribbon", "orb": "violet at the top fading to royal blue at the bottom" },
+
+  "math-machine":  { "rarity": "legendary", "shape": "coin", "motif": "a friendly robot head built from clean geometric lines, with a single antenna and two round eyes", "orb": "bright cyan at the top sweeping to lime-green at the bottom-left, like an Earth marble" },
+  "sharp-shooter": { "rarity": "legendary", "shape": "coin", "motif": "a drawn longbow with a nocked arrow, rendered as one elegant continuous line", "orb": "warm gold at the top fading to amber at the bottom" },
+  "unstoppable":   { "rarity": "legendary", "shape": "coin", "motif": "a rocket climbing upward with a looping vapor trail and three small stars", "orb": "bright cyan at the top sweeping to lime-green at the bottom" },
+  "two-months":    { "rarity": "legendary", "shape": "coin", "motif": "a laurel wreath encircling the number 60, crowned by a small flame", "orb": "warm gold at the top sweeping to orange at the bottom, like a flame" }
+}

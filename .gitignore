@@ -39,3 +39,5 @@ next-env.d.ts
 *.swp
 *.swo
 .DS_Store
+agents/badge-designer/generated/
+agents/collectible-designer/generated/

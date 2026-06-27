@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sql } from "@vercel/postgres";
+import { sql } from "@/lib/db";
 
 // GET: Retrieve lesson by session_id
 export async function GET(request: NextRequest) {

@@ -1,0 +1,30 @@
+{
+  "_docs": {
+    "criteria": "A badge is earned when its criteria are met. Simple form: { \"stat\": <name>, \"gte\": <number> }. Compound: { \"all\": [ ...criteria ] } (all must hold).",
+    "stats": "sessions, totalProblems, totalCorrect, perfectScores, hardCompleted, comebacks, topicsMastered, currentStreak, bestStreak, accuracy (= totalCorrect/totalProblems, 0..1).",
+    "rarity": "common | rare | epic | legendary",
+    "note": "Edit copy/icon/rarity/thresholds freely. The progress bar for a locked badge tracks the first count-based criterion."
+  },
+  "badges": [
+    { "id": "first-steps", "name": "First Steps", "description": "You started your math journey!", "icon": "🌱", "rarity": "common", "criteria": { "stat": "sessions", "gte": 1 } },
+    { "id": "ten-quizzes", "name": "Getting Serious", "description": "You finished 10 quizzes — keep showing up!", "icon": "💪", "rarity": "common", "criteria": { "stat": "sessions", "gte": 10 } },
+    { "id": "century", "name": "Century", "description": "You solved 100 problems!", "icon": "💯", "rarity": "rare", "criteria": { "stat": "totalProblems", "gte": 100 } },
+    { "id": "five-hundred", "name": "Number Cruncher", "description": "500 problems solved. That's real practice!", "icon": "🔢", "rarity": "epic", "criteria": { "stat": "totalProblems", "gte": 500 } },
+    { "id": "math-machine", "name": "Math Machine", "description": "1,000 problems! Your brain is a powerhouse.", "icon": "🤖", "rarity": "legendary", "criteria": { "stat": "totalProblems", "gte": 1000 } },
+    { "id": "flawless", "name": "Flawless", "description": "You got a perfect score!", "icon": "✨", "rarity": "rare", "criteria": { "stat": "perfectScores", "gte": 1 } },
+    { "id": "perfectionist", "name": "Perfectionist", "description": "10 perfect scores — wow!", "icon": "🎯", "rarity": "epic", "criteria": { "stat": "perfectScores", "gte": 10 } },
+    { "id": "sharp-shooter", "name": "Sharp Shooter", "description": "25 perfect scores. Incredible focus!", "icon": "🏹", "rarity": "legendary", "criteria": { "stat": "perfectScores", "gte": 25 } },
+    { "id": "on-a-roll", "name": "On a Roll", "description": "You practised 3 days in a row!", "icon": "🔥", "rarity": "common", "criteria": { "stat": "bestStreak", "gte": 3 } },
+    { "id": "week-warrior", "name": "Week Warrior", "description": "A whole week of practice. Habit unlocked!", "icon": "📅", "rarity": "rare", "criteria": { "stat": "bestStreak", "gte": 7 } },
+    { "id": "fortnight", "name": "Two-Week Titan", "description": "14 days straight — amazing dedication!", "icon": "🗓️", "rarity": "epic", "criteria": { "stat": "bestStreak", "gte": 14 } },
+    { "id": "three-weeks", "name": "Three-Week Wonder", "description": "21 days in a row — three whole weeks of showing up!", "icon": "⚡", "rarity": "epic", "criteria": { "stat": "bestStreak", "gte": 21 } },
+    { "id": "unstoppable", "name": "Unstoppable", "description": "30-day streak. You are unstoppable!", "icon": "🚀", "rarity": "legendary", "criteria": { "stat": "bestStreak", "gte": 30 } },
+    { "id": "two-months", "name": "Two-Month Marvel", "description": "60-day streak! Two whole months of pure dedication.", "icon": "💎", "rarity": "legendary", "criteria": { "stat": "bestStreak", "gte": 60 } },
+    { "id": "comeback-kid", "name": "Comeback Kid", "description": "You tried again and nailed it. That's grit!", "icon": "🌟", "rarity": "rare", "criteria": { "stat": "comebacks", "gte": 1 } },
+    { "id": "daredevil", "name": "Daredevil", "description": "You took on a Hard quiz. So brave!", "icon": "😎", "rarity": "rare", "criteria": { "stat": "hardCompleted", "gte": 1 } },
+    { "id": "brave-heart", "name": "Brave Heart", "description": "10 Hard quizzes — you love a challenge!", "icon": "🦁", "rarity": "epic", "criteria": { "stat": "hardCompleted", "gte": 10 } },
+    { "id": "topic-tamer", "name": "Topic Tamer", "description": "You mastered 3 different topics!", "icon": "🧩", "rarity": "rare", "criteria": { "stat": "topicsMastered", "gte": 3 } },
+    { "id": "topic-master", "name": "Topic Master", "description": "5 topics mastered. A true all-rounder!", "icon": "👑", "rarity": "epic", "criteria": { "stat": "topicsMastered", "gte": 5 } },
+    { "id": "accuracy-ace", "name": "Accuracy Ace", "description": "90%+ correct over 200 problems. Precision!", "icon": "🎖️", "rarity": "epic", "criteria": { "all": [ { "stat": "totalProblems", "gte": 200 }, { "stat": "accuracy", "gte": 0.9 } ] } }
+  ]
+}
