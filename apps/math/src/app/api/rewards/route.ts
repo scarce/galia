@@ -8,6 +8,7 @@ import {
   TICKETS_BY_ID,
   FAMILY_GOALS,
   EMPTY_STATS,
+  evaluateBadges,
   type UserStats,
 } from "@/lib/rewards";
 import {
@@ -82,7 +83,21 @@ export async function GET(request: NextRequest) {
     const badgeRows = await sql`
       SELECT badge_id FROM user_badges WHERE user_id = ${userId}
     `;
-    const earned = new Set(badgeRows.rows.map((r) => r.badge_id as string));
+    const stored = new Set(badgeRows.rows.map((r) => r.badge_id as string));
+    // A badge is earned if it's already recorded OR its criteria are currently
+    // met. The latter covers history that never ran through awardRewards (seeded
+    // data, or criteria added later) — without it the wall shows a full progress
+    // bar but a greyed-out, "locked" badge. Backfill so counts stay consistent.
+    const satisfied = evaluateBadges(stats);
+    for (const id of satisfied) {
+      if (stored.has(id)) continue;
+      await sql`
+        INSERT INTO user_badges (user_id, badge_id)
+        VALUES (${userId}, ${id})
+        ON CONFLICT (user_id, badge_id) DO NOTHING
+      `;
+    }
+    const earned = new Set([...stored, ...satisfied]);
 
     // Shared family deck: who owns each figure (across all girls) + when.
     const collRows = await sql`
