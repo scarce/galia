@@ -168,6 +168,10 @@ function ProfilePage() {
   const [users, setUsers] = useState<UserView[]>([]);
   const [loading, setLoading] = useState(true);
   const [tab, setTab] = useState<TabId>("collectibles");
+  const [selected, setSelected] = useState<CollectibleView | null>(null);
+  // Collectibles default to the current child's own dolls; toggle to the full
+  // shared family album.
+  const [showAllDolls, setShowAllDolls] = useState(false);
 
   const load = useCallback(() => {
     if (!userId) return;
@@ -355,8 +359,49 @@ function ProfilePage() {
           >
             🧸 {data.collectibleSet}
           </SectionTitle>
+          <div className="mb-5 flex gap-2">
+            {(
+              [
+                [false, `🧸 ${user?.name ?? "Mine"}`, myFigures],
+                [true, `🏠 Family`, familyFigures],
+              ] as [boolean, string, number][]
+            ).map(([all, label, count]) => {
+              const active = showAllDolls === all;
+              return (
+                <button
+                  key={label}
+                  onClick={() => setShowAllDolls(all)}
+                  style={active ? { backgroundColor: color } : undefined}
+                  className={`flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-bold transition-all ${
+                    active ? "text-white shadow" : "bg-white text-gray-600 hover:bg-gray-100"
+                  }`}
+                >
+                  {label}
+                  <span
+                    className={`rounded-full px-1.5 text-xs ${active ? "bg-white/25" : "bg-gray-200 text-gray-500"}`}
+                  >
+                    {count}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+          {!showAllDolls && myFigures === 0 ? (
+            <p className="rounded-2xl bg-white p-6 text-center font-semibold text-gray-500">
+              No dolls yet — score well on a quiz to win your first one! 🧸
+              <br />
+              <button
+                onClick={() => setShowAllDolls(true)}
+                className="mt-2 text-sm font-bold underline"
+                style={{ color }}
+              >
+                See the whole family album
+              </button>
+            </p>
+          ) : (
           <div className="grid grid-cols-2 gap-5 sm:grid-cols-3">
             {[...data.collectibles]
+              .filter((c) => showAllDolls || c.ownerId === userId)
               .sort((a, b) => {
                 // Owned first, most-recently collected first; unfound last.
                 if (!!a.earnedAt !== !!b.earnedAt) return a.earnedAt ? -1 : 1;
@@ -372,9 +417,18 @@ function ProfilePage() {
               return (
                 <div
                   key={c.id}
-                  className="overflow-hidden rounded-2xl bg-white shadow-sm transition-transform hover:scale-[1.03]"
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => setSelected(c)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault();
+                      setSelected(c);
+                    }
+                  }}
+                  className="cursor-pointer overflow-hidden rounded-2xl bg-white shadow-sm transition-transform hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
                   style={owned ? { boxShadow: `0 0 0 3px ${ownerColor}` } : undefined}
-                  title={owned ? `${c.girl}'s ${c.name}` : "Not found yet"}
+                  title={owned ? `${c.girl}'s ${c.name} — tap for details` : "Not found yet"}
                 >
                   <div className="relative aspect-square bg-gray-50">
                     {owned ? (
@@ -401,7 +455,10 @@ function ProfilePage() {
                     )}
                     {mine && (
                       <button
-                        onClick={() => saveCollectible(c)}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          saveCollectible(c);
+                        }}
                         aria-label={`Save ${c.name} to photos`}
                         className="absolute bottom-1.5 right-1.5 flex items-center gap-1 rounded-full bg-black/55 px-2.5 py-1.5 text-xs font-bold text-white backdrop-blur transition hover:bg-black/75 active:scale-90"
                       >
@@ -434,6 +491,7 @@ function ProfilePage() {
               );
             })}
           </div>
+          )}
         </section>
         )}
 
@@ -591,6 +649,161 @@ function ProfilePage() {
             <HowItWorks />
           </section>
         )}
+      </div>
+
+      {selected && (
+        <DollDetail
+          c={selected}
+          ownerName={nameOf(selected.ownerId)}
+          isMine={selected.ownerId === userId}
+          onSave={() => saveCollectible(selected)}
+          onClose={() => setSelected(null)}
+        />
+      )}
+    </div>
+  );
+}
+
+// Tap-to-open detail modal for a collectible doll: large art, rarity, owner,
+// and when it was found. Closes on backdrop click or Escape.
+function DollDetail({
+  c,
+  ownerName,
+  isMine,
+  onSave,
+  onClose,
+}: {
+  c: CollectibleView;
+  ownerName: string;
+  isMine: boolean;
+  onSave: () => void;
+  onClose: () => void;
+}) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
+
+  const owned = c.ownerId !== null;
+  const rarity = RARITY_META[c.rarity];
+  const foundOn = c.earnedAt
+    ? new Date(c.earnedAt).toLocaleDateString(undefined, {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+    : null;
+
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label={owned ? `${c.name} details` : "Locked doll"}
+      onClick={onClose}
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm"
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="relative w-full max-w-sm overflow-hidden rounded-3xl bg-white shadow-2xl"
+        style={owned ? { boxShadow: `0 0 0 4px ${rarity.glow}` } : undefined}
+      >
+        <button
+          onClick={onClose}
+          aria-label="Close"
+          className="absolute right-3 top-3 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-black/40 text-lg font-bold text-white backdrop-blur transition hover:bg-black/60 active:scale-90"
+        >
+          ✕
+        </button>
+
+        <div className="relative aspect-square bg-gray-50">
+          {owned ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={c.image}
+              alt={c.name}
+              className="h-full w-full object-cover"
+            />
+          ) : (
+            <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-gray-100">
+              <span className="text-7xl opacity-25 grayscale">{c.icon}</span>
+              <span className="text-sm font-bold text-gray-300">
+                Not found yet
+              </span>
+            </div>
+          )}
+          {owned && (
+            <span
+              className="absolute left-3 top-3 rounded-full px-3 py-1 text-xs font-bold text-white shadow"
+              style={{ backgroundColor: rarity.color }}
+            >
+              {rarity.label}
+            </span>
+          )}
+        </div>
+
+        <div className="p-5">
+          <h3 className="text-2xl font-black capitalize text-gray-800">
+            {owned ? `${c.girl}'s ${c.name}` : "Mystery Doll"}
+          </h3>
+
+          {owned ? (
+            <dl className="mt-4 space-y-2.5 text-sm">
+              <div className="flex items-center justify-between">
+                <dt className="font-semibold text-gray-400">Owner</dt>
+                <dd className="font-bold text-gray-800">
+                  {isMine ? "You" : ownerName}
+                </dd>
+              </div>
+              <div className="flex items-center justify-between">
+                <dt className="font-semibold text-gray-400">Featuring</dt>
+                <dd className="font-bold capitalize text-gray-800">{c.girl}</dd>
+              </div>
+              <div className="flex items-center justify-between">
+                <dt className="font-semibold text-gray-400">Rarity</dt>
+                <dd className="font-bold" style={{ color: rarity.color }}>
+                  {rarity.label}
+                </dd>
+              </div>
+              {foundOn && (
+                <div className="flex items-center justify-between">
+                  <dt className="font-semibold text-gray-400">Found</dt>
+                  <dd className="font-bold text-gray-800">{foundOn}</dd>
+                </div>
+              )}
+            </dl>
+          ) : (
+            <p className="mt-3 text-sm font-semibold text-gray-500">
+              Nobody has found this doll yet. Keep practising — any sister could
+              be the one to unlock it! 🎁
+            </p>
+          )}
+
+          {isMine && (
+            <button
+              onClick={onSave}
+              className="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-gray-900 px-4 py-3 text-sm font-bold text-white transition hover:bg-black active:scale-95"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M12 15V3" />
+                <path d="M8 7l4-4 4 4" />
+                <path d="M4 13v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5" />
+              </svg>
+              Save to Photos
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

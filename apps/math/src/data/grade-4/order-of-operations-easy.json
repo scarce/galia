@@ -8,1800 +8,1050 @@
     {
       "id": 1,
       "question": "What is $3 + 4 \\times 2$?",
-      "answers": [
-        "10",
-        "11",
-        "9",
-        "14"
-      ],
+      "answers": ["10", "11", "9", "14"],
       "correct": 1,
       "hint": "Remember PEMDAS! Which operation should you do first: addition or multiplication?"
     },
     {
       "id": 2,
       "question": "What is $10 - 2 \\times 3$?",
-      "answers": [
-        "8",
-        "6",
-        "4",
-        "24"
-      ],
+      "answers": ["8", "6", "4", "24"],
       "correct": 2,
       "hint": "Multiplication comes before subtraction. What is $2 \\times 3$, and then what happens?"
     },
     {
       "id": 3,
       "question": "What is $(5 + 3) \\times 2$?",
-      "answers": [
-        "13",
-        "11",
-        "16",
-        "10"
-      ],
+      "answers": ["13", "11", "16", "10"],
       "correct": 2,
       "hint": "Parentheses come first! Solve what's inside the parentheses, then multiply."
     },
     {
       "id": 4,
       "question": "What is $12 \\div 4 + 2$?",
-      "answers": [
-        "4",
-        "2",
-        "5",
-        "6"
-      ],
+      "answers": ["4", "2", "5", "6"],
       "correct": 2,
       "hint": "Division before addition. What do you get when you divide first?"
     },
     {
       "id": 5,
       "question": "What is $6 + 8 \\div 2$?",
-      "answers": [
-        "10",
-        "7",
-        "8",
-        "11"
-      ],
+      "answers": ["10", "7", "8", "11"],
       "correct": 0,
       "hint": "Don't go left to right! Which operation has priority here?"
     },
     {
       "id": 6,
       "question": "What is $2 \\times 3 + 4 \\times 5$?",
-      "answers": [
-        "46",
-        "26",
-        "50",
-        "70"
-      ],
+      "answers": ["46", "26", "50", "70"],
       "correct": 1,
       "hint": "Do all multiplications first, then add the results together."
     },
     {
       "id": 7,
       "question": "What is $(10 - 4) \\times 3$?",
-      "answers": [
-        "24",
-        "22",
-        "18",
-        "6"
-      ],
+      "answers": ["24", "22", "18", "6"],
       "correct": 2,
       "hint": "What's inside the parentheses? Solve that first, then multiply."
     },
     {
       "id": 8,
       "question": "What is $20 - 3 \\times 5$?",
-      "answers": [
-        "85",
-        "5",
-        "10",
-        "25"
-      ],
+      "answers": ["85", "5", "10", "25"],
       "correct": 1,
       "hint": "Multiplication before subtraction! Don't subtract first."
     },
     {
       "id": 9,
       "question": "What is $4 + 6 \\div 3$?",
-      "answers": [
-        "8",
-        "6",
-        "3",
-        "2"
-      ],
+      "answers": ["8", "6", "3", "2"],
       "correct": 1,
       "hint": "Division has priority over addition. Divide first, then add."
     },
     {
       "id": 10,
       "question": "What is $(8 + 2) \\div 5$?",
-      "answers": [
-        "4",
-        "3",
-        "6",
-        "2"
-      ],
+      "answers": ["4", "3", "6", "2"],
       "correct": 3,
       "hint": "Parentheses first! Add what's inside, then divide by 5."
     },
     {
       "id": 11,
       "question": "What is $15 - 10 \\div 2$?",
-      "answers": [
-        "10",
-        "12",
-        "2",
-        "5"
-      ],
+      "answers": ["10", "12", "2", "5"],
       "correct": 0,
       "hint": "Don't subtract first! Division comes before subtraction."
     },
     {
       "id": 12,
       "question": "What is $3 \\times (4 + 2)$?",
-      "answers": [
-        "18",
-        "24",
-        "14",
-        "10"
-      ],
+      "answers": ["18", "24", "14", "10"],
       "correct": 0,
       "hint": "Solve the parentheses first. What is $4 + 2$? Then multiply by 3."
     },
     {
       "id": 13,
       "question": "What is $24 \\div 6 \\times 2$?",
-      "answers": [
-        "2",
-        "12",
-        "8",
-        "6"
-      ],
+      "answers": ["2", "12", "8", "6"],
       "correct": 2,
       "hint": "Same priority, so go left to right. Divide first, then multiply."
     },
     {
       "id": 14,
       "question": "What is $5 + 3 \\times 2 - 1$?",
-      "answers": [
-        "15",
-        "10",
-        "14",
-        "12"
-      ],
+      "answers": ["15", "10", "14", "12"],
       "correct": 1,
       "hint": "Multiply first! Then do the addition and subtraction from left to right."
     },
     {
       "id": 15,
       "question": "What is $(12 - 8) + 6$?",
-      "answers": [
-        "10",
-        "4",
-        "16",
-        "2"
-      ],
+      "answers": ["10", "4", "16", "2"],
       "correct": 0,
       "hint": "Parentheses first! What is $12 - 8$? Then add 6."
     },
     {
       "id": 16,
       "question": "What is $8 \\times 2 \\div 4$?",
-      "answers": [
-        "4",
-        "16",
-        "1",
-        "6"
-      ],
+      "answers": ["4", "16", "1", "6"],
       "correct": 0,
       "hint": "Same level operations, so work left to right. Multiply, then divide."
     },
     {
       "id": 17,
       "question": "What is $9 + 6 \\div 3 - 2$?",
-      "answers": [
-        "3",
-        "7",
-        "11",
-        "9"
-      ],
+      "answers": ["3", "7", "11", "9"],
       "correct": 3,
       "hint": "Division first! Then add and subtract from left to right."
     },
     {
       "id": 18,
       "question": "What is $(5 \\times 2) + (3 \\times 4)$?",
-      "answers": [
-        "22",
-        "50",
-        "19",
-        "34"
-      ],
+      "answers": ["22", "50", "19", "34"],
       "correct": 0,
       "hint": "Solve each parentheses first, then add the two results."
     },
     {
       "id": 19,
       "question": "What is $100 \\div 10 \\div 2$?",
-      "answers": [
-        "50",
-        "20",
-        "5",
-        "10"
-      ],
+      "answers": ["50", "20", "5", "10"],
       "correct": 2,
       "hint": "Same level, go left to right. Don't do $10 \\div 2$ first!"
     },
     {
       "id": 20,
       "question": "What is $7 + 3 \\times (2 + 1)$?",
-      "answers": [
-        "24",
-        "12",
-        "30",
-        "16"
-      ],
+      "answers": ["24", "12", "30", "16"],
       "correct": 3,
       "hint": "Parentheses first, then multiplication, then addition."
     },
     {
       "id": 21,
       "question": "What is $18 - 12 \\div 3$?",
-      "answers": [
-        "6",
-        "2",
-        "14",
-        "10"
-      ],
+      "answers": ["6", "2", "14", "10"],
       "correct": 2,
       "hint": "Division before subtraction. What is $12 \\div 3$?"
     },
     {
       "id": 22,
       "question": "What is $2 + 2 \\times 2 + 2$?",
-      "answers": [
-        "16",
-        "8",
-        "12",
-        "10"
-      ],
+      "answers": ["16", "8", "12", "10"],
       "correct": 1,
       "hint": "Only the middle multiplication happens first. Then add the rest."
     },
     {
       "id": 23,
       "question": "What is $(15 - 5) \\div 2$?",
-      "answers": [
-        "7",
-        "10",
-        "3",
-        "5"
-      ],
+      "answers": ["7", "10", "3", "5"],
       "correct": 3,
       "hint": "Parentheses first! What is $15 - 5$? Then divide."
     },
     {
       "id": 24,
       "question": "What is $4 \\times 5 - 3 \\times 2$?",
-      "answers": [
-        "26",
-        "14",
-        "8",
-        "34"
-      ],
+      "answers": ["26", "14", "8", "34"],
       "correct": 1,
       "hint": "Do both multiplications first, then subtract."
     },
     {
       "id": 25,
       "question": "What is $36 \\div (6 - 3)$?",
-      "answers": [
-        "9",
-        "12",
-        "15",
-        "6"
-      ],
+      "answers": ["9", "12", "15", "6"],
       "correct": 1,
       "hint": "Parentheses first! What is $6 - 3$? Then divide 36 by that."
     },
     {
       "id": 26,
       "question": "What is $8 - 4 + 2$?",
-      "answers": [
-        "4",
-        "6",
-        "2",
-        "10"
-      ],
+      "answers": ["4", "6", "2", "10"],
       "correct": 1,
       "hint": "Same level operations. Go left to right: subtract, then add."
     },
     {
       "id": 27,
       "question": "What is $5 \\times (8 - 3)$?",
-      "answers": [
-        "37",
-        "40",
-        "20",
-        "25"
-      ],
+      "answers": ["37", "40", "20", "25"],
       "correct": 3,
       "hint": "Parentheses first! What is $8 - 3$? Then multiply by 5."
     },
     {
       "id": 28,
       "question": "What is $16 \\div 4 + 12 \\div 3$?",
-      "answers": [
-        "2",
-        "8",
-        "10",
-        "6"
-      ],
+      "answers": ["2", "8", "10", "6"],
       "correct": 1,
       "hint": "Do both divisions first, then add the results."
     },
     {
       "id": 29,
       "question": "What is $(3 + 7) \\times (2 + 3)$?",
-      "answers": [
-        "50",
-        "25",
-        "30",
-        "75"
-      ],
+      "answers": ["50", "25", "30", "75"],
       "correct": 0,
       "hint": "Solve both parentheses first, then multiply the results."
     },
     {
       "id": 30,
       "question": "What is $30 - 5 \\times 4$?",
-      "answers": [
-        "100",
-        "20",
-        "50",
-        "10"
-      ],
+      "answers": ["100", "20", "50", "10"],
       "correct": 3,
       "hint": "Multiplication before subtraction! What is $5 \\times 4$?"
     },
     {
       "id": 31,
       "question": "What is $6 \\times 6 \\div 9$?",
-      "answers": [
-        "4",
-        "3",
-        "9",
-        "6"
-      ],
+      "answers": ["4", "3", "9", "6"],
       "correct": 0,
       "hint": "Same level, go left to right. Multiply first, then divide."
     },
     {
       "id": 32,
       "question": "What is $1 + 2 \\times 3 + 4$?",
-      "answers": [
-        "11",
-        "13",
-        "15",
-        "21"
-      ],
+      "answers": ["11", "13", "15", "21"],
       "correct": 0,
       "hint": "Only the multiplication happens first. Then add all the numbers."
     },
     {
       "id": 33,
       "question": "What is $(20 + 4) \\div 6$?",
-      "answers": [
-        "6",
-        "12",
-        "8",
-        "4"
-      ],
+      "answers": ["6", "12", "8", "4"],
       "correct": 3,
       "hint": "Add inside the parentheses first, then divide."
     },
     {
       "id": 34,
       "question": "What is $10 - 2 + 8 \\div 2$?",
-      "answers": [
-        "6",
-        "12",
-        "10",
-        "8"
-      ],
+      "answers": ["6", "12", "10", "8"],
       "correct": 1,
       "hint": "Division first! Then add and subtract from left to right."
     },
     {
       "id": 35,
       "question": "What is $3 \\times 3 \\times 3$?",
-      "answers": [
-        "18",
-        "9",
-        "27",
-        "12"
-      ],
+      "answers": ["18", "9", "27", "12"],
       "correct": 2,
       "hint": "Multiply left to right. $3 \\times 3 = 9$, then $9 \\times$ what?"
     },
     {
       "id": 36,
       "question": "What is $40 \\div (4 + 4)$?",
-      "answers": [
-        "5",
-        "10",
-        "8",
-        "6"
-      ],
+      "answers": ["5", "10", "8", "6"],
       "correct": 0,
       "hint": "Parentheses first! What is $4 + 4$? Then divide 40 by that."
     },
     {
       "id": 37,
       "question": "What is $7 \\times 2 - 3 \\times 3$?",
-      "answers": [
-        "12",
-        "5",
-        "15",
-        "3"
-      ],
+      "answers": ["12", "5", "15", "3"],
       "correct": 1,
       "hint": "Do both multiplications first, then subtract."
     },
     {
       "id": 38,
       "question": "What is $25 - 15 + 10$?",
-      "answers": [
-        "30",
-        "20",
-        "0",
-        "10"
-      ],
+      "answers": ["30", "20", "0", "10"],
       "correct": 1,
       "hint": "Same level, go left to right. Subtract first, then add."
     },
     {
       "id": 39,
       "question": "What is $(6 \\times 4) \\div (2 \\times 3)$?",
-      "answers": [
-        "6",
-        "4",
-        "2",
-        "8"
-      ],
+      "answers": ["6", "4", "2", "8"],
       "correct": 1,
       "hint": "Solve both parentheses first, then divide."
     },
     {
       "id": 40,
       "question": "What is $50 - 10 \\times 3 + 5$?",
-      "answers": [
-        "35",
-        "25",
-        "125",
-        "15"
-      ],
+      "answers": ["35", "25", "125", "15"],
       "correct": 1,
       "hint": "Multiplication first! Then do subtraction and addition left to right."
     },
     {
       "id": 41,
       "question": "What is $5 + 5 \\times 5$?",
-      "answers": [
-        "50",
-        "35",
-        "30",
-        "25"
-      ],
+      "answers": ["50", "35", "30", "25"],
       "correct": 2,
       "hint": "Multiplication before addition! What is $5 \\times 5$?"
     },
     {
       "id": 42,
       "question": "What is $(9 - 3) \\times 4$?",
-      "answers": [
-        "24",
-        "33",
-        "21",
-        "28"
-      ],
+      "answers": ["24", "33", "21", "28"],
       "correct": 0,
       "hint": "Parentheses first! Subtract inside, then multiply by 4."
     },
     {
       "id": 43,
       "question": "What is $14 \\div 7 + 3$?",
-      "answers": [
-        "2",
-        "7",
-        "5",
-        "4"
-      ],
+      "answers": ["2", "7", "5", "4"],
       "correct": 2,
       "hint": "Division comes before addition. Divide first, then add."
     },
     {
       "id": 44,
       "question": "What is $8 + 4 \\times 3 - 2$?",
-      "answers": [
-        "34",
-        "18",
-        "22",
-        "16"
-      ],
+      "answers": ["34", "18", "22", "16"],
       "correct": 1,
       "hint": "Multiply first! Then add and subtract from left to right."
     },
     {
       "id": 45,
       "question": "What is $(7 + 5) \\div 4$?",
-      "answers": [
-        "4",
-        "2",
-        "3",
-        "6"
-      ],
+      "answers": ["4", "2", "3", "6"],
       "correct": 2,
       "hint": "Add inside the parentheses first, then divide."
     },
     {
       "id": 46,
       "question": "What is $6 \\times 3 - 10$?",
-      "answers": [
-        "8",
-        "18",
-        "-12",
-        "6"
-      ],
+      "answers": ["8", "18", "-12", "6"],
       "correct": 0,
       "hint": "Multiplication before subtraction! What is $6 \\times 3$?"
     },
     {
       "id": 47,
       "question": "What is $20 \\div 4 \\times 3$?",
-      "answers": [
-        "12",
-        "15",
-        "5",
-        "18"
-      ],
-      "correct": 0,
+      "answers": ["12", "15", "5", "18"],
+      "correct": 1,
       "hint": "Same priority, go left to right. Divide first, then multiply."
     },
     {
       "id": 48,
       "question": "What is $9 - 3 + 6$?",
-      "answers": [
-        "0",
-        "18",
-        "12",
-        "6"
-      ],
+      "answers": ["0", "18", "12", "6"],
       "correct": 2,
       "hint": "Same level operations. Go left to right: subtract, then add."
     },
     {
       "id": 49,
       "question": "What is $2 \\times (10 - 5)$?",
-      "answers": [
-        "15",
-        "10",
-        "20",
-        "8"
-      ],
+      "answers": ["15", "10", "20", "8"],
       "correct": 1,
       "hint": "Parentheses first! What is $10 - 5$? Then multiply by 2."
     },
     {
       "id": 50,
       "question": "What is $45 \\div 9 + 6$?",
-      "answers": [
-        "15",
-        "11",
-        "5",
-        "9"
-      ],
+      "answers": ["15", "11", "5", "9"],
       "correct": 1,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 51,
       "question": "What is $3 + 6 \\times 2 - 4$?",
-      "answers": [
-        "14",
-        "11",
-        "17",
-        "8"
-      ],
+      "answers": ["14", "11", "17", "8"],
       "correct": 1,
       "hint": "Multiply first! Then add and subtract from left to right."
     },
     {
       "id": 52,
       "question": "What is $(4 + 8) \\div 3$?",
-      "answers": [
-        "6",
-        "4",
-        "8",
-        "5"
-      ],
+      "answers": ["6", "4", "8", "5"],
       "correct": 1,
       "hint": "Add inside the parentheses first, then divide."
     },
     {
       "id": 53,
       "question": "What is $7 \\times 4 - 8$?",
-      "answers": [
-        "36",
-        "24",
-        "20",
-        "16"
-      ],
+      "answers": ["36", "24", "20", "16"],
       "correct": 2,
       "hint": "Multiplication before subtraction! What is $7 \\times 4$?"
     },
     {
       "id": 54,
       "question": "What is $32 \\div 8 \\div 2$?",
-      "answers": [
-        "2",
-        "8",
-        "4",
-        "16"
-      ],
+      "answers": ["2", "8", "4", "16"],
       "correct": 0,
       "hint": "Same level, go left to right. Divide step by step."
     },
     {
       "id": 55,
       "question": "What is $12 - 6 + 3$?",
-      "answers": [
-        "3",
-        "9",
-        "15",
-        "6"
-      ],
+      "answers": ["3", "9", "15", "6"],
       "correct": 1,
       "hint": "Same level operations. Go left to right: subtract, then add."
     },
     {
       "id": 56,
       "question": "What is $4 \\times (3 + 5)$?",
-      "answers": [
-        "17",
-        "35",
-        "32",
-        "27"
-      ],
+      "answers": ["17", "35", "32", "27"],
       "correct": 2,
       "hint": "Parentheses first! Add inside, then multiply by 4."
     },
     {
       "id": 57,
       "question": "What is $27 \\div 3 + 1$?",
-      "answers": [
-        "10",
-        "9",
-        "8",
-        "7"
-      ],
+      "answers": ["10", "9", "8", "7"],
       "correct": 0,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 58,
       "question": "What is $5 \\times 3 + 2 \\times 4$?",
-      "answers": [
-        "23",
-        "68",
-        "31",
-        "76"
-      ],
+      "answers": ["23", "68", "31", "76"],
       "correct": 0,
       "hint": "Do both multiplications first, then add the results."
     },
     {
       "id": 59,
       "question": "What is $(16 - 4) \\div 3$?",
-      "answers": [
-        "6",
-        "12",
-        "3",
-        "4"
-      ],
+      "answers": ["6", "12", "3", "4"],
       "correct": 3,
       "hint": "Parentheses first! Subtract inside, then divide."
     },
     {
       "id": 60,
       "question": "What is $18 - 9 \\div 3$?",
-      "answers": [
-        "3",
-        "15",
-        "12",
-        "6"
-      ],
+      "answers": ["3", "15", "12", "6"],
       "correct": 1,
       "hint": "Division before subtraction! What is $9 \\div 3$?"
     },
     {
       "id": 61,
       "question": "What is $4 + 8 \\div 4$?",
-      "answers": [
-        "3",
-        "4",
-        "6",
-        "8"
-      ],
+      "answers": ["3", "4", "6", "8"],
       "correct": 2,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 62,
       "question": "What is $(5 + 7) \\times 3$?",
-      "answers": [
-        "26",
-        "32",
-        "36",
-        "40"
-      ],
+      "answers": ["26", "32", "36", "40"],
       "correct": 2,
       "hint": "Parentheses first! Add inside, then multiply by 3."
     },
     {
       "id": 63,
       "question": "What is $15 - 5 \\times 2$?",
-      "answers": [
-        "5",
-        "20",
-        "10",
-        "15"
-      ],
+      "answers": ["5", "20", "10", "15"],
       "correct": 0,
       "hint": "Multiplication before subtraction! What is $5 \\times 2$?"
     },
     {
       "id": 64,
       "question": "What is $36 \\div 6 + 2$?",
-      "answers": [
-        "4",
-        "6",
-        "10",
-        "8"
-      ],
+      "answers": ["4", "6", "10", "8"],
       "correct": 3,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 65,
       "question": "What is $2 \\times 6 - 4$?",
-      "answers": [
-        "4",
-        "8",
-        "12",
-        "16"
-      ],
+      "answers": ["4", "8", "12", "16"],
       "correct": 1,
       "hint": "Multiplication before subtraction! What is $2 \\times 6$?"
     },
     {
       "id": 66,
       "question": "What is $(9 + 6) \\div 5$?",
-      "answers": [
-        "5",
-        "3",
-        "4",
-        "6"
-      ],
+      "answers": ["5", "3", "4", "6"],
       "correct": 1,
       "hint": "Parentheses first! Add inside, then divide."
     },
     {
       "id": 67,
       "question": "What is $24 \\div 4 + 5$?",
-      "answers": [
-        "11",
-        "8",
-        "7",
-        "10"
-      ],
+      "answers": ["11", "8", "7", "10"],
       "correct": 0,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 68,
       "question": "What is $10 + 2 \\times 6$?",
-      "answers": [
-        "22",
-        "72",
-        "32",
-        "18"
-      ],
+      "answers": ["22", "72", "32", "18"],
       "correct": 0,
       "hint": "Multiplication before addition! What is $2 \\times 6$?"
     },
     {
       "id": 69,
       "question": "What is $14 - 7 + 5$?",
-      "answers": [
-        "2",
-        "12",
-        "16",
-        "7"
-      ],
+      "answers": ["2", "12", "16", "7"],
       "correct": 1,
       "hint": "Same level operations. Go left to right: subtract, then add."
     },
     {
       "id": 70,
       "question": "What is $(8 - 2) \\times 5$?",
-      "answers": [
-        "38",
-        "35",
-        "30",
-        "25"
-      ],
+      "answers": ["38", "35", "30", "25"],
       "correct": 2,
       "hint": "Parentheses first! Subtract inside, then multiply by 5."
     },
     {
       "id": 71,
       "question": "What is $42 \\div 7 - 3$?",
-      "answers": [
-        "3",
-        "9",
-        "6",
-        "5"
-      ],
+      "answers": ["3", "9", "6", "5"],
       "correct": 0,
       "hint": "Division before subtraction. Divide first, then subtract."
     },
     {
       "id": 72,
       "question": "What is $6 + 3 \\times 4$?",
-      "answers": [
-        "18",
-        "36",
-        "21",
-        "24"
-      ],
+      "answers": ["18", "36", "21", "24"],
       "correct": 0,
       "hint": "Multiplication before addition! What is $3 \\times 4$?"
     },
     {
       "id": 73,
       "question": "What is $(12 + 6) \\div 9$?",
-      "answers": [
-        "2",
-        "3",
-        "4",
-        "6"
-      ],
+      "answers": ["2", "3", "4", "6"],
       "correct": 0,
       "hint": "Parentheses first! Add inside, then divide."
     },
     {
       "id": 74,
       "question": "What is $8 \\times 5 \\div 10$?",
-      "answers": [
-        "4",
-        "8",
-        "2",
-        "5"
-      ],
+      "answers": ["4", "8", "2", "5"],
       "correct": 0,
       "hint": "Same priority, go left to right. Multiply first, then divide."
     },
     {
       "id": 75,
       "question": "What is $20 - 8 + 4$?",
-      "answers": [
-        "8",
-        "24",
-        "16",
-        "12"
-      ],
+      "answers": ["8", "24", "16", "12"],
       "correct": 2,
       "hint": "Same level operations. Go left to right: subtract, then add."
     },
     {
       "id": 76,
       "question": "What is $3 \\times (6 + 2)$?",
-      "answers": [
-        "20",
-        "24",
-        "18",
-        "21"
-      ],
+      "answers": ["20", "24", "18", "21"],
       "correct": 1,
       "hint": "Parentheses first! Add inside, then multiply by 3."
     },
     {
       "id": 77,
       "question": "What is $56 \\div 8 + 3$?",
-      "answers": [
-        "4",
-        "10",
-        "7",
-        "14"
-      ],
+      "answers": ["4", "10", "7", "14"],
       "correct": 1,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 78,
       "question": "What is $4 \\times 4 - 6$?",
-      "answers": [
-        "10",
-        "24",
-        "8",
-        "12"
-      ],
+      "answers": ["10", "24", "8", "12"],
       "correct": 0,
       "hint": "Multiplication before subtraction! What is $4 \\times 4$?"
     },
     {
       "id": 79,
       "question": "What is $(10 + 8) \\div 6$?",
-      "answers": [
-        "6",
-        "4",
-        "2",
-        "3"
-      ],
+      "answers": ["6", "4", "2", "3"],
       "correct": 3,
       "hint": "Parentheses first! Add inside, then divide."
     },
     {
       "id": 80,
       "question": "What is $21 \\div 3 + 8$?",
-      "answers": [
-        "15",
-        "7",
-        "11",
-        "17"
-      ],
+      "answers": ["15", "7", "11", "17"],
       "correct": 0,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 81,
       "question": "What is $9 + 2 \\times 5$?",
-      "answers": [
-        "55",
-        "15",
-        "19",
-        "25"
-      ],
+      "answers": ["55", "15", "19", "25"],
       "correct": 2,
       "hint": "Multiplication before addition! What is $2 \\times 5$?"
     },
     {
       "id": 82,
       "question": "What is $(14 - 6) \\times 2$?",
-      "answers": [
-        "22",
-        "16",
-        "12",
-        "14"
-      ],
+      "answers": ["22", "16", "12", "14"],
       "correct": 1,
       "hint": "Parentheses first! Subtract inside, then multiply by 2."
     },
     {
       "id": 83,
       "question": "What is $30 \\div 6 + 4$?",
-      "answers": [
-        "5",
-        "2",
-        "9",
-        "7"
-      ],
+      "answers": ["5", "2", "9", "7"],
       "correct": 2,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 84,
       "question": "What is $5 \\times 6 - 12$?",
-      "answers": [
-        "42",
-        "18",
-        "24",
-        "36"
-      ],
+      "answers": ["42", "18", "24", "36"],
       "correct": 1,
       "hint": "Multiplication before subtraction! What is $5 \\times 6$?"
     },
     {
       "id": 85,
       "question": "What is $16 - 8 + 6$?",
-      "answers": [
-        "2",
-        "22",
-        "14",
-        "10"
-      ],
+      "answers": ["2", "22", "14", "10"],
       "correct": 2,
       "hint": "Same level operations. Go left to right: subtract, then add."
     },
     {
       "id": 86,
       "question": "What is $(4 + 5) \\times 4$?",
-      "answers": [
-        "21",
-        "32",
-        "36",
-        "24"
-      ],
+      "answers": ["21", "32", "36", "24"],
       "correct": 2,
       "hint": "Parentheses first! Add inside, then multiply by 4."
     },
     {
       "id": 87,
       "question": "What is $48 \\div 8 - 2$?",
-      "answers": [
-        "8",
-        "4",
-        "6",
-        "2"
-      ],
+      "answers": ["8", "4", "6", "2"],
       "correct": 1,
       "hint": "Division before subtraction. Divide first, then subtract."
     },
     {
       "id": 88,
       "question": "What is $7 + 4 \\times 2$?",
-      "answers": [
-        "22",
-        "15",
-        "18",
-        "14"
-      ],
+      "answers": ["22", "15", "18", "14"],
       "correct": 1,
       "hint": "Multiplication before addition! What is $4 \\times 2$?"
     },
     {
       "id": 89,
       "question": "What is $(18 - 6) \\div 4$?",
-      "answers": [
-        "4",
-        "6",
-        "3",
-        "2"
-      ],
+      "answers": ["4", "6", "3", "2"],
       "correct": 2,
       "hint": "Parentheses first! Subtract inside, then divide."
     },
     {
       "id": 90,
       "question": "What is $6 \\times 7 \\div 6$?",
-      "answers": [
-        "6",
-        "1",
-        "7",
-        "42"
-      ],
+      "answers": ["6", "1", "7", "42"],
       "correct": 2,
       "hint": "Same priority, go left to right. Multiply first, then divide."
     },
     {
       "id": 91,
       "question": "What is $11 + 3 \\times 3$?",
-      "answers": [
-        "42",
-        "20",
-        "17",
-        "23"
-      ],
+      "answers": ["42", "20", "17", "23"],
       "correct": 1,
       "hint": "Multiplication before addition! What is $3 \\times 3$?"
     },
     {
       "id": 92,
       "question": "What is $(7 + 8) \\div 5$?",
-      "answers": [
-        "5",
-        "4",
-        "3",
-        "6"
-      ],
+      "answers": ["5", "4", "3", "6"],
       "correct": 2,
       "hint": "Parentheses first! Add inside, then divide."
     },
     {
       "id": 93,
       "question": "What is $40 \\div 5 + 6$?",
-      "answers": [
-        "2",
-        "14",
-        "8",
-        "12"
-      ],
+      "answers": ["2", "14", "8", "12"],
       "correct": 1,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 94,
       "question": "What is $3 \\times 8 - 10$?",
-      "answers": [
-        "14",
-        "34",
-        "6",
-        "18"
-      ],
+      "answers": ["14", "34", "6", "18"],
       "correct": 0,
       "hint": "Multiplication before subtraction! What is $3 \\times 8$?"
     },
     {
       "id": 95,
       "question": "What is $22 - 10 + 5$?",
-      "answers": [
-        "7",
-        "27",
-        "17",
-        "12"
-      ],
+      "answers": ["7", "27", "17", "12"],
       "correct": 2,
       "hint": "Same level operations. Go left to right: subtract, then add."
     },
     {
       "id": 96,
       "question": "What is $(6 + 9) \\times 2$?",
-      "answers": [
-        "24",
-        "30",
-        "21",
-        "27"
-      ],
+      "answers": ["24", "30", "21", "27"],
       "correct": 1,
       "hint": "Parentheses first! Add inside, then multiply by 2."
     },
     {
       "id": 97,
       "question": "What is $63 \\div 9 + 5$?",
-      "answers": [
-        "12",
-        "7",
-        "14",
-        "9"
-      ],
+      "answers": ["12", "7", "14", "9"],
       "correct": 0,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 98,
       "question": "What is $9 \\times 3 - 15$?",
-      "answers": [
-        "27",
-        "12",
-        "18",
-        "21"
-      ],
+      "answers": ["27", "12", "18", "21"],
       "correct": 1,
       "hint": "Multiplication before subtraction! What is $9 \\times 3$?"
     },
     {
       "id": 99,
       "question": "What is $(11 - 5) \\times 6$?",
-      "answers": [
-        "36",
-        "66",
-        "30",
-        "42"
-      ],
+      "answers": ["36", "66", "30", "42"],
       "correct": 0,
       "hint": "Parentheses first! Subtract inside, then multiply by 6."
     },
     {
       "id": 100,
       "question": "What is $5 \\times 4 \\div 2$?",
-      "answers": [
-        "8",
-        "10",
-        "5",
-        "12"
-      ],
+      "answers": ["8", "10", "5", "12"],
       "correct": 1,
       "hint": "Same priority, go left to right. Multiply first, then divide."
     },
     {
       "id": 101,
       "question": "What is $12 + 6 \\div 2$?",
-      "answers": [
-        "9",
-        "15",
-        "18",
-        "6"
-      ],
+      "answers": ["9", "15", "18", "6"],
       "correct": 1,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 102,
       "question": "What is $(8 + 4) \\times 5$?",
-      "answers": [
-        "60",
-        "28",
-        "52",
-        "44"
-      ],
+      "answers": ["60", "28", "52", "44"],
       "correct": 0,
       "hint": "Parentheses first! Add inside, then multiply by 5."
     },
     {
       "id": 103,
       "question": "What is $25 - 3 \\times 6$?",
-      "answers": [
-        "132",
-        "7",
-        "13",
-        "22"
-      ],
+      "answers": ["132", "7", "13", "22"],
       "correct": 1,
       "hint": "Multiplication before subtraction! What is $3 \\times 6$?"
     },
     {
       "id": 104,
       "question": "What is $54 \\div 9 + 8$?",
-      "answers": [
-        "6",
-        "12",
-        "14",
-        "10"
-      ],
+      "answers": ["6", "12", "14", "10"],
       "correct": 2,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 105,
       "question": "What is $4 + 5 \\times 3$?",
-      "answers": [
-        "27",
-        "17",
-        "19",
-        "22"
-      ],
+      "answers": ["27", "17", "19", "22"],
       "correct": 2,
       "hint": "Multiplication before addition! What is $5 \\times 3$?"
     },
     {
       "id": 106,
       "question": "What is $(15 - 9) \\times 4$?",
-      "answers": [
-        "24",
-        "51",
-        "36",
-        "20"
-      ],
+      "answers": ["24", "51", "36", "20"],
       "correct": 0,
       "hint": "Parentheses first! Subtract inside, then multiply by 4."
     },
     {
       "id": 107,
       "question": "What is $28 \\div 7 - 1$?",
-      "answers": [
-        "4",
-        "3",
-        "5",
-        "2"
-      ],
+      "answers": ["4", "3", "5", "2"],
       "correct": 1,
       "hint": "Division before subtraction. Divide first, then subtract."
     },
     {
       "id": 108,
       "question": "What is $8 + 7 \\times 2$?",
-      "answers": [
-        "30",
-        "18",
-        "22",
-        "26"
-      ],
+      "answers": ["30", "18", "22", "26"],
       "correct": 2,
       "hint": "Multiplication before addition! What is $7 \\times 2$?"
     },
     {
       "id": 109,
       "question": "What is $(6 + 6) \\div 4$?",
-      "answers": [
-        "4",
-        "2",
-        "3",
-        "6"
-      ],
+      "answers": ["4", "2", "3", "6"],
       "correct": 2,
       "hint": "Parentheses first! Add inside, then divide."
     },
     {
       "id": 110,
       "question": "What is $9 \\times 2 \\div 3$?",
-      "answers": [
-        "3",
-        "6",
-        "12",
-        "9"
-      ],
+      "answers": ["3", "6", "12", "9"],
       "correct": 1,
       "hint": "Same priority, go left to right. Multiply first, then divide."
     },
     {
       "id": 111,
       "question": "What is $18 - 6 + 4$?",
-      "answers": [
-        "8",
-        "28",
-        "16",
-        "12"
-      ],
+      "answers": ["8", "28", "16", "12"],
       "correct": 2,
       "hint": "Same level operations. Go left to right: subtract, then add."
     },
     {
       "id": 112,
       "question": "What is $(5 + 4) \\times 6$?",
-      "answers": [
-        "29",
-        "48",
-        "54",
-        "45"
-      ],
+      "answers": ["29", "48", "54", "45"],
       "correct": 2,
       "hint": "Parentheses first! Add inside, then multiply by 6."
     },
     {
       "id": 113,
       "question": "What is $35 \\div 5 + 4$?",
-      "answers": [
-        "3",
-        "11",
-        "7",
-        "9"
-      ],
+      "answers": ["3", "11", "7", "9"],
       "correct": 1,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 114,
       "question": "What is $6 \\times 4 - 9$?",
-      "answers": [
-        "33",
-        "15",
-        "21",
-        "18"
-      ],
+      "answers": ["33", "15", "21", "18"],
       "correct": 1,
       "hint": "Multiplication before subtraction! What is $6 \\times 4$?"
     },
     {
       "id": 115,
       "question": "What is $(20 - 8) \\div 3$?",
-      "answers": [
-        "4",
-        "6",
-        "8",
-        "3"
-      ],
+      "answers": ["4", "6", "8", "3"],
       "correct": 0,
       "hint": "Parentheses first! Subtract inside, then divide."
     },
     {
       "id": 116,
       "question": "What is $13 + 2 \\times 4$?",
-      "answers": [
-        "60",
-        "19",
-        "21",
-        "25"
-      ],
+      "answers": ["60", "19", "21", "25"],
       "correct": 2,
       "hint": "Multiplication before addition! What is $2 \\times 4$?"
     },
     {
       "id": 117,
       "question": "What is $72 \\div 8 - 4$?",
-      "answers": [
-        "5",
-        "12",
-        "6",
-        "4"
-      ],
+      "answers": ["5", "12", "6", "4"],
       "correct": 0,
       "hint": "Division before subtraction. Divide first, then subtract."
     },
     {
       "id": 118,
       "question": "What is $(7 + 2) \\times 8$?",
-      "answers": [
-        "23",
-        "64",
-        "72",
-        "56"
-      ],
+      "answers": ["23", "64", "72", "56"],
       "correct": 2,
       "hint": "Parentheses first! Add inside, then multiply by 8."
     },
     {
       "id": 119,
       "question": "What is $4 \\times 9 \\div 6$?",
-      "answers": [
-        "6",
-        "8",
-        "4",
-        "3"
-      ],
+      "answers": ["6", "8", "4", "3"],
       "correct": 0,
       "hint": "Same priority, go left to right. Multiply first, then divide."
     },
     {
       "id": 120,
       "question": "What is $24 - 12 + 8$?",
-      "answers": [
-        "4",
-        "20",
-        "28",
-        "16"
-      ],
+      "answers": ["4", "20", "28", "16"],
       "correct": 1,
       "hint": "Same level operations. Go left to right: subtract, then add."
     },
     {
       "id": 121,
       "question": "What is $6 + 9 \\div 3$?",
-      "answers": [
-        "5",
-        "9",
-        "12",
-        "15"
-      ],
+      "answers": ["5", "9", "12", "15"],
       "correct": 1,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 122,
       "question": "What is $(10 + 2) \\times 4$?",
-      "answers": [
-        "18",
-        "44",
-        "48",
-        "42"
-      ],
+      "answers": ["18", "44", "48", "42"],
       "correct": 2,
       "hint": "Parentheses first! Add inside, then multiply by 4."
     },
     {
       "id": 123,
       "question": "What is $28 - 4 \\times 5$?",
-      "answers": [
-        "120",
-        "8",
-        "18",
-        "12"
-      ],
+      "answers": ["120", "8", "18", "12"],
       "correct": 1,
       "hint": "Multiplication before subtraction! What is $4 \\times 5$?"
     },
     {
       "id": 124,
       "question": "What is $49 \\div 7 + 6$?",
-      "answers": [
-        "13",
-        "1",
-        "7",
-        "10"
-      ],
+      "answers": ["13", "1", "7", "10"],
       "correct": 0,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 125,
       "question": "What is $3 + 8 \\times 2$?",
-      "answers": [
-        "22",
-        "14",
-        "19",
-        "16"
-      ],
+      "answers": ["22", "14", "19", "16"],
       "correct": 2,
       "hint": "Multiplication before addition! What is $8 \\times 2$?"
     },
     {
       "id": 126,
       "question": "What is $(13 - 7) \\times 5$?",
-      "answers": [
-        "30",
-        "58",
-        "35",
-        "25"
-      ],
+      "answers": ["30", "58", "35", "25"],
       "correct": 0,
       "hint": "Parentheses first! Subtract inside, then multiply by 5."
     },
     {
       "id": 127,
       "question": "What is $60 \\div 10 + 2$?",
-      "answers": [
-        "8",
-        "3",
-        "5",
-        "10"
-      ],
+      "answers": ["8", "3", "5", "10"],
       "correct": 0,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 128,
       "question": "What is $5 \\times 7 - 20$?",
-      "answers": [
-        "55",
-        "15",
-        "25",
-        "10"
-      ],
+      "answers": ["55", "15", "25", "10"],
       "correct": 1,
       "hint": "Multiplication before subtraction! What is $5 \\times 7$?"
     },
     {
       "id": 129,
       "question": "What is $(9 + 3) \\div 6$?",
-      "answers": [
-        "4",
-        "6",
-        "2",
-        "3"
-      ],
+      "answers": ["4", "6", "2", "3"],
       "correct": 2,
       "hint": "Parentheses first! Add inside, then divide."
     },
     {
       "id": 130,
       "question": "What is $8 \\times 3 \\div 4$?",
-      "answers": [
-        "2",
-        "8",
-        "6",
-        "12"
-      ],
+      "answers": ["2", "8", "6", "12"],
       "correct": 2,
       "hint": "Same priority, go left to right. Multiply first, then divide."
     },
     {
       "id": 131,
       "question": "What is $15 - 9 + 7$?",
-      "answers": [
-        "-1",
-        "13",
-        "11",
-        "21"
-      ],
+      "answers": ["-1", "13", "11", "21"],
       "correct": 1,
       "hint": "Same level operations. Go left to right: subtract, then add."
     },
     {
       "id": 132,
       "question": "What is $(8 + 6) \\times 3$?",
-      "answers": [
-        "26",
-        "42",
-        "36",
-        "48"
-      ],
+      "answers": ["26", "42", "36", "48"],
       "correct": 1,
       "hint": "Parentheses first! Add inside, then multiply by 3."
     },
     {
       "id": 133,
       "question": "What is $44 \\div 4 + 3$?",
-      "answers": [
-        "14",
-        "11",
-        "8",
-        "17"
-      ],
+      "answers": ["14", "11", "8", "17"],
       "correct": 0,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 134,
       "question": "What is $7 \\times 6 - 18$?",
-      "answers": [
-        "24",
-        "60",
-        "30",
-        "36"
-      ],
+      "answers": ["24", "60", "30", "36"],
       "correct": 0,
       "hint": "Multiplication before subtraction! What is $7 \\times 6$?"
     },
     {
       "id": 135,
       "question": "What is $(16 - 10) \\times 7$?",
-      "answers": [
-        "42",
-        "102",
-        "35",
-        "49"
-      ],
+      "answers": ["42", "102", "35", "49"],
       "correct": 0,
       "hint": "Parentheses first! Subtract inside, then multiply by 7."
     },
     {
       "id": 136,
       "question": "What is $9 + 4 \\times 5$?",
-      "answers": [
-        "65",
-        "25",
-        "29",
-        "34"
-      ],
+      "answers": ["65", "25", "29", "34"],
       "correct": 2,
       "hint": "Multiplication before addition! What is $4 \\times 5$?"
     },
     {
       "id": 137,
       "question": "What is $81 \\div 9 - 5$?",
-      "answers": [
-        "14",
-        "9",
-        "4",
-        "6"
-      ],
+      "answers": ["14", "9", "4", "6"],
       "correct": 2,
       "hint": "Division before subtraction. Divide first, then subtract."
     },
     {
       "id": 138,
       "question": "What is $(4 + 10) \\div 7$?",
-      "answers": [
-        "4",
-        "7",
-        "2",
-        "3"
-      ],
+      "answers": ["4", "7", "2", "3"],
       "correct": 2,
       "hint": "Parentheses first! Add inside, then divide."
     },
     {
       "id": 139,
       "question": "What is $6 \\times 5 \\div 10$?",
-      "answers": [
-        "3",
-        "6",
-        "5",
-        "12"
-      ],
+      "answers": ["3", "6", "5", "12"],
       "correct": 0,
       "hint": "Same priority, go left to right. Multiply first, then divide."
     },
     {
       "id": 140,
       "question": "What is $30 - 15 + 9$?",
-      "answers": [
-        "6",
-        "24",
-        "36",
-        "18"
-      ],
+      "answers": ["6", "24", "36", "18"],
       "correct": 1,
       "hint": "Same level operations. Go left to right: subtract, then add."
     },
     {
       "id": 141,
       "question": "What is $8 + 12 \\div 4$?",
-      "answers": [
-        "5",
-        "11",
-        "14",
-        "20"
-      ],
+      "answers": ["5", "11", "14", "20"],
       "correct": 1,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 142,
       "question": "What is $(9 + 5) \\times 4$?",
-      "answers": [
-        "29",
-        "52",
-        "56",
-        "48"
-      ],
+      "answers": ["29", "52", "56", "48"],
       "correct": 2,
       "hint": "Parentheses first! Add inside, then multiply by 4."
     },
     {
       "id": 143,
       "question": "What is $33 - 3 \\times 8$?",
-      "answers": [
-        "9",
-        "240",
-        "57",
-        "15"
-      ],
+      "answers": ["9", "240", "57", "15"],
       "correct": 0,
       "hint": "Multiplication before subtraction! What is $3 \\times 8$?"
     },
     {
       "id": 144,
       "question": "What is $64 \\div 8 + 5$?",
-      "answers": [
-        "8",
-        "16",
-        "13",
-        "11"
-      ],
+      "answers": ["8", "16", "13", "11"],
       "correct": 2,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 145,
       "question": "What is $2 + 9 \\times 3$?",
-      "answers": [
-        "33",
-        "29",
-        "23",
-        "35"
-      ],
+      "answers": ["33", "29", "23", "35"],
       "correct": 1,
       "hint": "Multiplication before addition! What is $9 \\times 3$?"
     },
     {
       "id": 146,
       "question": "What is $(12 - 4) \\times 6$?",
-      "answers": [
-        "68",
-        "48",
-        "42",
-        "54"
-      ],
+      "answers": ["68", "48", "42", "54"],
       "correct": 1,
       "hint": "Parentheses first! Subtract inside, then multiply by 6."
     },
     {
       "id": 147,
       "question": "What is $45 \\div 5 + 7$?",
-      "answers": [
-        "16",
-        "9",
-        "12",
-        "21"
-      ],
+      "answers": ["16", "9", "12", "21"],
       "correct": 0,
       "hint": "Division before addition. Divide first, then add."
     },
     {
       "id": 148,
       "question": "What is $8 \\times 4 - 14$?",
-      "answers": [
-        "46",
-        "18",
-        "26",
-        "22"
-      ],
+      "answers": ["46", "18", "26", "22"],
       "correct": 1,
       "hint": "Multiplication before subtraction! What is $8 \\times 4$?"
     },
     {
       "id": 149,
       "question": "What is $(7 + 11) \\div 9$?",
-      "answers": [
-        "3",
-        "9",
-        "2",
-        "6"
-      ],
+      "answers": ["3", "9", "2", "6"],
       "correct": 2,
       "hint": "Parentheses first! Add inside, then divide."
     },
     {
       "id": 150,
       "question": "What is $10 \\times 3 \\div 5$?",
-      "answers": [
-        "15",
-        "2",
-        "6",
-        "30"
-      ],
+      "answers": ["15", "2", "6", "30"],
       "correct": 2,
       "hint": "Same priority, go left to right. Multiply first, then divide."
     }
