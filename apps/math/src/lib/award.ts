@@ -224,17 +224,33 @@ async function notifyParent(
   userName: string,
   tickets: EarnedTicket[],
   familyGoals: EarnedFamilyGoal[],
+  collectible: EarnedCollectible | null,
+  badges: EarnedBadge[],
 ) {
   const to = process.env.NOTIFICATION_EMAIL;
   if (!to || !process.env.RESEND_API_KEY) return;
-  if (tickets.length === 0 && familyGoals.length === 0) return;
+  if (
+    tickets.length === 0 &&
+    familyGoals.length === 0 &&
+    !collectible &&
+    badges.length === 0
+  )
+    return;
 
   const lines: string[] = [];
+  if (collectible) {
+    lines.push(
+      `🧸 ${userName} collected a new figure: ${collectible.icon} ${collectible.name} (${collectible.rarity})`,
+    );
+  }
+  for (const b of badges) {
+    lines.push(`🏅 ${userName} earned a badge: ${b.icon} ${b.name} — ${b.description}`);
+  }
   for (const t of tickets) {
     lines.push(`🎫 ${userName} won a Golden Ticket: ${t.icon} ${t.name} — ${t.description}`);
   }
   for (const g of familyGoals) {
-    lines.push(`👨‍👩‍👧‍👧 Family goal complete: ${g.icon} ${g.name} → ${g.reward}`);
+    lines.push(`👨‍👧‍👧‍👧‍👩 Family goal complete: ${g.icon} ${g.name} → ${g.reward}`);
   }
 
   try {
@@ -391,7 +407,7 @@ export async function awardRewards(opts: {
     const familyGoals = await checkFamilyGoals();
 
     // --- Notify parent of real-world rewards ---
-    await notifyParent(opts.userName, tickets, familyGoals);
+    await notifyParent(opts.userName, tickets, familyGoals, collectible, newBadges);
 
     return { badges: newBadges, collectible, tickets, familyGoals, pointsEarned };
   } catch (err) {

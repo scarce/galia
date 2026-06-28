@@ -307,6 +307,19 @@ describe("streaks — weekend-forgiving with make-up", () => {
     const r = computeStreaks([MON, TUE, WED, SAT, SUN, NEXT_MON], NEXT_MON);
     expect(r.best).toBe(8); // both Thu and Fri forgiven
   });
+
+  it("a trailing inactive weekend is not a streak on its own", () => {
+    // Last activity was Monday; "today" is the following Sunday with no recent
+    // practice. Free weekend days must not manufacture a streak out of nothing.
+    const r = computeStreaks([MON], SUN);
+    expect(r.current).toBe(0);
+  });
+
+  it("an inactive weekend still shows no streak even with older activity", () => {
+    // Active only on Mon/Tue, then nothing; today is Sunday (a free weekend).
+    const r = computeStreaks([MON, TUE], SUN);
+    expect(r.current).toBe(0);
+  });
 });
 
 describe("summer scenario (high-level shape)", () => {

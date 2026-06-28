@@ -209,7 +209,7 @@ export interface CollectibleDef {
   rarity: Rarity;
 }
 
-export const COLLECTIBLE_SET = "Action Figures 2026";
+export const COLLECTIBLE_SET = "Dolls 2026";
 
 export const COLLECTIBLES: CollectibleDef[] = [
   // Common
@@ -538,16 +538,32 @@ export function computeStreaks(
   const covered = (t: number) => !uncovered.has(t);
 
   // Best run of consecutive covered calendar days within [start, today].
+  // A run that contains no actual activity (e.g. a lone free weekend) is not a
+  // streak, so it only counts once it includes at least one active day.
   let best = 0;
   let run = 0;
+  let runActive = false;
   for (let t = startMs; t <= todayMs; t += DAY_MS) {
-    if (covered(t)) best = Math.max(best, ++run);
-    else run = 0;
+    if (covered(t)) {
+      run++;
+      if (set.has(fmtDay(t))) runActive = true;
+      if (runActive) best = Math.max(best, run);
+    } else {
+      run = 0;
+      runActive = false;
+    }
   }
 
-  // Current run = trailing covered days ending today.
+  // Current run = trailing covered days ending today. Free weekend days keep an
+  // existing streak alive, but a trailing run made up ONLY of inactive days
+  // (e.g. today is the weekend and there was no recent activity) is not a streak.
   let current = 0;
-  for (let t = todayMs; t >= startMs && covered(t); t -= DAY_MS) current++;
+  let currentActive = false;
+  for (let t = todayMs; t >= startMs && covered(t); t -= DAY_MS) {
+    current++;
+    if (set.has(fmtDay(t))) currentActive = true;
+  }
+  if (!currentActive) current = 0;
 
   return { current, best };
 }

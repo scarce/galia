@@ -105,7 +105,7 @@ function HowItWorks() {
       body: "Super rare! Get a perfect score for a chance to win one, or unlock one with a legendary badge. Trade them with your grown-ups for treats like movie night, staying up late, or a giant hug.",
     },
     {
-      icon: "👨‍👩‍👧‍👧",
+      icon: "👨‍👧‍👧‍👧‍👩",
       title: "Team up with your sisters",
       body: "Some goals are for the whole family. When you all practise together you unlock big family rewards — like a pizza night!",
     },
@@ -213,7 +213,7 @@ function ProfilePage() {
         await nav.share({
           files: [file],
           title: c.name,
-          text: `${c.name} — Action Figures 2026`,
+          text: `${c.name} — Dolls 2026`,
         });
         return;
       }
@@ -302,19 +302,11 @@ function ProfilePage() {
                 🔥 {data.stats.currentStreak}-day streak
               </span>
               <span className="rounded-full bg-white/20 px-3 py-1.5">
-                🧸 {myFigures} figures
-              </span>
-              <span className="rounded-full bg-white/20 px-3 py-1.5">
-                🏅 {earnedBadges}/{data.badges.length}
-              </span>
-              <span className="rounded-full bg-white/20 px-3 py-1.5">
                 🎫 {unredeemedTickets}
               </span>
-              {data.dollars > 0 && (
-                <span className="rounded-full bg-white/30 px-3 py-1.5">
-                  💰 ${data.dollars.toFixed(0)} earned
-                </span>
-              )}
+              <span className="rounded-full bg-white/30 px-3 py-1.5">
+                💰 ${data.dollars.toFixed(2)} earned
+              </span>
             </div>
           </div>
         </div>
@@ -325,11 +317,11 @@ function ProfilePage() {
         <nav className="sticky top-3 z-20 mx-auto mb-8 flex w-fit max-w-full flex-wrap justify-center gap-1 rounded-full bg-white/80 p-1.5 shadow-md backdrop-blur">
           {(
             [
-              ["collectibles", `🧸 Collectibles`, familyFigures],
-              ["tickets", `🎫 Golden Tickets`, data.tickets.length],
+              ["collectibles", `🧸 Figures`, familyFigures],
+              ["tickets", `🎫 Tickets`, data.tickets.length],
               ["badges", `🏅 Badges`, earnedBadges],
-              ["family", `👨‍👩‍👧‍👧 Family Goals`, null],
-              ["how", `❓ How it works`, null],
+              ["family", `👨‍👧‍👧‍👧‍👩 Family`, null],
+              ["how", `❓ Rules`, null],
             ] as [TabId, string, number | null][]
           ).map(([id, label, count]) => {
             const active = tab === id;
@@ -338,7 +330,7 @@ function ProfilePage() {
                 key={id}
                 onClick={() => setTab(id)}
                 style={active ? { backgroundColor: color } : undefined}
-                className={`flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-bold transition-all ${
+                className={`flex items-center gap-1 rounded-full px-3 py-2 text-xs font-bold transition-all sm:gap-1.5 sm:px-4 sm:text-sm ${
                   active ? "text-white shadow" : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
@@ -359,7 +351,7 @@ function ProfilePage() {
         {tab === "collectibles" && (
         <section>
           <SectionTitle
-            sub={`${familyFigures}/${data.deckSize} found by the family · ${myFigures} in your collection`}
+            sub={`${familyFigures}/${data.deckSize} found by the sisters · ${myFigures} in your collection`}
           >
             🧸 {data.collectibleSet}
           </SectionTitle>
@@ -554,7 +546,7 @@ function ProfilePage() {
         {/* Family goals */}
         {tab === "family" && (
         <section>
-          <SectionTitle>👨‍👩‍👧‍👧 Family Goals</SectionTitle>
+          <SectionTitle>👨‍👧‍👧‍👧‍👩 Family Goals</SectionTitle>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             {data.familyGoals.map((g) => (
               <div
@@ -595,7 +587,7 @@ function ProfilePage() {
         {/* How it works (ELI5) */}
         {tab === "how" && (
           <section>
-            <SectionTitle>❓ How it all works</SectionTitle>
+            <SectionTitle>❓ The Rules</SectionTitle>
             <HowItWorks />
           </section>
         )}
