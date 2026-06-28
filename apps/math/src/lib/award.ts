@@ -40,7 +40,7 @@ const EMPTY: EarnedRewards = {
   pointsEarned: 0,
 };
 
-async function ensureTables() {
+export async function ensureTables() {
   await sql`CREATE TABLE IF NOT EXISTS user_badges (
     id SERIAL PRIMARY KEY,
     user_id VARCHAR(10) NOT NULL,

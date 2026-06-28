@@ -232,12 +232,22 @@ function ProfilePage() {
     load();
   };
 
-  if (loading || !data) {
+  if (loading || !data || !Array.isArray(data.badges)) {
     return (
       <div className="flex min-h-screen items-center justify-center">
         <div className="text-center">
           <div className="mb-4 text-6xl">👤</div>
-          <p className="text-xl text-gray-600">Loading profile...</p>
+          <p className="text-xl text-gray-600">
+            {loading || !data ? "Loading profile..." : "Couldn't load profile."}
+          </p>
+          {!loading && data && !Array.isArray(data.badges) && (
+            <button
+              onClick={() => router.push(`/?user=${userId}`)}
+              className="mt-4 rounded-full bg-indigo-600 px-6 py-2 text-sm font-semibold text-white"
+            >
+              ← Back
+            </button>
+          )}
         </div>
       </div>
     );

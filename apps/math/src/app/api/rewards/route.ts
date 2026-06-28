@@ -10,7 +10,57 @@ import {
   EMPTY_STATS,
   type UserStats,
 } from "@/lib/rewards";
-import { computeStats, getFamilyMetrics, getPoints } from "@/lib/award";
+import {
+  computeStats,
+  getFamilyMetrics,
+  getPoints,
+  ensureTables,
+} from "@/lib/award";
+
+const buildBadges = (stats: UserStats, earned: Set<string>) =>
+  BADGES.map((b) => ({
+    id: b.id,
+    name: b.name,
+    description: b.description,
+    icon: b.icon,
+    rarity: b.rarity,
+    earned: earned.has(b.id),
+    progress: b.progress ? b.progress(stats) : null,
+  }));
+
+// A fully-locked, zeroed trophy room — used for no-DB (local) and as a safe
+// fallback when a DB read fails, so the client never crashes.
+function emptyPayload() {
+  return {
+    stats: EMPTY_STATS,
+    points: 0,
+    dollars: 0,
+    badges: buildBadges(EMPTY_STATS, new Set()),
+    collectibles: FIGURES.map((f) => ({
+      id: f.id,
+      name: f.name,
+      icon: f.icon,
+      rarity: f.rarity,
+      girl: f.girl,
+      image: f.image,
+      ownerId: null as string | null,
+      earnedAt: null as string | null,
+    })),
+    deckSize: FAMILY_DECK_SIZE,
+    collectibleSet: COLLECTIBLE_SET,
+    tickets: [] as unknown[],
+    familyGoals: FAMILY_GOALS.map((g) => ({
+      id: g.id,
+      name: g.name,
+      description: g.description,
+      icon: g.icon,
+      reward: g.reward,
+      target: g.target,
+      current: 0,
+      completed: false,
+    })),
+  };
+}
 
 // Everything the trophy room needs for one user: stats, badge wall (earned +
 // locked with progress), collection album, won tickets, and family goals.
@@ -20,51 +70,12 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: "Missing user" }, { status: 400 });
   }
 
-  const buildBadges = (stats: UserStats, earned: Set<string>) =>
-    BADGES.map((b) => ({
-      id: b.id,
-      name: b.name,
-      description: b.description,
-      icon: b.icon,
-      rarity: b.rarity,
-      earned: earned.has(b.id),
-      progress: b.progress ? b.progress(stats) : null,
-    }));
-
-  // No DB (e.g. local dev): return a fully-locked, zeroed trophy room.
   if (!process.env.POSTGRES_URL) {
-    return NextResponse.json({
-      stats: EMPTY_STATS,
-      points: 0,
-      dollars: 0,
-      badges: buildBadges(EMPTY_STATS, new Set()),
-      collectibles: FIGURES.map((f) => ({
-        id: f.id,
-        name: f.name,
-        icon: f.icon,
-        rarity: f.rarity,
-        girl: f.girl,
-        image: f.image,
-        ownerId: null,
-        earnedAt: null,
-      })),
-      deckSize: FAMILY_DECK_SIZE,
-      collectibleSet: COLLECTIBLE_SET,
-      tickets: [],
-      familyGoals: FAMILY_GOALS.map((g) => ({
-        id: g.id,
-        name: g.name,
-        description: g.description,
-        icon: g.icon,
-        reward: g.reward,
-        target: g.target,
-        current: 0,
-        completed: false,
-      })),
-    });
+    return NextResponse.json(emptyPayload());
   }
 
   try {
+    await ensureTables(); // create reward tables on first read if missing
     const stats = await computeStats(userId);
     const { points, dollars } = await getPoints(userId);
 
@@ -142,7 +153,9 @@ export async function GET(request: NextRequest) {
       })),
     });
   } catch (error) {
+    // Never 500 the client (it would crash the profile). Degrade to an empty
+    // trophy room; a schema migration may be needed (see migrations/).
     console.error("Rewards read error:", error);
-    return NextResponse.json({ error: "Failed to load rewards" }, { status: 500 });
+    return NextResponse.json(emptyPayload());
   }
 }
