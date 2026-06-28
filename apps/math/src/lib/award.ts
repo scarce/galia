@@ -250,7 +250,7 @@ async function notifyParent(
     lines.push(`🎫 ${userName} won a Golden Ticket: ${t.icon} ${t.name} — ${t.description}`);
   }
   for (const g of familyGoals) {
-    lines.push(`👨‍👧‍👧‍👧‍👩 Family goal complete: ${g.icon} ${g.name} → ${g.reward}`);
+    lines.push(`🏠 Family goal complete: ${g.icon} ${g.name} → ${g.reward}`);
   }
 
   try {

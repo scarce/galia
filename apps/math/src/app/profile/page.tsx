@@ -105,7 +105,7 @@ function HowItWorks() {
       body: "Super rare! Get a perfect score for a chance to win one, or unlock one with a legendary badge. Trade them with your grown-ups for treats like movie night, staying up late, or a giant hug.",
     },
     {
-      icon: "👨‍👧‍👧‍👧‍👩",
+      icon: "🏠",
       title: "Team up with your sisters",
       body: "Some goals are for the whole family. When you all practise together you unlock big family rewards — like a pizza night!",
     },
@@ -314,13 +314,13 @@ function ProfilePage() {
 
       <div className="mx-auto -mt-6 max-w-6xl rounded-t-3xl bg-[#f0f4ff] p-6 md:p-10">
         {/* Section pill menu */}
-        <nav className="sticky top-3 z-20 mx-auto mb-8 flex w-fit max-w-full flex-wrap justify-center gap-1 rounded-full bg-white/80 p-1.5 shadow-md backdrop-blur">
+        <nav className="sticky top-3 z-20 mx-auto mb-8 flex w-fit max-w-full flex-nowrap justify-center gap-1 overflow-x-auto rounded-full bg-white/80 p-1.5 shadow-md backdrop-blur">
           {(
             [
-              ["collectibles", `🧸 Figures`, familyFigures],
+              ["collectibles", `🧸 Dolls`, familyFigures],
               ["tickets", `🎫 Tickets`, data.tickets.length],
               ["badges", `🏅 Badges`, earnedBadges],
-              ["family", `👨‍👧‍👧‍👧‍👩 Family`, null],
+              ["family", `🏠 Family`, null],
               ["how", `❓ Rules`, null],
             ] as [TabId, string, number | null][]
           ).map(([id, label, count]) => {
@@ -330,7 +330,7 @@ function ProfilePage() {
                 key={id}
                 onClick={() => setTab(id)}
                 style={active ? { backgroundColor: color } : undefined}
-                className={`flex items-center gap-1 rounded-full px-3 py-2 text-xs font-bold transition-all sm:gap-1.5 sm:px-4 sm:text-sm ${
+                className={`flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full px-3 py-2 text-xs font-bold transition-all sm:gap-1.5 sm:px-4 sm:text-sm ${
                   active ? "text-white shadow" : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
@@ -546,7 +546,7 @@ function ProfilePage() {
         {/* Family goals */}
         {tab === "family" && (
         <section>
-          <SectionTitle>👨‍👧‍👧‍👧‍👩 Family Goals</SectionTitle>
+          <SectionTitle>🏠 Family Goals</SectionTitle>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             {data.familyGoals.map((g) => (
               <div
