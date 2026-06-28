@@ -27,6 +27,7 @@ const GRADE_THEMES: Record<number, string[]> = {
   2: [
     "addition",
     "subtraction",
+    "multiplication",
     "number-lines",
     "counting-large-numbers",
     "time-and-calendar",
@@ -63,6 +64,13 @@ const themes: Theme[] = [
     name: "Subtraction",
     description: "Practice taking away - from basic subtraction to borrowing",
     icon: "➖",
+  },
+  {
+    id: "multiplication",
+    name: "Multiplication",
+    description:
+      "Times tables — from the 1s, 2s, 5s and 10s up to the full table",
+    icon: "✖️",
   },
   {
     id: "order-of-operations",
