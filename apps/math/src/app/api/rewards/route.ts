@@ -84,11 +84,14 @@ export async function GET(request: NextRequest) {
       SELECT badge_id FROM user_badges WHERE user_id = ${userId}
     `;
     const stored = new Set(badgeRows.rows.map((r) => r.badge_id as string));
-    // A badge is earned if it's already recorded OR its criteria are currently
-    // met. The latter covers history that never ran through awardRewards (seeded
-    // data, or criteria added later) — without it the wall shows a full progress
-    // bar but a greyed-out, "locked" badge. Backfill so counts stay consistent.
-    const satisfied = evaluateBadges(stats);
+    // Reconcile user_badges with the season-scoped truth. `stats` already counts
+    // only this season's activity, so the badges the child actually qualifies for
+    // are exactly evaluateBadges(stats). We INSERT any newly-earned ones (covers
+    // seeded history that never ran awardRewards) and DELETE any stale rows that
+    // no longer hold — e.g. badges left over from all-time stats before the
+    // season window existed. Every badge criterion is monotonic within a season,
+    // so this never churns a legitimately-earned badge.
+    const satisfied = new Set(evaluateBadges(stats));
     for (const id of satisfied) {
       if (stored.has(id)) continue;
       await sql`
@@ -97,7 +100,13 @@ export async function GET(request: NextRequest) {
         ON CONFLICT (user_id, badge_id) DO NOTHING
       `;
     }
-    const earned = new Set([...stored, ...satisfied]);
+    for (const id of stored) {
+      if (satisfied.has(id)) continue;
+      await sql`
+        DELETE FROM user_badges WHERE user_id = ${userId} AND badge_id = ${id}
+      `;
+    }
+    const earned = satisfied;
 
     // Shared family deck: who owns each figure (across all girls) + when.
     const collRows = await sql`

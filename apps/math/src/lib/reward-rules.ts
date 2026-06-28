@@ -1,4 +1,5 @@
-// Tunable reward-engine rules, loaded from `reward-rules.json` at the app root.
+// Tunable reward-engine rules, loaded from `incentive-program-2026-summer.json`
+// at the app root.
 //
 // Edit that JSON to change behaviour without touching code. In `next dev` the
 // change hot-reloads; in production it ships with the build (redeploy to apply).
@@ -23,7 +24,7 @@
 // tickets.dailyCap          : max tickets a child can win per calendar day.
 // badges.enabled            : master switch for mastery badges.
 
-import rawRules from "../../reward-rules.json";
+import rawRules from "../../incentive-program-2026-summer.json";
 import type { Rarity } from "./rewards";
 
 export interface LevelPoints {
@@ -57,6 +58,11 @@ export interface RewardRules {
   // cumulative score (never spent) — collectibles unlock at thresholds AND the
   // full total converts to dollars.
   redemption: { enabled: boolean; dollarsPerPoint: number };
+  // The reward program window. ALL reward stats (sessions, streaks, badges,
+  // points…) only count quiz activity within [start, end] inclusive, so practice
+  // from before the program — or after it ends — never inflates the trophy room.
+  // Dates are YYYY-MM-DD (server local date). `name` is shown in the UI.
+  season: { name: string; start: string; end: string };
 }
 
 export const DEFAULT_RULES: RewardRules = {
@@ -83,6 +89,7 @@ export const DEFAULT_RULES: RewardRules = {
   },
   badges: { enabled: true },
   redemption: { enabled: true, dollarsPerPoint: 0.76 },
+  season: { name: "Summer 2026", start: "2026-06-01", end: "2026-09-10" },
 };
 
 // Shallow-merge one level deep (enough for this config shape).

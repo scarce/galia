@@ -92,7 +92,7 @@ function HowItWorks() {
     {
       icon: "💰",
       title: "Points become real money",
-      body: `At the end of summer, your points turn into real dollars — each point is worth about $${rate.toFixed(2)}. The harder you work, the more you save up!`,
+      body: `At the end of ${RULES.season.name}, your points turn into real dollars — each point is worth about $${rate.toFixed(2)}. The harder you work, the more you save up!`,
     },
     {
       icon: "🏅",
@@ -294,7 +294,7 @@ function ProfilePage() {
             </h1>
             {user && (
               <p className="text-sm font-semibold text-white/80">
-                Grade {user.grade}
+                Grade {user.grade} · 🏆 {RULES.season.name}
               </p>
             )}
             <div className="mt-3 flex flex-wrap gap-2 text-xs font-bold">

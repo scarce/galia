@@ -40,6 +40,14 @@ const EMPTY: EarnedRewards = {
   pointsEarned: 0,
 };
 
+// The reward program window (configured in incentive-program-2026-summer.json).
+// Every reward query
+// below counts only quiz activity in [start, end] inclusive, so practice from
+// before the season — or after it ends — never inflates stats, streaks, badges or
+// points. The end is inclusive via the exclusive next-day bound `< end::date + 1`.
+const SEASON_START = RULES.season.start;
+const SEASON_END = RULES.season.end;
+
 export async function ensureTables() {
   await sql`CREATE TABLE IF NOT EXISTS user_badges (
     id SERIAL PRIMARY KEY,
@@ -99,6 +107,8 @@ async function sessionsSinceLastCollectible(userId: string): Promise<number> {
   const cnt = await sql`
     SELECT COUNT(*)::int AS n FROM quiz_results
     WHERE user_id = ${userId} AND completed_at > ${m}
+      AND completed_at >= ${SEASON_START}::date
+      AND completed_at < (${SEASON_END}::date + 1)
   `;
   return cnt.rows[0].n as number;
 }
@@ -114,15 +124,21 @@ export async function computeStats(userId: string): Promise<UserStats> {
       COUNT(*) FILTER (WHERE round > 1 AND score = total_questions AND is_test_mode = false)::int AS comebacks
     FROM quiz_results
     WHERE user_id = ${userId}
+      AND completed_at >= ${SEASON_START}::date
+      AND completed_at < (${SEASON_END}::date + 1)
   `;
   const topics = await sql`
     SELECT COUNT(DISTINCT theme_name)::int AS n
     FROM quiz_results
     WHERE user_id = ${userId} AND is_test_mode = false AND score = total_questions
+      AND completed_at >= ${SEASON_START}::date
+      AND completed_at < (${SEASON_END}::date + 1)
   `;
   const dateRows = await sql`
     SELECT DISTINCT to_char(completed_at, 'YYYY-MM-DD') AS d
     FROM quiz_results WHERE user_id = ${userId}
+      AND completed_at >= ${SEASON_START}::date
+      AND completed_at < (${SEASON_END}::date + 1)
   `;
   const todayRow = await sql`SELECT to_char(NOW(), 'YYYY-MM-DD') AS today`;
   const today = todayRow.rows[0].today as string;
@@ -149,7 +165,10 @@ export async function getFamilyMetrics(): Promise<Record<string, number>> {
   const collectibleSum = await sql`SELECT COUNT(*)::int AS n FROM user_collectibles`;
   const pairs = await sql`
     SELECT user_id, to_char(completed_at, 'YYYY-MM-DD') AS d
-    FROM quiz_results GROUP BY user_id, to_char(completed_at, 'YYYY-MM-DD')
+    FROM quiz_results
+    WHERE completed_at >= ${SEASON_START}::date
+      AND completed_at < (${SEASON_END}::date + 1)
+    GROUP BY user_id, to_char(completed_at, 'YYYY-MM-DD')
   `;
   const todayRow = await sql`SELECT to_char(NOW(), 'YYYY-MM-DD') AS today`;
   const today = todayRow.rows[0].today as string;
@@ -176,7 +195,10 @@ async function checkFamilyGoals(): Promise<EarnedFamilyGoal[]> {
   const collectibleSum = await sql`SELECT COUNT(*)::int AS n FROM user_collectibles`;
   const pairs = await sql`
     SELECT user_id, to_char(completed_at, 'YYYY-MM-DD') AS d
-    FROM quiz_results GROUP BY user_id, to_char(completed_at, 'YYYY-MM-DD')
+    FROM quiz_results
+    WHERE completed_at >= ${SEASON_START}::date
+      AND completed_at < (${SEASON_END}::date + 1)
+    GROUP BY user_id, to_char(completed_at, 'YYYY-MM-DD')
   `;
   const todayRow = await sql`SELECT to_char(NOW(), 'YYYY-MM-DD') AS today`;
   const today = todayRow.rows[0].today as string;

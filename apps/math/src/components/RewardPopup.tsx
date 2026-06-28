@@ -123,7 +123,7 @@ export default function RewardPopup({
             <div className="mx-auto mt-3 inline-flex items-center gap-2 rounded-full bg-amber-100 px-4 py-2 text-amber-700">
               <span className="font-party text-2xl">+{rewards.pointsEarned}</span>
               <span className="text-sm font-bold">
-                points · ≈ ${dollars.toFixed(2)} for summer 💰
+                points · ≈ ${dollars.toFixed(2)} for {RULES.season.name} 💰
               </span>
             </div>
           )}

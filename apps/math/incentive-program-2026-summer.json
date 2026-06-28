@@ -36,5 +36,10 @@
   "redemption": {
     "enabled": true,
     "dollarsPerPoint": 0.76
+  },
+  "season": {
+    "name": "Summer 2026",
+    "start": "2026-06-01",
+    "end": "2026-09-10"
   }
 }
