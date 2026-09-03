@@ -15,7 +15,6 @@ export default function UserSelector({
 }: UserSelectorProps) {
   return (
     <div className="flex flex-col items-center gap-6">
-      <h2 className="text-2xl font-bold text-gray-700">Who&apos;s playing?</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {users.map((user) => (
           <button

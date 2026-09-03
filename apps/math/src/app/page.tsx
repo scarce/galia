@@ -172,12 +172,19 @@ const levels = [
 ];
 
 type Mode = "training" | "test";
+type AppId = "math" | "therapy";
+
+const APPS: { id: AppId; name: string; icon: string; description: string }[] = [
+  { id: "math", name: "Math", icon: "🧮", description: "Practice and earn rewards" },
+  { id: "therapy", name: "Therapy", icon: "🧘", description: "Mindfulness & reflection" },
+];
 
 export default function Home() {
   const router = useRouter();
   const [unlocked, setUnlocked] = useState<boolean | null>(null);
   const [users, setUsers] = useState<User[]>([]);
   const [selectedUser, setSelectedUser] = useState<User | null>(null);
+  const [selectedApp, setSelectedApp] = useState<AppId | null>(null);
   const [selectedMode, setSelectedMode] = useState<Mode>("training");
   // Set once the user picks what to play; opens the difficulty chooser.
   const [pendingTheme, setPendingTheme] = useState<Theme | null>(null);
@@ -260,7 +267,11 @@ export default function Home() {
   };
 
   const handleBack = () => {
-    setSelectedUser(null);
+    if (selectedApp) {
+      setSelectedApp(null);
+    } else {
+      setSelectedUser(null);
+    }
     setSelectedMode("training");
     closeDifficulty();
   };
@@ -282,39 +293,69 @@ export default function Home() {
     return <PasscodeScreen onUnlock={() => setUnlocked(true)} />;
   }
 
-  // Two steps now: pick a profile, then the home hub (streak + difficulty +
-  // topics/test). Difficulty is an inline panel, not a separate screen.
-  const step = !selectedUser ? "user" : "home";
-  const isHome = step === "home" && !!selectedUser;
+  // Three steps: pick a profile, pick an app, then the app hub.
+  const step = !selectedUser ? "user" : !selectedApp ? "app" : "home";
+  const isHome = step === "home" && !!selectedUser && !!selectedApp;
 
   return (
     <div className="flex min-h-screen flex-col p-6 pt-10 md:p-10">
       {/* Top bar: branding on the left, streak calendar on the right.
           Full-bleed indigo bar spanning the whole page width. */}
       <header
-        className={`-mx-6 -mt-10 mb-10 flex flex-col gap-6 bg-[#4F39F6] px-6 pt-10 pb-8 md:-mx-10 md:-mt-10 md:px-10 ${
+        className={`relative -mx-6 -mt-10 mb-10 flex flex-col gap-6 overflow-hidden bg-[#4F39F6] px-6 pt-10 pb-8 md:-mx-10 md:-mt-10 md:px-10 ${
           isHome
             ? "lg:flex-row lg:items-center lg:justify-between"
             : "items-center text-center"
         }`}
       >
-        <div className={isHome ? "text-center lg:text-left" : "text-center"}>
+        {/* Decorative clouds drifting behind the header content */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
+          <svg
+            className="absolute inset-0 h-full w-full"
+            viewBox="0 0 800 240"
+            preserveAspectRatio="xMidYMid slice"
+            fill="none"
+          >
+            <g fill="#ffffff">
+              <g opacity="0.14">
+                <ellipse cx="120" cy="60" rx="70" ry="30" />
+                <ellipse cx="180" cy="70" rx="55" ry="26" />
+                <ellipse cx="70" cy="78" rx="45" ry="22" />
+              </g>
+              <g opacity="0.10">
+                <ellipse cx="640" cy="50" rx="80" ry="34" />
+                <ellipse cx="710" cy="62" rx="60" ry="28" />
+                <ellipse cx="580" cy="66" rx="48" ry="24" />
+              </g>
+              <g opacity="0.12">
+                <ellipse cx="420" cy="190" rx="90" ry="36" />
+                <ellipse cx="500" cy="200" rx="65" ry="30" />
+                <ellipse cx="350" cy="204" rx="55" ry="26" />
+              </g>
+              <g opacity="0.08">
+                <ellipse cx="760" cy="180" rx="60" ry="26" />
+                <ellipse cx="30" cy="180" rx="55" ry="24" />
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <div className={`relative ${isHome ? "text-center lg:text-left" : "text-center"}`}>
           <h1 className="mb-2 text-5xl font-extrabold text-white md:text-6xl">
-            galia/math
+            galia
           </h1>
-          <p className="text-lg text-indigo-100 md:text-xl">
-            {step === "user" && "Select your profile to begin"}
-            {isHome &&
-              selectedMode === "training" &&
-              "Pick a topic and keep your rings closed"}
-            {isHome &&
-              selectedMode === "test" &&
-              "Ready for a mixed test?"}
-          </p>
+          {isHome && (
+            <p className="text-lg text-indigo-100 md:text-xl">
+              {selectedMode === "training" &&
+                "Pick a topic and keep your rings closed"}
+              {selectedMode === "test" &&
+                "Ready for a mixed test?"}
+            </p>
+          )}
         </div>
 
         {isHome && selectedUser && (
-          <div className="w-full lg:w-auto lg:max-w-sm">
+          <div className="relative w-full lg:w-auto lg:max-w-sm">
             <StreakCalendar userId={selectedUser.id} />
           </div>
         )}
@@ -335,7 +376,7 @@ export default function Home() {
           </button>
         )}
 
-        {selectedUser && (
+        {isHome && selectedUser && (
           <div className="flex items-center gap-2 rounded-full bg-gray-100 p-1">
             <button
               onClick={() => setSelectedMode("training")}
@@ -360,7 +401,7 @@ export default function Home() {
           </div>
         )}
 
-        {selectedUser && (
+        {isHome && selectedUser && (
           <button
             onClick={() => router.push(`/profile?user=${selectedUser.id}`)}
             className="flex items-center gap-2 rounded-full bg-amber-400 px-5 py-2 text-sm font-bold text-amber-950 shadow-sm transition-all hover:scale-105 hover:bg-amber-300 active:scale-95"
@@ -379,6 +420,37 @@ export default function Home() {
             onSelectUser={setSelectedUser}
           />
         </div>
+      )}
+
+      {/* App selection */}
+      {step === "app" && selectedUser && (
+        <main className="mx-auto flex w-full max-w-4xl flex-col gap-8">
+          <div className="grid gap-6 sm:grid-cols-2">
+            {APPS.map((app) => (
+              <button
+                key={app.id}
+                onClick={() => {
+                  if (app.id === "therapy") {
+                    router.push(`/therapy?user=${selectedUser.id}`);
+                  } else {
+                    setSelectedApp(app.id);
+                  }
+                }}
+                className="flex flex-col items-center gap-4 rounded-3xl bg-white p-8 shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-xl active:scale-95"
+              >
+                <span className="text-6xl">{app.icon}</span>
+                <div className="text-center">
+                  <h2 className="text-2xl font-bold text-gray-800">
+                    {app.name}
+                  </h2>
+                  <p className="mt-2 text-sm text-gray-500">
+                    {app.description}
+                  </p>
+                </div>
+              </button>
+            ))}
+          </div>
+        </main>
       )}
 
       {/* Training: topic grid - click opens the difficulty chooser */}
@@ -419,9 +491,6 @@ export default function Home() {
           >
             <span className="text-6xl">📝</span>
             <h2 className="text-2xl font-bold">Start Test</h2>
-            <p className="text-sm text-white/80">
-              40 questions from all topics
-            </p>
           </button>
         </main>
       )}
@@ -488,13 +557,6 @@ export default function Home() {
         </div>
       )}
 
-      <footer className="mt-12 text-center text-sm text-gray-500">
-        {selectedMode === "test" ? (
-          <p>40 questions from all topics • 1h30 total time • Good luck!</p>
-        ) : (
-          <p>40 questions • 1h30 total time • Good luck!</p>
-        )}
-      </footer>
     </div>
   );
 }

@@ -36,6 +36,8 @@ function emptyPayload() {
     stats: EMPTY_STATS,
     points: 0,
     dollars: 0,
+    earned: 0,
+    spent: 0,
     badges: buildBadges(EMPTY_STATS, new Set()),
     collectibles: FIGURES.map((f) => ({
       id: f.id,
@@ -78,7 +80,7 @@ export async function GET(request: NextRequest) {
   try {
     await ensureTables(); // create reward tables on first read if missing
     const stats = await computeStats(userId);
-    const { points, dollars } = await getPoints(userId);
+    const { points, dollars, earned: dollarsEarned, spent } = await getPoints(userId);
 
     const badgeRows = await sql`
       SELECT badge_id FROM user_badges WHERE user_id = ${userId}
@@ -151,6 +153,8 @@ export async function GET(request: NextRequest) {
       stats,
       points,
       dollars,
+      earned: dollarsEarned,
+      spent,
       badges: buildBadges(stats, earned),
       collectibles: FIGURES.map((f) => ({
         id: f.id,

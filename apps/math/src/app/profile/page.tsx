@@ -50,7 +50,9 @@ interface FamilyGoalView {
 interface RewardsData {
   stats: UserStats;
   points: number;
-  dollars: number;
+  dollars: number; // available (earned − spent)
+  earned: number; // lifetime dollar value of all points
+  spent: number; // total cashed out via the spending ledger
   badges: BadgeView[];
   collectibles: CollectibleView[];
   deckSize: number;
@@ -172,6 +174,7 @@ function ProfilePage() {
   // Collectibles default to the current child's own dolls; toggle to the full
   // shared family album.
   const [showAllDolls, setShowAllDolls] = useState(false);
+  const [spendOpen, setSpendOpen] = useState(false);
 
   const load = useCallback(() => {
     if (!userId) return;
@@ -308,9 +311,13 @@ function ProfilePage() {
               <span className="rounded-full bg-white/20 px-3 py-1.5">
                 🎫 {unredeemedTickets}
               </span>
-              <span className="rounded-full bg-white/30 px-3 py-1.5">
-                💰 ${data.dollars.toFixed(2)} earned
-              </span>
+              <button
+                onClick={() => setSpendOpen(true)}
+                disabled={data.dollars <= 0}
+                className="rounded-full bg-white/30 px-3 py-1.5 font-bold transition hover:bg-white/50 active:scale-95 disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                💰 ${data.dollars.toFixed(2)} available
+              </button>
             </div>
           </div>
         </div>
@@ -660,6 +667,163 @@ function ProfilePage() {
           onClose={() => setSelected(null)}
         />
       )}
+
+      {spendOpen && userId && (
+        <SpendModal
+          userId={userId}
+          available={data.dollars}
+          color={color}
+          onClose={() => setSpendOpen(false)}
+          onSpent={() => {
+            setSpendOpen(false);
+            load();
+          }}
+        />
+      )}
+    </div>
+  );
+}
+
+// Popup for cashing out part of an earned balance: enter an amount plus a note
+// of what it went towards, then confirm to subtract it from the balance.
+function SpendModal({
+  userId,
+  available,
+  color,
+  onClose,
+  onSpent,
+}: {
+  userId: string;
+  available: number;
+  color: string;
+  onClose: () => void;
+  onSpent: () => void;
+}) {
+  const [amount, setAmount] = useState("");
+  const [note, setNote] = useState("");
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
+
+  const value = parseFloat(amount);
+  const valid =
+    Number.isFinite(value) &&
+    value > 0 &&
+    Math.round(value * 100) <= Math.round(available * 100);
+
+  const submit = async () => {
+    if (!valid || saving) return;
+    setSaving(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/rewards/spend", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId, amount: value, note }),
+      });
+      const body = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        setError(body.error || "Something went wrong");
+        setSaving(false);
+        return;
+      }
+      onSpent();
+    } catch {
+      setError("Couldn't reach the server");
+      setSaving(false);
+    }
+  };
+
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label="Spend money"
+      onClick={onClose}
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm"
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="relative w-full max-w-sm overflow-hidden rounded-3xl bg-white p-6 shadow-2xl"
+      >
+        <button
+          onClick={onClose}
+          aria-label="Close"
+          className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-lg font-bold text-gray-500 transition hover:bg-gray-200 active:scale-90"
+        >
+          ✕
+        </button>
+
+        <h3 className="text-2xl font-black text-gray-800">💸 Spend money</h3>
+        <p className="mt-1 text-sm font-semibold text-gray-500">
+          You have <span style={{ color }}>${available.toFixed(2)}</span>{" "}
+          available.
+        </p>
+
+        <label className="mt-5 block text-sm font-bold text-gray-600">
+          Amount
+          <div className="mt-1 flex items-center gap-2 rounded-2xl border-2 border-gray-200 px-4 py-3 focus-within:border-gray-400">
+            <span className="text-xl font-black text-gray-400">$</span>
+            <input
+              type="number"
+              inputMode="decimal"
+              min="0"
+              step="0.01"
+              max={available}
+              autoFocus
+              value={amount}
+              onChange={(e) => setAmount(e.target.value)}
+              placeholder="0.00"
+              className="w-full text-xl font-bold text-gray-800 outline-none"
+            />
+          </div>
+        </label>
+
+        <label className="mt-4 block text-sm font-bold text-gray-600">
+          What did you spend it on?
+          <textarea
+            value={note}
+            onChange={(e) => setNote(e.target.value)}
+            rows={3}
+            placeholder="e.g. a new book, ice cream, a toy…"
+            className="mt-1 w-full resize-none rounded-2xl border-2 border-gray-200 px-4 py-3 text-base text-gray-800 outline-none focus:border-gray-400"
+          />
+        </label>
+
+        {value > 0 &&
+          Math.round(value * 100) > Math.round(available * 100) && (
+            <p className="mt-3 text-sm font-semibold text-rose-500">
+              That&apos;s more than you have available.
+            </p>
+          )}
+        {error && (
+          <p className="mt-3 text-sm font-semibold text-rose-500">{error}</p>
+        )}
+
+        <div className="mt-6 flex gap-3">
+          <button
+            onClick={onClose}
+            className="flex-1 rounded-full bg-gray-100 px-4 py-3 text-sm font-bold text-gray-600 transition hover:bg-gray-200 active:scale-95"
+          >
+            Cancel
+          </button>
+          <button
+            onClick={submit}
+            disabled={!valid || saving}
+            style={valid && !saving ? { backgroundColor: color } : undefined}
+            className="flex-1 rounded-full px-4 py-3 text-sm font-black text-white shadow transition active:scale-95 disabled:cursor-not-allowed disabled:bg-gray-300"
+          >
+            {saving ? "Saving…" : "OK"}
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

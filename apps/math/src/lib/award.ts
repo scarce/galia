@@ -84,16 +84,63 @@ export async function ensureTables() {
     collectibles_awarded INTEGER NOT NULL DEFAULT 0,
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
   )`;
+  // Spending ledger: each row is money the child chose to cash out of their
+  // earned balance, with a free-text note of what it went towards. Recorded
+  // separately from `user_points` so the effort points that drive collectible
+  // milestones are never disturbed — only the displayed dollar balance shrinks.
+  await sql`CREATE TABLE IF NOT EXISTS user_spending (
+    id SERIAL PRIMARY KEY,
+    user_id VARCHAR(10) NOT NULL,
+    amount NUMERIC(10,2) NOT NULL,
+    note TEXT,
+    spent_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+  )`;
 }
 
 // Cumulative effort points + cash value for a user (points-mode redemption).
-export async function getPoints(
-  userId: string,
-): Promise<{ points: number; dollars: number }> {
+// `earned` is the lifetime dollar value of all points; `spent` is the sum of
+// the spending ledger; `dollars` is the remaining (available) balance.
+export async function getPoints(userId: string): Promise<{
+  points: number;
+  dollars: number;
+  earned: number;
+  spent: number;
+}> {
   const row = await sql`SELECT points FROM user_points WHERE user_id = ${userId}`;
   const points = (row.rows[0]?.points as number) ?? 0;
   const rate = RULES.redemption.enabled ? RULES.redemption.dollarsPerPoint : 0;
-  return { points, dollars: points * rate };
+  const spentRow = await sql`
+    SELECT COALESCE(SUM(amount), 0)::float AS spent
+    FROM user_spending WHERE user_id = ${userId}
+  `;
+  const spent = (spentRow.rows[0]?.spent as number) ?? 0;
+  const earned = points * rate;
+  return { points, earned, spent, dollars: earned - spent };
+}
+
+// Append a spend to the ledger, returning the updated balance. Rejects amounts
+// that are non-positive or exceed the available balance so the child can never
+// go into the red.
+export async function recordSpend(
+  userId: string,
+  amount: number,
+  note: string,
+): Promise<{ ok: boolean; error?: string; dollars: number; spent: number }> {
+  const { dollars } = await getPoints(userId);
+  if (!(amount > 0)) {
+    return { ok: false, error: "Amount must be greater than zero", dollars, spent: 0 };
+  }
+  // Round to cents and guard against tiny floating-point overshoot.
+  const cents = Math.round(amount * 100);
+  if (cents > Math.round(dollars * 100)) {
+    return { ok: false, error: "Not enough balance", dollars, spent: 0 };
+  }
+  await sql`
+    INSERT INTO user_spending (user_id, amount, note)
+    VALUES (${userId}, ${cents / 100}, ${note.trim() || null})
+  `;
+  const updated = await getPoints(userId);
+  return { ok: true, dollars: updated.dollars, spent: updated.spent };
 }
 
 // How many quiz sessions the user has completed since their last collectible
