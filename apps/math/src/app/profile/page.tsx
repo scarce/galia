@@ -9,6 +9,7 @@ import {
   type UserStats,
 } from "@/lib/rewards";
 import { RULES } from "@/lib/reward-rules";
+import { getSeasonStatus } from "@/lib/season";
 
 interface BadgeView {
   id: string;
@@ -75,6 +76,7 @@ function HowItWorks() {
   const c = RULES.collectible;
   const lp = c.levelPoints;
   const rate = RULES.redemption.dollarsPerPoint;
+  const seasonStatus = getSeasonStatus(RULES.season);
   const cards: { icon: string; title: string; body: string }[] = [
     {
       icon: "🔥",
@@ -113,6 +115,12 @@ function HowItWorks() {
     },
   ];
   return (
+    <div>
+      {seasonStatus !== "active" && (
+        <p className="mb-4 rounded-2xl bg-white p-5 text-sm text-gray-600">
+          These rules describe {RULES.season.name}. {seasonStatus === "ended" ? "Earning has ended; saved rewards remain available." : "Earning has not started yet."}
+        </p>
+      )}
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
       {cards.map((card) => (
         <div key={card.title} className="flex gap-4 rounded-2xl bg-white p-5 shadow-sm">
@@ -123,6 +131,7 @@ function HowItWorks() {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 }
@@ -169,6 +178,7 @@ function ProfilePage() {
   const [user, setUser] = useState<UserView | null>(null);
   const [users, setUsers] = useState<UserView[]>([]);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [tab, setTab] = useState<TabId>("collectibles");
   const [selected, setSelected] = useState<CollectibleView | null>(null);
   // Collectibles default to the current child's own dolls; toggle to the full
@@ -178,13 +188,25 @@ function ProfilePage() {
 
   const load = useCallback(() => {
     if (!userId) return;
+    setLoadError(null);
+    setLoading(true);
     fetch(`/api/rewards?user=${encodeURIComponent(userId)}`)
-      .then((r) => r.json())
+      .then(async (r) => {
+        if (!r.ok) throw new Error("Rewards unavailable");
+        const payload: RewardsData = await r.json();
+        if (!Array.isArray(payload.badges) || !Array.isArray(payload.collectibles)) {
+          throw new Error("Invalid rewards response");
+        }
+        return payload;
+      })
       .then((d) => {
         setData(d);
         setLoading(false);
       })
-      .catch(() => setLoading(false));
+      .catch(() => {
+        setLoadError("We couldn’t load your balance and dolls. Please try again.");
+        setLoading(false);
+      });
   }, [userId]);
 
   useEffect(() => {
@@ -239,20 +261,20 @@ function ProfilePage() {
     load();
   };
 
-  if (loading || !data || !Array.isArray(data.badges)) {
+  if (!data) {
     return (
       <div className="flex min-h-screen items-center justify-center">
         <div className="text-center">
           <div className="mb-4 text-6xl">👤</div>
           <p className="text-xl text-gray-600">
-            {loading || !data ? "Loading profile..." : "Couldn't load profile."}
+            {loadError || "Loading profile..."}
           </p>
-          {!loading && data && !Array.isArray(data.badges) && (
+          {!loading && loadError && (
             <button
-              onClick={() => router.push(`/?user=${userId}`)}
+              onClick={load}
               className="mt-4 rounded-full bg-indigo-600 px-6 py-2 text-sm font-semibold text-white"
             >
-              ← Back
+              Try again
             </button>
           )}
         </div>
@@ -260,6 +282,7 @@ function ProfilePage() {
     );
   }
 
+  const seasonStatus = getSeasonStatus(RULES.season);
   const color = user?.color || "#4F39F6";
   const nameOf = (id: string | null) =>
     id ? (users.find((u) => u.id === id)?.name ?? id) : "";
@@ -324,6 +347,26 @@ function ProfilePage() {
       </header>
 
       <div className="mx-auto -mt-6 max-w-6xl rounded-t-3xl bg-[#f0f4ff] p-6 md:p-10">
+        {loadError && (
+          <div role="alert" className="mb-6 rounded-2xl bg-white p-5 text-gray-700 shadow-sm">
+            <p>{loadError} Showing your last loaded rewards.</p>
+            <button onClick={load} disabled={loading} className="mt-2 font-bold text-indigo-700 underline disabled:opacity-50">
+              {loading ? "Loading…" : "Try again"}
+            </button>
+          </div>
+        )}
+        {seasonStatus !== "active" && (
+          <div className="mb-6 rounded-2xl bg-white p-5 shadow-sm">
+            <h2 className="text-lg font-bold text-gray-800">
+              {RULES.season.name} {seasonStatus === "ended" ? "has ended" : "hasn’t started yet"}
+            </h2>
+            <p className="mt-1 text-sm leading-relaxed text-gray-600">
+              {seasonStatus === "ended"
+                ? "Your earned balance, dolls and tickets are still here. You can cash out your available balance and enjoy your collection. The campaign ran from " + RULES.season.start + " to " + RULES.season.end + ". You can keep practising anytime."
+                : "You can start earning campaign rewards on " + RULES.season.start + ". Your saved balance and collection are shown below."}
+            </p>
+          </div>
+        )}
         {/* Section pill menu */}
         <nav className="sticky top-3 z-20 mx-auto mb-8 flex w-fit max-w-full flex-nowrap justify-center gap-1 overflow-x-auto rounded-full bg-white/80 p-1.5 shadow-md backdrop-blur">
           {(
@@ -395,7 +438,9 @@ function ProfilePage() {
           </div>
           {!showAllDolls && myFigures === 0 ? (
             <p className="rounded-2xl bg-white p-6 text-center font-semibold text-gray-500">
-              No dolls yet — score well on a quiz to win your first one! 🧸
+              {seasonStatus === "active"
+                ? "No dolls yet — score well on a quiz to win your first one! 🧸"
+                : "No dolls collected during this campaign. 🧸"}
               <br />
               <button
                 onClick={() => setShowAllDolls(true)}

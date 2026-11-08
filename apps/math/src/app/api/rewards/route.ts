@@ -181,9 +181,11 @@ export async function GET(request: NextRequest) {
       })),
     });
   } catch (error) {
-    // Never 500 the client (it would crash the profile). Degrade to an empty
-    // trophy room; a schema migration may be needed (see migrations/).
+    // A failed read must not look like lost earnings or an empty collection.
     console.error("Rewards read error:", error);
-    return NextResponse.json(emptyPayload());
+    return NextResponse.json(
+      { error: "Rewards are temporarily unavailable. Please try again." },
+      { status: 503 },
+    );
   }
 }
