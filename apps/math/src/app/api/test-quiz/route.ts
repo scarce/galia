@@ -30,12 +30,14 @@ const GRADE_THEMES: Record<number, string[]> = {
     "time-and-calendar",
   ],
   4: [
+    "us-measurements",
     "properties-of-operations",
     "order-of-operations",
     "word-problems",
     "work-rate",
   ],
   5: [
+    "us-measurements",
     "algebra",
     "order-of-operations",
     "work-rate",

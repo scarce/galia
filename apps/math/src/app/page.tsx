@@ -33,12 +33,14 @@ const GRADE_THEMES: Record<number, string[]> = {
     "time-and-calendar",
   ],
   4: [
+    "us-measurements",
     "properties-of-operations",
     "order-of-operations",
     "word-problems",
     "work-rate",
   ],
   5: [
+    "us-measurements",
     "algebra",
     "order-of-operations",
     "work-rate",
@@ -52,6 +54,12 @@ const GRADE_THEMES: Record<number, string[]> = {
 };
 
 const themes: Theme[] = [
+  {
+    id: "us-measurements",
+    name: "US Measurements",
+    description: "Learn inches, feet, miles, pounds, ounces, cups, and gallons",
+    icon: "📏",
+  },
   {
     id: "addition",
     name: "Addition",

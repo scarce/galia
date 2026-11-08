@@ -1,0 +1,489 @@
+{
+  "theme": "US Measurements",
+  "themeId": "us-measurements",
+  "level": "easy",
+  "totalTimeMinutes": 90,
+  "questionTimeMinutes": 2,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which unit is best for the length of a pencil?",
+      "answers": [
+        "inches",
+        "miles",
+        "pounds",
+        "gallons"
+      ],
+      "correct": 0,
+      "hint": "Think about a small length you could measure with a ruler."
+    },
+    {
+      "id": 2,
+      "question": "Which unit is best for the distance between two towns?",
+      "answers": [
+        "cups",
+        "miles",
+        "inches",
+        "ounces"
+      ],
+      "correct": 1,
+      "hint": "Think about a long distance you would travel by car."
+    },
+    {
+      "id": 3,
+      "question": "Which unit is best for how heavy a backpack is?",
+      "answers": [
+        "quarts",
+        "miles",
+        "pounds",
+        "feet"
+      ],
+      "correct": 2,
+      "hint": "Weight tells how heavy something is."
+    },
+    {
+      "id": 4,
+      "question": "Which unit is best for the amount of water in a large jug?",
+      "answers": [
+        "inches",
+        "pounds",
+        "yards",
+        "gallons"
+      ],
+      "correct": 3,
+      "hint": "Capacity tells how much liquid a container can hold."
+    },
+    {
+      "id": 5,
+      "question": "Which unit is best for the weight of one small strawberry?",
+      "answers": [
+        "ounces",
+        "miles",
+        "yards",
+        "gallons"
+      ],
+      "correct": 0,
+      "hint": "Use a small unit of weight, not a unit of length or liquid capacity."
+    },
+    {
+      "id": 6,
+      "question": "Which unit is best for the height of a door?",
+      "answers": [
+        "ounces",
+        "feet",
+        "miles",
+        "cups"
+      ],
+      "correct": 1,
+      "hint": "Choose a length unit bigger than an inch but much smaller than a mile."
+    },
+    {
+      "id": 7,
+      "question": "A recipe needs a small amount of vanilla. Which unit fits best?",
+      "answers": [
+        "pounds",
+        "yards",
+        "teaspoons",
+        "miles"
+      ],
+      "correct": 2,
+      "hint": "Think about a tiny measuring spoon."
+    },
+    {
+      "id": 8,
+      "question": "What does the abbreviation lb stand for?",
+      "answers": [
+        "inch",
+        "gallon",
+        "foot",
+        "pound"
+      ],
+      "correct": 3,
+      "hint": "This abbreviation is used on weights and food packages."
+    },
+    {
+      "id": 9,
+      "question": "What does the abbreviation oz stand for when weighing food?",
+      "answers": [
+        "ounce",
+        "yard",
+        "mile",
+        "cup"
+      ],
+      "correct": 0,
+      "hint": "This is a small unit of weight. A pound contains 16 of them."
+    },
+    {
+      "id": 10,
+      "question": "Are a weight ounce and a fluid ounce used to measure the same thing?",
+      "answers": [
+        "No: weight ounces measure distance; fluid ounces measure time.",
+        "No: weight ounces measure weight; fluid ounces measure liquid volume.",
+        "Yes: both always measure weight.",
+        "Yes: both always measure length."
+      ],
+      "correct": 1,
+      "hint": "The word fluid refers to liquids. Check whether you are measuring weight or volume."
+    },
+    {
+      "id": 11,
+      "question": "How many inches are in 1 foot?",
+      "answers": [
+        "24 inches",
+        "22 inches",
+        "12 inches",
+        "13 inches"
+      ],
+      "correct": 2,
+      "hint": "1 foot = 12 inches. Multiply by the number of larger units."
+    },
+    {
+      "id": 12,
+      "question": "How many inches are in 2 feet?",
+      "answers": [
+        "25 inches",
+        "48 inches",
+        "34 inches",
+        "24 inches"
+      ],
+      "correct": 3,
+      "hint": "1 foot = 12 inches. Multiply by the number of larger units."
+    },
+    {
+      "id": 13,
+      "question": "How many inches are in 3 feet?",
+      "answers": [
+        "36 inches",
+        "37 inches",
+        "72 inches",
+        "46 inches"
+      ],
+      "correct": 0,
+      "hint": "1 foot = 12 inches. Multiply by the number of larger units."
+    },
+    {
+      "id": 14,
+      "question": "How many feet are in 1 yard?",
+      "answers": [
+        "13 feet",
+        "3 feet",
+        "4 feet",
+        "6 feet"
+      ],
+      "correct": 1,
+      "hint": "1 yard = 3 feet. Multiply by the number of larger units."
+    },
+    {
+      "id": 15,
+      "question": "How many feet are in 2 yards?",
+      "answers": [
+        "12 feet",
+        "16 feet",
+        "6 feet",
+        "7 feet"
+      ],
+      "correct": 2,
+      "hint": "1 yard = 3 feet. Multiply by the number of larger units."
+    },
+    {
+      "id": 16,
+      "question": "How many feet are in 3 yards?",
+      "answers": [
+        "10 feet",
+        "18 feet",
+        "19 feet",
+        "9 feet"
+      ],
+      "correct": 3,
+      "hint": "1 yard = 3 feet. Multiply by the number of larger units."
+    },
+    {
+      "id": 17,
+      "question": "How many feet are in 1 mile?",
+      "answers": [
+        "5280 feet",
+        "5281 feet",
+        "10560 feet",
+        "5290 feet"
+      ],
+      "correct": 0,
+      "hint": "1 mile = 5,280 feet. Multiply by the number of larger units."
+    },
+    {
+      "id": 18,
+      "question": "How many feet are in 2 miles?",
+      "answers": [
+        "10570 feet",
+        "10560 feet",
+        "10561 feet",
+        "21120 feet"
+      ],
+      "correct": 1,
+      "hint": "1 mile = 5,280 feet. Multiply by the number of larger units."
+    },
+    {
+      "id": 19,
+      "question": "How many feet are in 3 miles?",
+      "answers": [
+        "31680 feet",
+        "15850 feet",
+        "15840 feet",
+        "15841 feet"
+      ],
+      "correct": 2,
+      "hint": "1 mile = 5,280 feet. Multiply by the number of larger units."
+    },
+    {
+      "id": 20,
+      "question": "How many ounces are in 1 pound?",
+      "answers": [
+        "17 ounces",
+        "32 ounces",
+        "26 ounces",
+        "16 ounces"
+      ],
+      "correct": 3,
+      "hint": "1 pound = 16 weight ounces. Multiply by the number of larger units."
+    },
+    {
+      "id": 21,
+      "question": "How many ounces are in 2 pounds?",
+      "answers": [
+        "32 ounces",
+        "33 ounces",
+        "64 ounces",
+        "42 ounces"
+      ],
+      "correct": 0,
+      "hint": "1 pound = 16 weight ounces. Multiply by the number of larger units."
+    },
+    {
+      "id": 22,
+      "question": "How many ounces are in 3 pounds?",
+      "answers": [
+        "58 ounces",
+        "48 ounces",
+        "49 ounces",
+        "96 ounces"
+      ],
+      "correct": 1,
+      "hint": "1 pound = 16 weight ounces. Multiply by the number of larger units."
+    },
+    {
+      "id": 23,
+      "question": "How many US fluid ounces are in 1 cup?",
+      "answers": [
+        "16 US fluid ounces",
+        "18 US fluid ounces",
+        "8 US fluid ounces",
+        "9 US fluid ounces"
+      ],
+      "correct": 2,
+      "hint": "1 US cup = 8 US fluid ounces. Multiply by the number of larger units."
+    },
+    {
+      "id": 24,
+      "question": "How many US fluid ounces are in 2 cups?",
+      "answers": [
+        "17 US fluid ounces",
+        "32 US fluid ounces",
+        "26 US fluid ounces",
+        "16 US fluid ounces"
+      ],
+      "correct": 3,
+      "hint": "1 US cup = 8 US fluid ounces. Multiply by the number of larger units."
+    },
+    {
+      "id": 25,
+      "question": "How many US fluid ounces are in 3 cups?",
+      "answers": [
+        "24 US fluid ounces",
+        "25 US fluid ounces",
+        "48 US fluid ounces",
+        "34 US fluid ounces"
+      ],
+      "correct": 0,
+      "hint": "1 US cup = 8 US fluid ounces. Multiply by the number of larger units."
+    },
+    {
+      "id": 26,
+      "question": "How many cups are in 1 pint?",
+      "answers": [
+        "12 cups",
+        "2 cups",
+        "3 cups",
+        "4 cups"
+      ],
+      "correct": 1,
+      "hint": "1 US pint = 2 cups. Multiply by the number of larger units."
+    },
+    {
+      "id": 27,
+      "question": "How many cups are in 2 pints?",
+      "answers": [
+        "8 cups",
+        "14 cups",
+        "4 cups",
+        "5 cups"
+      ],
+      "correct": 2,
+      "hint": "1 US pint = 2 cups. Multiply by the number of larger units."
+    },
+    {
+      "id": 28,
+      "question": "How many cups are in 3 pints?",
+      "answers": [
+        "7 cups",
+        "12 cups",
+        "16 cups",
+        "6 cups"
+      ],
+      "correct": 3,
+      "hint": "1 US pint = 2 cups. Multiply by the number of larger units."
+    },
+    {
+      "id": 29,
+      "question": "How many pints are in 1 quart?",
+      "answers": [
+        "2 pints",
+        "3 pints",
+        "4 pints",
+        "12 pints"
+      ],
+      "correct": 0,
+      "hint": "1 US quart = 2 pints. Multiply by the number of larger units."
+    },
+    {
+      "id": 30,
+      "question": "How many pints are in 2 quarts?",
+      "answers": [
+        "14 pints",
+        "4 pints",
+        "5 pints",
+        "8 pints"
+      ],
+      "correct": 1,
+      "hint": "1 US quart = 2 pints. Multiply by the number of larger units."
+    },
+    {
+      "id": 31,
+      "question": "How many pints are in 3 quarts?",
+      "answers": [
+        "12 pints",
+        "16 pints",
+        "6 pints",
+        "7 pints"
+      ],
+      "correct": 2,
+      "hint": "1 US quart = 2 pints. Multiply by the number of larger units."
+    },
+    {
+      "id": 32,
+      "question": "How many quarts are in 1 gallon?",
+      "answers": [
+        "5 quarts",
+        "8 quarts",
+        "14 quarts",
+        "4 quarts"
+      ],
+      "correct": 3,
+      "hint": "1 US gallon = 4 quarts. Multiply by the number of larger units."
+    },
+    {
+      "id": 33,
+      "question": "How many quarts are in 2 gallons?",
+      "answers": [
+        "8 quarts",
+        "9 quarts",
+        "16 quarts",
+        "18 quarts"
+      ],
+      "correct": 0,
+      "hint": "1 US gallon = 4 quarts. Multiply by the number of larger units."
+    },
+    {
+      "id": 34,
+      "question": "How many quarts are in 3 gallons?",
+      "answers": [
+        "22 quarts",
+        "12 quarts",
+        "13 quarts",
+        "24 quarts"
+      ],
+      "correct": 1,
+      "hint": "1 US gallon = 4 quarts. Multiply by the number of larger units."
+    },
+    {
+      "id": 35,
+      "question": "How many teaspoons are in 1 tablespoon?",
+      "answers": [
+        "6 teaspoons",
+        "13 teaspoons",
+        "3 teaspoons",
+        "4 teaspoons"
+      ],
+      "correct": 2,
+      "hint": "1 US tablespoon = 3 teaspoons. Multiply by the number of larger units."
+    },
+    {
+      "id": 36,
+      "question": "How many teaspoons are in 2 tablespoons?",
+      "answers": [
+        "7 teaspoons",
+        "12 teaspoons",
+        "16 teaspoons",
+        "6 teaspoons"
+      ],
+      "correct": 3,
+      "hint": "1 US tablespoon = 3 teaspoons. Multiply by the number of larger units."
+    },
+    {
+      "id": 37,
+      "question": "How many teaspoons are in 3 tablespoons?",
+      "answers": [
+        "9 teaspoons",
+        "10 teaspoons",
+        "18 teaspoons",
+        "19 teaspoons"
+      ],
+      "correct": 0,
+      "hint": "1 US tablespoon = 3 teaspoons. Multiply by the number of larger units."
+    },
+    {
+      "id": 38,
+      "question": "How many tablespoons are in 1 cup?",
+      "answers": [
+        "26 tablespoons",
+        "16 tablespoons",
+        "17 tablespoons",
+        "32 tablespoons"
+      ],
+      "correct": 1,
+      "hint": "1 US cup = 16 tablespoons. Multiply by the number of larger units."
+    },
+    {
+      "id": 39,
+      "question": "How many tablespoons are in 2 cups?",
+      "answers": [
+        "64 tablespoons",
+        "42 tablespoons",
+        "32 tablespoons",
+        "33 tablespoons"
+      ],
+      "correct": 2,
+      "hint": "1 US cup = 16 tablespoons. Multiply by the number of larger units."
+    },
+    {
+      "id": 40,
+      "question": "How many tablespoons are in 3 cups?",
+      "answers": [
+        "49 tablespoons",
+        "96 tablespoons",
+        "58 tablespoons",
+        "48 tablespoons"
+      ],
+      "correct": 3,
+      "hint": "1 US cup = 16 tablespoons. Multiply by the number of larger units."
+    }
+  ]
+}

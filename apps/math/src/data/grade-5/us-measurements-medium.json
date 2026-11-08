@@ -1,0 +1,489 @@
+{
+  "theme": "US Measurements",
+  "themeId": "us-measurements",
+  "level": "medium",
+  "totalTimeMinutes": 90,
+  "questionTimeMinutes": 2,
+  "questions": [
+    {
+      "id": 1,
+      "question": "A measurement is 2 feet and 1 inches. How many inches is that altogether?",
+      "answers": [
+        "25 inches",
+        "26 inches",
+        "50 inches",
+        "35 inches"
+      ],
+      "correct": 0,
+      "hint": "1 foot = 12 inches. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 2,
+      "question": "A measurement is 4 feet and 2 inches. How many inches is that altogether?",
+      "answers": [
+        "60 inches",
+        "50 inches",
+        "51 inches",
+        "100 inches"
+      ],
+      "correct": 1,
+      "hint": "1 foot = 12 inches. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 3,
+      "question": "Convert 60 inches into feet.",
+      "answers": [
+        "10 feet",
+        "15 feet",
+        "5 feet",
+        "6 feet"
+      ],
+      "correct": 2,
+      "hint": "1 foot = 12 inches. Divide by the number of smaller units in one larger unit."
+    },
+    {
+      "id": 4,
+      "question": "How many inches are in half a foot?",
+      "answers": [
+        "7 inches",
+        "12 inches",
+        "16 inches",
+        "6 inches"
+      ],
+      "correct": 3,
+      "hint": "1 foot = 12 inches. Divide the amount in one whole unit by 2."
+    },
+    {
+      "id": 5,
+      "question": "A measurement is 2 yards and 1 feet. How many feet is that altogether?",
+      "answers": [
+        "7 feet",
+        "8 feet",
+        "14 feet",
+        "17 feet"
+      ],
+      "correct": 0,
+      "hint": "1 yard = 3 feet. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 6,
+      "question": "A measurement is 4 yards and 2 feet. How many feet is that altogether?",
+      "answers": [
+        "24 feet",
+        "14 feet",
+        "15 feet",
+        "28 feet"
+      ],
+      "correct": 1,
+      "hint": "1 yard = 3 feet. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 7,
+      "question": "Convert 15 feet into yards.",
+      "answers": [
+        "10 yards",
+        "15 yards",
+        "5 yards",
+        "6 yards"
+      ],
+      "correct": 2,
+      "hint": "1 yard = 3 feet. Divide by the number of smaller units in one larger unit."
+    },
+    {
+      "id": 8,
+      "question": "How many feet are in half a yard?",
+      "answers": [
+        "2.5 feet",
+        "3 feet",
+        "11.5 feet",
+        "1.5 feet"
+      ],
+      "correct": 3,
+      "hint": "1 yard = 3 feet. Divide the amount in one whole unit by 2."
+    },
+    {
+      "id": 9,
+      "question": "A measurement is 2 miles and 1 feet. How many feet is that altogether?",
+      "answers": [
+        "10561 feet",
+        "10562 feet",
+        "21122 feet",
+        "10571 feet"
+      ],
+      "correct": 0,
+      "hint": "1 mile = 5,280 feet. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 10,
+      "question": "A measurement is 4 miles and 2 feet. How many feet is that altogether?",
+      "answers": [
+        "21132 feet",
+        "21122 feet",
+        "21123 feet",
+        "42244 feet"
+      ],
+      "correct": 1,
+      "hint": "1 mile = 5,280 feet. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 11,
+      "question": "Convert 26400 feet into miles.",
+      "answers": [
+        "10 miles",
+        "15 miles",
+        "5 miles",
+        "6 miles"
+      ],
+      "correct": 2,
+      "hint": "1 mile = 5,280 feet. Divide by the number of smaller units in one larger unit."
+    },
+    {
+      "id": 12,
+      "question": "How many feet are in half a mile?",
+      "answers": [
+        "2641 feet",
+        "5280 feet",
+        "2650 feet",
+        "2640 feet"
+      ],
+      "correct": 3,
+      "hint": "1 mile = 5,280 feet. Divide the amount in one whole unit by 2."
+    },
+    {
+      "id": 13,
+      "question": "A measurement is 2 pounds and 1 ounces. How many ounces is that altogether?",
+      "answers": [
+        "33 ounces",
+        "34 ounces",
+        "66 ounces",
+        "43 ounces"
+      ],
+      "correct": 0,
+      "hint": "1 pound = 16 weight ounces. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 14,
+      "question": "A measurement is 4 pounds and 2 ounces. How many ounces is that altogether?",
+      "answers": [
+        "76 ounces",
+        "66 ounces",
+        "67 ounces",
+        "132 ounces"
+      ],
+      "correct": 1,
+      "hint": "1 pound = 16 weight ounces. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 15,
+      "question": "Convert 80 ounces into pounds.",
+      "answers": [
+        "10 pounds",
+        "15 pounds",
+        "5 pounds",
+        "6 pounds"
+      ],
+      "correct": 2,
+      "hint": "1 pound = 16 weight ounces. Divide by the number of smaller units in one larger unit."
+    },
+    {
+      "id": 16,
+      "question": "How many ounces are in half a pound?",
+      "answers": [
+        "9 ounces",
+        "16 ounces",
+        "18 ounces",
+        "8 ounces"
+      ],
+      "correct": 3,
+      "hint": "1 pound = 16 weight ounces. Divide the amount in one whole unit by 2."
+    },
+    {
+      "id": 17,
+      "question": "A measurement is 2 cups and 1 US fluid ounces. How many US fluid ounces is that altogether?",
+      "answers": [
+        "17 US fluid ounces",
+        "18 US fluid ounces",
+        "34 US fluid ounces",
+        "27 US fluid ounces"
+      ],
+      "correct": 0,
+      "hint": "1 US cup = 8 US fluid ounces. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 18,
+      "question": "A measurement is 4 cups and 2 US fluid ounces. How many US fluid ounces is that altogether?",
+      "answers": [
+        "44 US fluid ounces",
+        "34 US fluid ounces",
+        "35 US fluid ounces",
+        "68 US fluid ounces"
+      ],
+      "correct": 1,
+      "hint": "1 US cup = 8 US fluid ounces. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 19,
+      "question": "Convert 40 US fluid ounces into cups.",
+      "answers": [
+        "10 cups",
+        "15 cups",
+        "5 cups",
+        "6 cups"
+      ],
+      "correct": 2,
+      "hint": "1 US cup = 8 US fluid ounces. Divide by the number of smaller units in one larger unit."
+    },
+    {
+      "id": 20,
+      "question": "How many US fluid ounces are in half a cup?",
+      "answers": [
+        "5 US fluid ounces",
+        "8 US fluid ounces",
+        "14 US fluid ounces",
+        "4 US fluid ounces"
+      ],
+      "correct": 3,
+      "hint": "1 US cup = 8 US fluid ounces. Divide the amount in one whole unit by 2."
+    },
+    {
+      "id": 21,
+      "question": "A measurement is 2 pints and 1 cups. How many cups is that altogether?",
+      "answers": [
+        "5 cups",
+        "6 cups",
+        "10 cups",
+        "15 cups"
+      ],
+      "correct": 0,
+      "hint": "1 US pint = 2 cups. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 22,
+      "question": "A measurement is 4 pints and 2 cups. How many cups is that altogether?",
+      "answers": [
+        "5 cups",
+        "10 cups",
+        "11 cups",
+        "20 cups"
+      ],
+      "correct": 1,
+      "hint": "1 US pint = 2 cups. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 23,
+      "question": "Convert 10 cups into pints.",
+      "answers": [
+        "10 pints",
+        "15 pints",
+        "5 pints",
+        "6 pints"
+      ],
+      "correct": 2,
+      "hint": "1 US pint = 2 cups. Divide by the number of smaller units in one larger unit."
+    },
+    {
+      "id": 24,
+      "question": "How many cups are in half a pint?",
+      "answers": [
+        "2 cups",
+        "11 cups",
+        "0.5 cups",
+        "1 cups"
+      ],
+      "correct": 3,
+      "hint": "1 US pint = 2 cups. Divide the amount in one whole unit by 2."
+    },
+    {
+      "id": 25,
+      "question": "A measurement is 2 quarts and 1 pints. How many pints is that altogether?",
+      "answers": [
+        "5 pints",
+        "6 pints",
+        "10 pints",
+        "15 pints"
+      ],
+      "correct": 0,
+      "hint": "1 US quart = 2 pints. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 26,
+      "question": "A measurement is 4 quarts and 2 pints. How many pints is that altogether?",
+      "answers": [
+        "5 pints",
+        "10 pints",
+        "11 pints",
+        "20 pints"
+      ],
+      "correct": 1,
+      "hint": "1 US quart = 2 pints. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 27,
+      "question": "Convert 10 pints into quarts.",
+      "answers": [
+        "10 quarts",
+        "15 quarts",
+        "5 quarts",
+        "6 quarts"
+      ],
+      "correct": 2,
+      "hint": "1 US quart = 2 pints. Divide by the number of smaller units in one larger unit."
+    },
+    {
+      "id": 28,
+      "question": "How many pints are in half a quart?",
+      "answers": [
+        "2 pints",
+        "11 pints",
+        "0.5 pints",
+        "1 pints"
+      ],
+      "correct": 3,
+      "hint": "1 US quart = 2 pints. Divide the amount in one whole unit by 2."
+    },
+    {
+      "id": 29,
+      "question": "A measurement is 2 gallons and 1 quarts. How many quarts is that altogether?",
+      "answers": [
+        "9 quarts",
+        "10 quarts",
+        "18 quarts",
+        "19 quarts"
+      ],
+      "correct": 0,
+      "hint": "1 US gallon = 4 quarts. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 30,
+      "question": "A measurement is 4 gallons and 2 quarts. How many quarts is that altogether?",
+      "answers": [
+        "28 quarts",
+        "18 quarts",
+        "19 quarts",
+        "36 quarts"
+      ],
+      "correct": 1,
+      "hint": "1 US gallon = 4 quarts. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 31,
+      "question": "Convert 20 quarts into gallons.",
+      "answers": [
+        "10 gallons",
+        "15 gallons",
+        "5 gallons",
+        "6 gallons"
+      ],
+      "correct": 2,
+      "hint": "1 US gallon = 4 quarts. Divide by the number of smaller units in one larger unit."
+    },
+    {
+      "id": 32,
+      "question": "How many quarts are in half a gallon?",
+      "answers": [
+        "3 quarts",
+        "4 quarts",
+        "12 quarts",
+        "2 quarts"
+      ],
+      "correct": 3,
+      "hint": "1 US gallon = 4 quarts. Divide the amount in one whole unit by 2."
+    },
+    {
+      "id": 33,
+      "question": "A measurement is 2 tablespoons and 1 teaspoons. How many teaspoons is that altogether?",
+      "answers": [
+        "7 teaspoons",
+        "8 teaspoons",
+        "14 teaspoons",
+        "17 teaspoons"
+      ],
+      "correct": 0,
+      "hint": "1 US tablespoon = 3 teaspoons. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 34,
+      "question": "A measurement is 4 tablespoons and 2 teaspoons. How many teaspoons is that altogether?",
+      "answers": [
+        "24 teaspoons",
+        "14 teaspoons",
+        "15 teaspoons",
+        "28 teaspoons"
+      ],
+      "correct": 1,
+      "hint": "1 US tablespoon = 3 teaspoons. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 35,
+      "question": "Convert 15 teaspoons into tablespoons.",
+      "answers": [
+        "10 tablespoons",
+        "15 tablespoons",
+        "5 tablespoons",
+        "6 tablespoons"
+      ],
+      "correct": 2,
+      "hint": "1 US tablespoon = 3 teaspoons. Divide by the number of smaller units in one larger unit."
+    },
+    {
+      "id": 36,
+      "question": "How many teaspoons are in half a tablespoon?",
+      "answers": [
+        "2.5 teaspoons",
+        "3 teaspoons",
+        "11.5 teaspoons",
+        "1.5 teaspoons"
+      ],
+      "correct": 3,
+      "hint": "1 US tablespoon = 3 teaspoons. Divide the amount in one whole unit by 2."
+    },
+    {
+      "id": 37,
+      "question": "A measurement is 2 cups and 1 tablespoons. How many tablespoons is that altogether?",
+      "answers": [
+        "33 tablespoons",
+        "34 tablespoons",
+        "66 tablespoons",
+        "43 tablespoons"
+      ],
+      "correct": 0,
+      "hint": "1 US cup = 16 tablespoons. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 38,
+      "question": "A measurement is 4 cups and 2 tablespoons. How many tablespoons is that altogether?",
+      "answers": [
+        "76 tablespoons",
+        "66 tablespoons",
+        "67 tablespoons",
+        "132 tablespoons"
+      ],
+      "correct": 1,
+      "hint": "1 US cup = 16 tablespoons. Convert the larger units first, then add the leftover smaller units."
+    },
+    {
+      "id": 39,
+      "question": "Convert 80 tablespoons into cups.",
+      "answers": [
+        "10 cups",
+        "15 cups",
+        "5 cups",
+        "6 cups"
+      ],
+      "correct": 2,
+      "hint": "1 US cup = 16 tablespoons. Divide by the number of smaller units in one larger unit."
+    },
+    {
+      "id": 40,
+      "question": "How many tablespoons are in half a cup?",
+      "answers": [
+        "9 tablespoons",
+        "16 tablespoons",
+        "18 tablespoons",
+        "8 tablespoons"
+      ],
+      "correct": 3,
+      "hint": "1 US cup = 16 tablespoons. Divide the amount in one whole unit by 2."
+    }
+  ]
+}

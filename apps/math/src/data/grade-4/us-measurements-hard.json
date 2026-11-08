@@ -1,0 +1,489 @@
+{
+  "theme": "US Measurements",
+  "themeId": "us-measurements",
+  "level": "hard",
+  "totalTimeMinutes": 90,
+  "questionTimeMinutes": 2,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Iris walks 1 miles in the morning and 2,640 feet in the afternoon. How many feet does she walk altogether?",
+      "answers": [
+        "7920 feet",
+        "7921 feet",
+        "15840 feet",
+        "7930 feet"
+      ],
+      "correct": 0,
+      "hint": "1 mile = 5,280 feet. Convert the morning walk, then add the afternoon walk."
+    },
+    {
+      "id": 2,
+      "question": "Zoe has a ribbon 3 yards long. She cuts off 18 inches. How many inches remain?",
+      "answers": [
+        "100 inches",
+        "90 inches",
+        "91 inches",
+        "180 inches"
+      ],
+      "correct": 1,
+      "hint": "1 yard = 3 feet = 36 inches. Convert the whole ribbon, then subtract the piece cut off."
+    },
+    {
+      "id": 3,
+      "question": "A bag holds 2 pounds of flour. Iris uses 12 ounces. How many ounces of flour remain?",
+      "answers": [
+        "40 ounces",
+        "30 ounces",
+        "20 ounces",
+        "21 ounces"
+      ],
+      "correct": 2,
+      "hint": "1 pound = 16 ounces. Find the starting weight in ounces, then subtract 12."
+    },
+    {
+      "id": 4,
+      "question": "Zoe fills 2 one-gallon pitchers with lemonade. Each serving is 2 cups. How many servings can she pour?",
+      "answers": [
+        "17 servings",
+        "32 servings",
+        "26 servings",
+        "16 servings"
+      ],
+      "correct": 3,
+      "hint": "1 US gallon = 4 quarts = 16 cups. Convert to cups, then divide by 2 cups per serving."
+    },
+    {
+      "id": 5,
+      "question": "Each of 3 bottles holds 1 pint of water. How many US fluid ounces do the bottles hold altogether?",
+      "answers": [
+        "48 US fluid ounces",
+        "49 US fluid ounces",
+        "96 US fluid ounces",
+        "58 US fluid ounces"
+      ],
+      "correct": 0,
+      "hint": "1 US pint = 2 cups and 1 cup = 8 US fluid ounces. Find the amount per bottle, then multiply."
+    },
+    {
+      "id": 6,
+      "question": "A recipe uses 3 tablespoons of oil per batch. Iris makes 2 batches. How many teaspoons of oil does she need?",
+      "answers": [
+        "28 teaspoons",
+        "18 teaspoons",
+        "19 teaspoons",
+        "36 teaspoons"
+      ],
+      "correct": 1,
+      "hint": "1 tablespoon = 3 teaspoons. Find the teaspoons for one batch, then multiply by the number of batches."
+    },
+    {
+      "id": 7,
+      "question": "Zoe has 2 quarts of juice. She pours out 3 cups. How many cups are left?",
+      "answers": [
+        "10 cups",
+        "15 cups",
+        "5 cups",
+        "6 cups"
+      ],
+      "correct": 2,
+      "hint": "1 US quart = 2 pints = 4 cups. Convert to cups before subtracting."
+    },
+    {
+      "id": 8,
+      "question": "A shelf can hold 10 pounds. There are already 1 pounds of books on it. Each new book weighs 8 ounces. How many new books can be added without going over the limit?",
+      "answers": [
+        "19 books",
+        "36 books",
+        "28 books",
+        "18 books"
+      ],
+      "correct": 3,
+      "hint": "Subtract the existing weight from 10 pounds. Convert the remaining capacity to ounces, then divide by 8."
+    },
+    {
+      "id": 9,
+      "question": "Iris has a rope 4 feet long. She cuts it into pieces that are 6 inches long. How many complete pieces can she make?",
+      "answers": [
+        "8 pieces",
+        "9 pieces",
+        "16 pieces",
+        "18 pieces"
+      ],
+      "correct": 0,
+      "hint": "1 foot = 12 inches. Convert the rope length to inches, then divide by 6."
+    },
+    {
+      "id": 10,
+      "question": "Zoe needs 2 cups of milk. Her measuring spoon holds 2 tablespoons. How many full spoonfuls does she need?",
+      "answers": [
+        "26 spoonfuls",
+        "16 spoonfuls",
+        "17 spoonfuls",
+        "32 spoonfuls"
+      ],
+      "correct": 1,
+      "hint": "1 US cup = 16 tablespoons. Find the total tablespoons, then divide by 2."
+    },
+    {
+      "id": 11,
+      "question": "Iris walks 2 miles in the morning and 2,640 feet in the afternoon. How many feet does she walk altogether?",
+      "answers": [
+        "26400 feet",
+        "13210 feet",
+        "13200 feet",
+        "13201 feet"
+      ],
+      "correct": 2,
+      "hint": "1 mile = 5,280 feet. Convert the morning walk, then add the afternoon walk."
+    },
+    {
+      "id": 12,
+      "question": "Zoe has a ribbon 4 yards long. She cuts off 18 inches. How many inches remain?",
+      "answers": [
+        "127 inches",
+        "252 inches",
+        "136 inches",
+        "126 inches"
+      ],
+      "correct": 3,
+      "hint": "1 yard = 3 feet = 36 inches. Convert the whole ribbon, then subtract the piece cut off."
+    },
+    {
+      "id": 13,
+      "question": "A bag holds 3 pounds of flour. Iris uses 12 ounces. How many ounces of flour remain?",
+      "answers": [
+        "36 ounces",
+        "37 ounces",
+        "72 ounces",
+        "46 ounces"
+      ],
+      "correct": 0,
+      "hint": "1 pound = 16 ounces. Find the starting weight in ounces, then subtract 12."
+    },
+    {
+      "id": 14,
+      "question": "Zoe fills 3 one-gallon pitchers with lemonade. Each serving is 2 cups. How many servings can she pour?",
+      "answers": [
+        "34 servings",
+        "24 servings",
+        "25 servings",
+        "48 servings"
+      ],
+      "correct": 1,
+      "hint": "1 US gallon = 4 quarts = 16 cups. Convert to cups, then divide by 2 cups per serving."
+    },
+    {
+      "id": 15,
+      "question": "Each of 4 bottles holds 1 pint of water. How many US fluid ounces do the bottles hold altogether?",
+      "answers": [
+        "128 US fluid ounces",
+        "74 US fluid ounces",
+        "64 US fluid ounces",
+        "65 US fluid ounces"
+      ],
+      "correct": 2,
+      "hint": "1 US pint = 2 cups and 1 cup = 8 US fluid ounces. Find the amount per bottle, then multiply."
+    },
+    {
+      "id": 16,
+      "question": "A recipe uses 3 tablespoons of oil per batch. Iris makes 3 batches. How many teaspoons of oil does she need?",
+      "answers": [
+        "28 teaspoons",
+        "54 teaspoons",
+        "37 teaspoons",
+        "27 teaspoons"
+      ],
+      "correct": 3,
+      "hint": "1 tablespoon = 3 teaspoons. Find the teaspoons for one batch, then multiply by the number of batches."
+    },
+    {
+      "id": 17,
+      "question": "Zoe has 3 quarts of juice. She pours out 3 cups. How many cups are left?",
+      "answers": [
+        "9 cups",
+        "10 cups",
+        "18 cups",
+        "19 cups"
+      ],
+      "correct": 0,
+      "hint": "1 US quart = 2 pints = 4 cups. Convert to cups before subtracting."
+    },
+    {
+      "id": 18,
+      "question": "A shelf can hold 10 pounds. There are already 2 pounds of books on it. Each new book weighs 8 ounces. How many new books can be added without going over the limit?",
+      "answers": [
+        "26 books",
+        "16 books",
+        "17 books",
+        "32 books"
+      ],
+      "correct": 1,
+      "hint": "Subtract the existing weight from 10 pounds. Convert the remaining capacity to ounces, then divide by 8."
+    },
+    {
+      "id": 19,
+      "question": "Iris has a rope 5 feet long. She cuts it into pieces that are 6 inches long. How many complete pieces can she make?",
+      "answers": [
+        "20 pieces",
+        "5 pieces",
+        "10 pieces",
+        "11 pieces"
+      ],
+      "correct": 2,
+      "hint": "1 foot = 12 inches. Convert the rope length to inches, then divide by 6."
+    },
+    {
+      "id": 20,
+      "question": "Zoe needs 3 cups of milk. Her measuring spoon holds 2 tablespoons. How many full spoonfuls does she need?",
+      "answers": [
+        "25 spoonfuls",
+        "48 spoonfuls",
+        "34 spoonfuls",
+        "24 spoonfuls"
+      ],
+      "correct": 3,
+      "hint": "1 US cup = 16 tablespoons. Find the total tablespoons, then divide by 2."
+    },
+    {
+      "id": 21,
+      "question": "Iris walks 3 miles in the morning and 2,640 feet in the afternoon. How many feet does she walk altogether?",
+      "answers": [
+        "18480 feet",
+        "18481 feet",
+        "36960 feet",
+        "18490 feet"
+      ],
+      "correct": 0,
+      "hint": "1 mile = 5,280 feet. Convert the morning walk, then add the afternoon walk."
+    },
+    {
+      "id": 22,
+      "question": "Zoe has a ribbon 5 yards long. She cuts off 18 inches. How many inches remain?",
+      "answers": [
+        "172 inches",
+        "162 inches",
+        "163 inches",
+        "324 inches"
+      ],
+      "correct": 1,
+      "hint": "1 yard = 3 feet = 36 inches. Convert the whole ribbon, then subtract the piece cut off."
+    },
+    {
+      "id": 23,
+      "question": "A bag holds 4 pounds of flour. Iris uses 12 ounces. How many ounces of flour remain?",
+      "answers": [
+        "104 ounces",
+        "62 ounces",
+        "52 ounces",
+        "53 ounces"
+      ],
+      "correct": 2,
+      "hint": "1 pound = 16 ounces. Find the starting weight in ounces, then subtract 12."
+    },
+    {
+      "id": 24,
+      "question": "Zoe fills 4 one-gallon pitchers with lemonade. Each serving is 2 cups. How many servings can she pour?",
+      "answers": [
+        "33 servings",
+        "64 servings",
+        "42 servings",
+        "32 servings"
+      ],
+      "correct": 3,
+      "hint": "1 US gallon = 4 quarts = 16 cups. Convert to cups, then divide by 2 cups per serving."
+    },
+    {
+      "id": 25,
+      "question": "Each of 5 bottles holds 1 pint of water. How many US fluid ounces do the bottles hold altogether?",
+      "answers": [
+        "80 US fluid ounces",
+        "81 US fluid ounces",
+        "160 US fluid ounces",
+        "90 US fluid ounces"
+      ],
+      "correct": 0,
+      "hint": "1 US pint = 2 cups and 1 cup = 8 US fluid ounces. Find the amount per bottle, then multiply."
+    },
+    {
+      "id": 26,
+      "question": "A recipe uses 3 tablespoons of oil per batch. Iris makes 4 batches. How many teaspoons of oil does she need?",
+      "answers": [
+        "46 teaspoons",
+        "36 teaspoons",
+        "37 teaspoons",
+        "72 teaspoons"
+      ],
+      "correct": 1,
+      "hint": "1 tablespoon = 3 teaspoons. Find the teaspoons for one batch, then multiply by the number of batches."
+    },
+    {
+      "id": 27,
+      "question": "Zoe has 4 quarts of juice. She pours out 3 cups. How many cups are left?",
+      "answers": [
+        "26 cups",
+        "23 cups",
+        "13 cups",
+        "14 cups"
+      ],
+      "correct": 2,
+      "hint": "1 US quart = 2 pints = 4 cups. Convert to cups before subtracting."
+    },
+    {
+      "id": 28,
+      "question": "A shelf can hold 10 pounds. There are already 3 pounds of books on it. Each new book weighs 8 ounces. How many new books can be added without going over the limit?",
+      "answers": [
+        "15 books",
+        "28 books",
+        "24 books",
+        "14 books"
+      ],
+      "correct": 3,
+      "hint": "Subtract the existing weight from 10 pounds. Convert the remaining capacity to ounces, then divide by 8."
+    },
+    {
+      "id": 29,
+      "question": "Iris has a rope 6 feet long. She cuts it into pieces that are 6 inches long. How many complete pieces can she make?",
+      "answers": [
+        "12 pieces",
+        "13 pieces",
+        "24 pieces",
+        "22 pieces"
+      ],
+      "correct": 0,
+      "hint": "1 foot = 12 inches. Convert the rope length to inches, then divide by 6."
+    },
+    {
+      "id": 30,
+      "question": "Zoe needs 4 cups of milk. Her measuring spoon holds 2 tablespoons. How many full spoonfuls does she need?",
+      "answers": [
+        "42 spoonfuls",
+        "32 spoonfuls",
+        "33 spoonfuls",
+        "64 spoonfuls"
+      ],
+      "correct": 1,
+      "hint": "1 US cup = 16 tablespoons. Find the total tablespoons, then divide by 2."
+    },
+    {
+      "id": 31,
+      "question": "Iris walks 4 miles in the morning and 2,640 feet in the afternoon. How many feet does she walk altogether?",
+      "answers": [
+        "47520 feet",
+        "23770 feet",
+        "23760 feet",
+        "23761 feet"
+      ],
+      "correct": 2,
+      "hint": "1 mile = 5,280 feet. Convert the morning walk, then add the afternoon walk."
+    },
+    {
+      "id": 32,
+      "question": "Zoe has a ribbon 6 yards long. She cuts off 18 inches. How many inches remain?",
+      "answers": [
+        "199 inches",
+        "396 inches",
+        "208 inches",
+        "198 inches"
+      ],
+      "correct": 3,
+      "hint": "1 yard = 3 feet = 36 inches. Convert the whole ribbon, then subtract the piece cut off."
+    },
+    {
+      "id": 33,
+      "question": "A bag holds 5 pounds of flour. Iris uses 12 ounces. How many ounces of flour remain?",
+      "answers": [
+        "68 ounces",
+        "69 ounces",
+        "136 ounces",
+        "78 ounces"
+      ],
+      "correct": 0,
+      "hint": "1 pound = 16 ounces. Find the starting weight in ounces, then subtract 12."
+    },
+    {
+      "id": 34,
+      "question": "Zoe fills 5 one-gallon pitchers with lemonade. Each serving is 2 cups. How many servings can she pour?",
+      "answers": [
+        "50 servings",
+        "40 servings",
+        "41 servings",
+        "80 servings"
+      ],
+      "correct": 1,
+      "hint": "1 US gallon = 4 quarts = 16 cups. Convert to cups, then divide by 2 cups per serving."
+    },
+    {
+      "id": 35,
+      "question": "Each of 6 bottles holds 1 pint of water. How many US fluid ounces do the bottles hold altogether?",
+      "answers": [
+        "192 US fluid ounces",
+        "106 US fluid ounces",
+        "96 US fluid ounces",
+        "97 US fluid ounces"
+      ],
+      "correct": 2,
+      "hint": "1 US pint = 2 cups and 1 cup = 8 US fluid ounces. Find the amount per bottle, then multiply."
+    },
+    {
+      "id": 36,
+      "question": "A recipe uses 3 tablespoons of oil per batch. Iris makes 5 batches. How many teaspoons of oil does she need?",
+      "answers": [
+        "46 teaspoons",
+        "90 teaspoons",
+        "55 teaspoons",
+        "45 teaspoons"
+      ],
+      "correct": 3,
+      "hint": "1 tablespoon = 3 teaspoons. Find the teaspoons for one batch, then multiply by the number of batches."
+    },
+    {
+      "id": 37,
+      "question": "Zoe has 5 quarts of juice. She pours out 3 cups. How many cups are left?",
+      "answers": [
+        "17 cups",
+        "18 cups",
+        "34 cups",
+        "27 cups"
+      ],
+      "correct": 0,
+      "hint": "1 US quart = 2 pints = 4 cups. Convert to cups before subtracting."
+    },
+    {
+      "id": 38,
+      "question": "A shelf can hold 10 pounds. There are already 4 pounds of books on it. Each new book weighs 8 ounces. How many new books can be added without going over the limit?",
+      "answers": [
+        "22 books",
+        "12 books",
+        "13 books",
+        "24 books"
+      ],
+      "correct": 1,
+      "hint": "Subtract the existing weight from 10 pounds. Convert the remaining capacity to ounces, then divide by 8."
+    },
+    {
+      "id": 39,
+      "question": "Iris has a rope 7 feet long. She cuts it into pieces that are 6 inches long. How many complete pieces can she make?",
+      "answers": [
+        "28 pieces",
+        "24 pieces",
+        "14 pieces",
+        "15 pieces"
+      ],
+      "correct": 2,
+      "hint": "1 foot = 12 inches. Convert the rope length to inches, then divide by 6."
+    },
+    {
+      "id": 40,
+      "question": "Zoe needs 5 cups of milk. Her measuring spoon holds 2 tablespoons. How many full spoonfuls does she need?",
+      "answers": [
+        "41 spoonfuls",
+        "80 spoonfuls",
+        "50 spoonfuls",
+        "40 spoonfuls"
+      ],
+      "correct": 3,
+      "hint": "1 US cup = 16 tablespoons. Find the total tablespoons, then divide by 2."
+    }
+  ]
+}
